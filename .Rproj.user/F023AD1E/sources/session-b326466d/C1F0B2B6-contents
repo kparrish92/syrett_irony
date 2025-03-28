@@ -371,6 +371,8 @@ nice_mod = brms::brm(response ~ intonation*modifier_type + (1 | subject.ID) +
 
 ```{r}
 ce_df = conditional_effects(nice_mod, categorical = TRUE)[["modifier_type:cats__"]]
+
+
 ```
 
 ```{r}
