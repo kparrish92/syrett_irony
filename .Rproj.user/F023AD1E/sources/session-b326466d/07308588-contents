@@ -1,0 +1,339 @@
+---
+title: "tDCS Project"
+output: html_document
+date: "2025-03-18"
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(here)
+library(bayestestR)
+library(bayesplot)
+library(brms)
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```
+
+```{r}
+
+syrett_theme <- function() {
+  theme(
+    axis.text = element_text(colour = "black", family = "Arial", size = 12),
+    axis.title = element_text(colour = "black", family = "Arial", size = 12))
+} 
+
+## define color palette 
+cbPalette <- c("#999999", "#E69F00", "#56B4E9",
+               "#009E73", "#F0E442", "#0072B2", 
+               "#D55E00", "#CC79A7")
+
+
+listening = read.csv(here("data", "tidy", "listening_df.csv")) %>% 
+  rename("listening" = correct_total)
+
+reading = read.csv(here("data", "tidy", "reading_tidy.csv")) %>% 
+  rename("reading" = score)
+
+stroop = read.csv(here("data", "tidy", "stroop_tidy.csv"))
+
+wm_df = read.csv(here("data", "tidy", "wm_tidy.csv")) %>% 
+  rename("working_memory" = n)
+
+stroop_joined = stroop %>% 
+  left_join(reading, by = c("ppt", "group", "test")) %>% 
+  left_join(listening) %>% 
+  left_join(wm_df,by = c("ppt", "group", "test")) %>% 
+  mutate(model_factor = paste0(test,"_", group))
+
+```
+
+### RQ1: Does tDCS enhance listening and reading comprehension?
+
+It does for listening, but not reading.
+
+<details>
+  <summary>**Listening**</summary>
+
+```{r}
+es_listening = stroop_joined %>% 
+  filter(!is.na(listening)) %>% 
+  group_by(test, group) %>% 
+  summarise(mean = mean(listening), sd = sd(listening), n = n())
+
+
+effect_size = function(n1, n2, s1, s2, m1, m2) 
+{
+calc = sqrt(((n1-1)*s1^2 + (n2-1)*s2^2) / (n1+n1-2))
+mean_diff = m1 - m2
+es = mean_diff/calc
+return(es)
+}
+
+control_es = effect_size(n1 = es_listening$n[1], 
+                         n2 = es_listening$n[3], 
+                         s1 = es_listening$sd[1], 
+                         s2 = es_listening$sd[3],
+                         m1 = es_listening$mean[1], 
+                         m2 = es_listening$mean[3]) 
+
+
+treatment_es = effect_size(n1 = es_listening$n[2], 
+                         n2 = es_listening$n[4], 
+                         s1 = es_listening$sd[2], 
+                         s2 = es_listening$sd[4],
+                         m1 = es_listening$mean[2], 
+                         m2 = es_listening$mean[4]) 
+
+library(pwr)
+
+min_detectable_eff_listenting = pwr.t.test(n = 15, power = .8)[["d"]]
+
+power_control_listenting = round(pwr.t.test(n = 15, d = control_es)[["power"]], digits = 2)
+needed_n_control_listenting = round(pwr.t.test(d = control_es, power = .8)[["n"]])
+
+power_treatment_listenting = round(pwr.t.test(n = 15, d = treatment_es)[["power"]], digits = 2)
+needed_n_treatment_listenting = round(pwr.t.test(d = treatment_es, power = .8)[["n"]])
+```
+
+<mark>
+Based on a sample of 15 per group, power level of .8 and alpha of .05, the minimum detectable effect was d = `r round(min_detectable_eff_listenting, digits = 2)`.
+</mark>
+
+<mark>
+The data showed a small descriptive effect for the control group going from pretest to posttest (d = `r round(control_es, digits = 2)`).
+The power of this comparison was low: `r power_control_listenting`. 
+To achieve a statistically powered sample, `r needed_n_control_listenting` participants per group would have been needed.
+</mark>
+
+<mark>
+For the treatment group, the effect was large (d = `r round(treatment_es, digits = 2)`.
+This comparison was statistically powered: `r power_treatment_listenting`. 
+The minimum number of participants in this case to achieve a statistically powered sample, `r needed_n_treatment_listenting` participants per group would have been needed.
+</mark>
+
+```{r}
+stroop_joined %>% 
+  ggplot(aes(y = listening, x = test, fill = group)) + geom_boxplot() + 
+  scale_x_discrete(limits = c("pre", "post")) + theme_minimal() + syrett_theme() +
+  ylab("Listening Score") + xlab("Test")
+```
+
+```{r}
+summary(m1 <- glm(listening ~ model_factor, family="poisson", data=stroop_joined))[["coefficients"]] %>% 
+  as.data.frame() %>% knitr::kable(digits = 2)
+```
+
+`r report::report(m1)`
+</details> 
+
+<details>
+  <summary>**Reading**</summary>
+  
+```{r}
+es_reading = stroop_joined %>% 
+  filter(!is.na(reading)) %>% 
+  group_by(test, group) %>% 
+  summarise(mean = mean(reading), sd = sd(reading), n = n())
+
+control_es_r = effect_size(n1 = es_reading$n[1], 
+                         n2 = es_reading$n[3], 
+                         s1 = es_reading$sd[1], 
+                         s2 = es_reading$sd[3],
+                         m1 = es_reading$mean[1], 
+                         m2 = es_reading$mean[3]) 
+
+
+treatment_es_r = effect_size(n1 = es_reading$n[2], 
+                         n2 = es_reading$n[4], 
+                         s1 = es_reading$sd[2], 
+                         s2 = es_reading$sd[4],
+                         m1 = es_reading$mean[2], 
+                         m2 = es_reading$mean[4]) 
+
+library(pwr)
+
+min_detectable_eff_reading = pwr.t.test(n = 15, power = .8)[["d"]]
+
+power_control_reading = round(pwr.t.test(n = 15, d = control_es_r)[["power"]], digits = 2)
+needed_n_control_reading = round(pwr.t.test(d = control_es_r, power = .8)[["n"]])
+
+power_treatment_reading = round(pwr.t.test(n = 15, d = treatment_es_r)[["power"]], digits = 2)
+needed_n_treatment_reaing = round(pwr.t.test(d = treatment_es_r, power = .8)[["n"]])
+
+```
+
+<mark>
+Based on a sample of 15 per group, power level of .8 and alpha of .05, the minimum detectable effect was d = `r round(min_detectable_eff_reading, digits = 2)`.
+</mark>
+
+<mark>
+The data showed a medium-small descriptive effect for the control group going from pretest to posttest (d = `r round(control_es_r, digits = 2)`).
+The power of this comparison was low: `r power_control_reading`. 
+To achieve a statistically powered sample, `r needed_n_control_reading` participants per group would have been needed.
+</mark>
+
+<mark>
+The data showed a medium descriptive effect for the treatment group going from pretest to posttest (d = `r round(treatment_es_r, digits = 2)`).
+The power of this comparison was low: `r power_treatment_reading`. 
+To achieve a statistically powered sample, `r needed_n_treatment_reaing` participants per group would have been needed.
+</mark>
+
+```{r}
+stroop_joined %>% 
+  ggplot(aes(y = reading, x = test, fill = group)) + geom_boxplot() + 
+  scale_x_discrete(limits = c("pre", "post")) + theme_minimal() + syrett_theme() +
+  ylab("Reading Score") + xlab("Test")
+```
+
+
+```{r}
+summary(m2 <- glm(reading ~ model_factor, family="poisson", data=stroop_joined))[["coefficients"]] %>% 
+  as.data.frame() %>% knitr::kable(digits = 2)
+```
+
+`r report::report(m2)`
+
+</details> 
+
+### RQ2: If so, is it because WM may also have increased?
+
+Working memory **did not** increase meaningfully for either group.
+
+<details>
+  <summary>**Working Memory**</summary>
+
+```{r}
+es_wm = stroop_joined %>% 
+  filter(!is.na(working_memory)) %>% 
+  group_by(test, group) %>% 
+  summarise(mean = mean(working_memory), sd = sd(working_memory), n = n())
+
+control_es_wm = effect_size(n1 = es_wm$n[1], 
+                         n2 = es_wm$n[3], 
+                         s1 = es_wm$sd[1], 
+                         s2 = es_wm$sd[3],
+                         m1 = es_wm$mean[1], 
+                         m2 = es_wm$mean[3]) 
+
+
+treatment_es_wm = effect_size(n1 = es_wm$n[2], 
+                         n2 = es_wm$n[4], 
+                         s1 = es_wm$sd[2], 
+                         s2 = es_wm$sd[4],
+                         m1 = es_wm$mean[2], 
+                         m2 = es_wm$mean[4]) 
+
+library(pwr)
+
+min_detectable_eff_wm = pwr.t.test(n = 15, power = .8)[["d"]]
+
+power_control_wn = round(pwr.t.test(n = 15, d = control_es_wm)[["power"]], digits = 2)
+needed_n_control_wn = round(pwr.t.test(d = control_es_wm, power = .8)[["n"]])
+
+power_treatment_wn = round(pwr.t.test(n = 15, d = treatment_es_wm)[["power"]], digits = 2)
+needed_n_treatment_wn = round(pwr.t.test(d = treatment_es_wm, power = .8)[["n"]])
+```
+
+<mark>
+Based on a sample of 15 per group, power level of .8 and alpha of .05, the minimum detectable effect was d = `r round(min_detectable_eff_reading, digits = 2)`.
+</mark>
+
+<mark>
+The data showed a negative and small descriptive effect for the control group going from pretest to posttest (d = `r round(control_es_wm, digits = 2)`).
+The power of this comparison was low: `r power_control_wn`. 
+To achieve a statistically powered sample, `r needed_n_control_wn` participants per group would have been needed.
+</mark>
+
+<mark>
+The data showed a medium-small descriptive effect for the treatment group going from pretest to posttest (d = `r round(treatment_es_wm, digits = 2)`).
+The power of this comparison was low: `r power_treatment_wn`. 
+To achieve a statistically powered sample, `r needed_n_treatment_wn` participants per group would have been needed.
+</mark>
+
+
+
+```{r}
+stroop_joined %>% 
+  ggplot(aes(y = working_memory, x = test, fill = group)) + geom_boxplot() + 
+  scale_x_discrete(limits = c("pre", "post")) + theme_minimal() + syrett_theme() +
+  ylab("Working Memory Score") + xlab("Test")
+```
+
+```{r}
+summary(m3 <- glm(working_memory ~ model_factor, family="poisson", data=stroop_joined))[["coefficients"]] %>% 
+  as.data.frame() %>% knitr::kable(digits = 2)
+```
+
+`r report::report(m3)`
+</details> 
+
+### RQ3: Does tDCS improve WM and inhibitory control?
+
+There is not evidence in improvement for the stroop effect either. 
+
+<details>
+  <summary>**Stroop Effect**</summary>
+  
+```{r}
+es_stroop = stroop_joined %>% 
+  filter(!is.na(stroop_effect)) %>% 
+  group_by(test, group) %>% 
+  summarise(mean = mean(stroop_effect), sd = sd(stroop_effect), n = n())
+
+control_es_stroop = effect_size(n1 = es_stroop$n[1], 
+                         n2 = es_stroop$n[3], 
+                         s1 = es_stroop$sd[1], 
+                         s2 = es_stroop$sd[3],
+                         m1 = es_stroop$mean[1], 
+                         m2 = es_stroop$mean[3]) 
+
+
+treatment_es_stroop = effect_size(n1 = es_stroop$n[2], 
+                         n2 = es_stroop$n[4], 
+                         s1 = es_stroop$sd[2], 
+                         s2 = es_stroop$sd[4],
+                         m1 = es_stroop$mean[2], 
+                         m2 = es_stroop$mean[4]) 
+
+library(pwr)
+
+min_detectable_eff_stroop = pwr.t.test(n = 15, power = .8)[["d"]]
+
+power_control_stroop = round(pwr.t.test(n = 15, d = control_es_stroop)[["power"]], digits = 2)
+needed_n_control_stroop = round(pwr.t.test(d = control_es_stroop, power = .8)[["n"]])
+
+power_treatment_stroop = round(pwr.t.test(n = 15, d = treatment_es_stroop)[["power"]], digits = 2)
+needed_n_treatment_stroop = round(pwr.t.test(d = treatment_es_stroop, power = .8)[["n"]])
+```
+
+<mark>
+Based on a sample of 15 per group, power level of .8 and alpha of .05, the minimum detectable effect was d = `r round(min_detectable_eff_reading, digits = 2)`.
+</mark>
+
+<mark>
+The data showed a negative and small descriptive effect for the control group going from pretest to posttest (d = `r round(control_es_stroop, digits = 2)`).
+The power of this comparison was low: `r power_control_stroop`. 
+To achieve a statistically powered sample, `r needed_n_control_stroop` participants per group would have been needed.
+</mark>
+
+<mark>
+The data showed a negative and small descriptive effect  for the treatment group going from pretest to posttest (d = `r round(treatment_es_stroop, digits = 2)`).
+The power of this comparison was low: `r power_treatment_stroop`. 
+To achieve a statistically powered sample, `r needed_n_treatment_stroop` participants per group would have been needed.
+</mark>
+
+
+```{r}
+stroop_joined %>% 
+  ggplot(aes(y = stroop_effect, x = test, fill = group)) + geom_boxplot() + 
+  scale_x_discrete(limits = c("pre", "post")) + theme_minimal() + syrett_theme() +
+  ylab("Stroop Effect") + xlab("Test")
+```
+
+```{r}
+summary(m4 <- glm(stroop_effect ~ model_factor, data=stroop_joined))[["coefficients"]] %>% 
+  as.data.frame() %>% knitr::kable(digits = 2)
+```
+
+`r report::report(m4)`
+
+</details> 

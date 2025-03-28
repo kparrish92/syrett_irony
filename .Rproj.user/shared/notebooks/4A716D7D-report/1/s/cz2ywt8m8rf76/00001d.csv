@@ -1,0 +1,7 @@
+"0","nice_df = tidy_data %>% "
+"0","  filter(probe_type == ""nice"") "
+"0",""
+"0","nice_df %>% "
+"0","  ggplot(aes(x = response)) + "
+"0","  geom_bar(position = ""dodge"", color = ""black"") + facet_grid(modifier_type~intonation) +"
+"0","  theme_minimal() + syrett_theme()"

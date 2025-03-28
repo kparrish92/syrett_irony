@@ -1,0 +1,2 @@
+"0","ce_df = conditional_effects(nice_mod, categorical = TRUE)[[""modifier_type:cats__""]]"
+"2","Warning: Interactions cannot be plotted directly if 'categorical' is TRUE. Please use argument 'conditions' instead."

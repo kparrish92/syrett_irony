@@ -1,0 +1,7 @@
+"0",""
+"0","mean_mod = brms::brm(response ~ intonation*modifier_type + (1 | subject.ID) + "
+"0","                            (1 | trial_object) + (1 | trial_modifier),"
+"0","                          family = ""bernoulli"","
+"0","                          data = mean_df,"
+"0","                     file = here(""data"", ""models"", ""mean_mod.rds""))"
+"0",""

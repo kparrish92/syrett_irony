@@ -1,0 +1,7 @@
+"0","mean_df = tidy_data %>% "
+"0","  filter(probe_type == ""mean"") "
+"0",""
+"0","mean_df %>% "
+"0","  ggplot(aes(x = intonation, fill = modifier_type)) + "
+"0","  geom_bar(position = ""dodge"", color = ""black"") + facet_wrap(~response) +"
+"0","  theme_minimal() + syrett_theme()"

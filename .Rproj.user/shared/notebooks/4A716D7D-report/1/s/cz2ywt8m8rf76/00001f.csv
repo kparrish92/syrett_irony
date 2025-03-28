@@ -1,0 +1,6 @@
+"0",""
+"0","nice_mod = brms::brm(response ~ intonation*modifier_type + (1 | subject.ID) + "
+"0","                          (1 | trial_object) + (1 | trial_modifier),"
+"0","                        family = ""categorical"","
+"0","                        data = nice_df, "
+"0","                     file = here(""data"", ""models"", ""nice_mod.rds""))"

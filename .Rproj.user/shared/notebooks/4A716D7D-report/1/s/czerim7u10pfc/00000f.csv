@@ -1,0 +1,6 @@
+"0","approve_df %>% "
+"0","  ggplot(aes(modifier_type, fill = as.factor(response), group = as.factor(response))) + "
+"0","  geom_bar(position = ""fill"", color = ""black"") + facet_wrap(~intonation) +"
+"0","  theme_minimal() + syrett_theme() + scale_fill_discrete(name = ""Response"") +"
+"0","  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))"
+"0",""
