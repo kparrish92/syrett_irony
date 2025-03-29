@@ -1,2 +1,2 @@
-ce_df %>% 
-  select(estimate__)
+intonation_mt_pcts %>% 
+  pivot_wider(names_from = response, values_from = pct_rating)

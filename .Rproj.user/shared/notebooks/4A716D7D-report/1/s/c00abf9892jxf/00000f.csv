@@ -1,0 +1,6 @@
+"0","tidy_data %>% "
+"0","  filter(probe_type == ""nice"") %>% "
+"0","  ggplot(aes(x = response, fill = as.factor(response), group = as.factor(response))) + "
+"0","  geom_bar(position = ""dodge"", color = ""black"") +"
+"0","  theme_minimal() + syrett_theme() + theme(legend.position=""none"")"
+"0",""
