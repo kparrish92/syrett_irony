@@ -49,6 +49,10 @@ pcts_app = approve_df %>% group_by(intonation, response) %>% summarise(n = round
 
 ```{r}
 approve_df %>% 
+  mutate(response = case_when(
+    response == 1 ~ "No",
+    response == 2 ~ "Yes",
+  )) %>% 
   ggplot(aes(intonation, fill = as.factor(response), group = as.factor(response))) + 
   geom_bar(position = "fill", color = "black") +
   theme_minimal() + syrett_theme() + scale_fill_discrete(name = "Response") + ggtitle("Overall proportion of responses to declarative and sarcastic items")
@@ -86,6 +90,10 @@ describe_posterior(
 
 ```{r}
 approve_df %>% 
+    mutate(response = case_when(
+    response == 1 ~ "No",
+    response == 2 ~ "Yes",
+  )) %>% 
   ggplot(aes(modifier_type, fill = as.factor(response), group = as.factor(response))) + 
   geom_bar(position = "fill", color = "black") +
   theme_minimal() + syrett_theme() + scale_fill_discrete(name = "Response") + ggtitle("Overall proportion of responses to the modifier types")
@@ -129,6 +137,10 @@ describe_posterior(
 
 ```{r}
 approve_df %>% 
+    mutate(response = case_when(
+    response == 1 ~ "No",
+    response == 2 ~ "Yes",
+  )) %>% 
   ggplot(aes(modifier_type, fill = as.factor(response), group = as.factor(response))) + 
   geom_bar(position = "fill", color = "black") + facet_wrap(~intonation) +
   theme_minimal() + syrett_theme() + scale_fill_discrete(name = "Response") +
@@ -209,6 +221,10 @@ pcts_mean = mean_df %>% group_by(intonation, response) %>% summarise(n = round(n
 
 ```{r}
 mean_df %>% 
+    mutate(response = case_when(
+    response == 1 ~ "No",
+    response == 2 ~ "Yes",
+  )) %>% 
   ggplot(aes(intonation, fill = as.factor(response), group = as.factor(response))) + 
   geom_bar(position = "fill", color = "black") +
   theme_minimal() + syrett_theme() + scale_fill_discrete(name = "Response") + ggtitle("Overall proportion of responses to declarative and sarcastic items")
@@ -249,6 +265,10 @@ describe_posterior(
 
 ```{r}
 mean_df %>% 
+    mutate(response = case_when(
+    response == 1 ~ "No",
+    response == 2 ~ "Yes",
+  )) %>% 
   ggplot(aes(modifier_type, fill = as.factor(response), group = as.factor(response))) + 
   geom_bar(position = "fill", color = "black") +
   theme_minimal() + syrett_theme() + scale_fill_discrete(name = "Response") + ggtitle("Overall proportion of responses to the modifier types")
@@ -292,6 +312,10 @@ describe_posterior(
 
 ```{r}
 mean_df %>% 
+    mutate(response = case_when(
+    response == 1 ~ "No",
+    response == 2 ~ "Yes",
+  )) %>% 
   ggplot(aes(modifier_type, fill = as.factor(response), group = as.factor(response))) + 
   geom_bar(position = "fill", color = "black") + facet_wrap(~intonation) +
   theme_minimal() + syrett_theme() + scale_fill_discrete(name = "Response") +
