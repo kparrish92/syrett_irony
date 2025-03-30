@@ -35,14 +35,17 @@ Finally, both predictors are visualized and considered in tandem as they relate 
 
 In each case, a Bayesian multilevel logistic regression was run in which the binary outcome (log-odds of choosing "yes") was analyzed as a function of the relevant predictors (detailed below) and a random intercept for subject id, trial object, and trial modifier. 
 Each model was estimated using MCMC
-sampling with 4 chains of 2000 iterations and a warmup of 1000
-Hamiltonian Monte-Carlo sampling was carried out distributed between 6 processing cores.
+sampling with 4 chains of 2000 iterations and a warmup of 1000 distributed between 6 processing cores.
 
 **Intonation only**
 
 ```{r, include=FALSE}
 approve_df = tidy_data %>% 
-  filter(probe_type == "approve") 
+  filter(probe_type == "approve") %>% 
+    mutate(response = case_when(
+    response == 1 ~ 0,
+    response == 2 ~ 1
+  ))
 
 pcts_app = approve_df %>% group_by(intonation, response) %>% summarise(n = round(n()/834, digits = 2)*100)
 ```
@@ -50,8 +53,8 @@ pcts_app = approve_df %>% group_by(intonation, response) %>% summarise(n = round
 ```{r}
 approve_df %>% 
   mutate(response = case_when(
-    response == 1 ~ "No",
-    response == 2 ~ "Yes",
+    response == 0 ~ "No",
+    response == 1 ~ "Yes",
   )) %>% 
   ggplot(aes(intonation, fill = as.factor(response), group = as.factor(response))) + 
   geom_bar(position = "fill", color = "black") +
@@ -63,9 +66,8 @@ The first plot shows the overall proportion of responses to declarative and sarc
 Overall, choosing "yes" was slightly more frequent for the declarative items (`r pcts_app$n[2]` percent) compared to `r pcts_app$n[4]` percent in sarcastic responses.
 
 A logistic regression model was fit in which response was predicted as a function of intonation (including the random effects mentioned above). 
-The model, described below, found substantial evidence that the overall difference between responses to sarcastic and declarative items was not due to chance (probability of direction approaching 1).
-The table below shows the predicted log-odds for a selection of "no" for the declarative condition (represented by the intercept in the first row) and the effect (change in log-odds) of sarcastic (second row).
-The negative effect suggests that a selection of "no" is less likely for sarcastic items than declarative ones ("yes" is more likely).
+The model, described below, found substantial evidence that the overall difference between responses to sarcastic and declarative items was not due to chance (β = -0.636; 95% HDI = -0.934 - -0.034; pd = 1.0).
+
 
 ```{r}
 approve_mod_int = brms::brm(response ~ intonation + (1 | subject.ID) + 
@@ -91,8 +93,8 @@ describe_posterior(
 ```{r}
 approve_df %>% 
     mutate(response = case_when(
-    response == 1 ~ "No",
-    response == 2 ~ "Yes",
+    response == 0 ~ "No",
+    response == 1 ~ "Yes",
   )) %>% 
   ggplot(aes(modifier_type, fill = as.factor(response), group = as.factor(response))) + 
   geom_bar(position = "fill", color = "black") +
@@ -108,11 +110,9 @@ Overall, a response of "yes" was most frequent for the `grad+subj+pos` items (`r
 Finally, `grad+subj+neg` showed very few responses of "yes" (only `r pcts_app_mod$n[2]` percent).
 
 A logistic regression model was fit in which response was predicted as a function of modifier type (including the random effects mentioned above). 
-
 The model, described below, found substantial evidence that, relative to the baseline `–grad–subj`, there was compelling evidence that both of the other modifier types were distinctly responded to by participants. 
-The table below shows the predicted log-odds for a selection of "no" for the `grad–subj` condition (represented by the intercept in the first row).
-The model predicts that a choice of "no" for `modifier_typegradPsubjPneg` (second row) relative to `grad–subj` is lower overall.
-The opposite was found for the modifier type `b_modifier_typegradPsubjPpos` relative to `grad-subj`, in which the log-odds of a choice of "no" was higher.
+The model predicts that a choice of "yes" for `modifier_typegradPsubjPneg` (second row) relative to `grad–subj` is lower overall (β = -1.35; 95% HDI = -2.13 - -0.59; pd = 1.0).
+The opposite was found for the modifier type `b_modifier_typegradPsubjPpos` relative to `grad-subj`, in which the log-odds of a choice of "yes" was higher (β = 2.79; 95% HDI = 2.05 - 3.52; pd = 1.0).
 
 ```{r}
 approve_mod_int_mt = brms::brm(response ~ modifier_type + (1 | subject.ID) + 
@@ -138,8 +138,8 @@ describe_posterior(
 ```{r}
 approve_df %>% 
     mutate(response = case_when(
-    response == 1 ~ "No",
-    response == 2 ~ "Yes",
+    response == 0 ~ "No",
+    response == 1 ~ "Yes",
   )) %>% 
   ggplot(aes(modifier_type, fill = as.factor(response), group = as.factor(response))) + 
   geom_bar(position = "fill", color = "black") + facet_wrap(~intonation) +
@@ -170,12 +170,16 @@ When the intonation was `r approve_all$intonation[9]` and the modifier type was 
 
 The final model is a little more complex than the first two, since we now have an interaction. 
 This model predicts to log-odds of a response of as a function of both intonation (2 levels) and modifier type (3 levels) and their interaction. 
-As a result, the intercept of this model represents the log-odds of a choice of "no" when the modifier type is `grad–subj` and the intonation is `declarative`. 
-The fixed effect `b_intonationsarcastic` represents the change in the predicted log-dds of choosing "no" when we change the predictor for intonation from `declarative` to `sarcastic`. It's negative, which suggests that it the probality of choosing "no" is less for sarcastic intonation relative to declarative when the modifier type is `grad–subj`. 
-Rows 3 and 4 make similar adjustments, but this time change modifier type while holding the intonation constant. 
+As a result, the intercept of this model represents the log-odds of a choice of "yes" when the modifier type is `grad–subj` and the intonation is `declarative` (β = -1.574; 95% HDI = -2.24 - -0.905; pd = 1.0).
+The fixed effect `b_intonationsarcastic` represents the change in the predicted log-dds of choosing "yes" when we change the predictor for intonation from `declarative` to `sarcastic`. 
+It's negative, which suggests that it the probability of choosing "yes" is less for sarcastic intonation relative to declarative when the modifier type is `grad–subj` (β = -0.41; 95% HDI = -0.894 - 0.058; pd = .958).
+There was also evidence that modifier type impacted the probability of a "yes" response.
+In particular, for declarative items, the modifier type `b_modifier_typegradPsubjPneg` was less likely to elicit a response of "yes" relative to the baseline `grad–subj` (β = -2.056; 95% HDI = -3.065 - -1.131; pd = 1.0).
+Oppositely, the modifier type `b_modifier_typegradPsubjPpos` was more likely to elicit a "yes" response than the baseline (β = 3.437; 95% HDI = 2.597 - 4.306; pd = 1.0).
 The final two terms are the interaction terms. 
-These represent the change relative to the declarative modifier combinations. The positive estimate for row 5 suggests that the probability of choosing "no" when the modifier type is `grad+subj+neg` is higher for when the intonation is sarcastic than declarative. 
-The negative value for row 6 suggests that the probability of choosing "no" when the modifier type is `grad+subj+pos` is lower for when the intonation is sarcastic than declarative. 
+These represent the change relative to the declarative modifier combinations. 
+The positive estimate for row 5 suggests that the probability of choosing "yes" when the modifier type is `grad+subj+neg` is higher for when the intonation is sarcastic than declarative (β = 1.277; 95% HDI = 0.455 - 2.168; pd = 1.0). 
+The negative value for row 6 suggests that the probability of choosing "yes" when the modifier type is `grad+subj+pos` is lower for when the intonation is sarcastic than declarative (β = -1.021; 95% HDI = -1.709 - -0.379; pd = 1.0). 
 In each comparison, the row "pd" (probability of direction) tell us how sure we can be about the given comparison. In this case, all of the comparisons' directions are highly probable (over .95). 
 
 ```{r}
@@ -204,7 +208,11 @@ describe_posterior(
   
 ```{r}
 mean_df = tidy_data %>% 
-  filter(probe_type == "mean") 
+  filter(probe_type == "mean") %>% 
+  mutate(response = case_when(
+    response == 1 ~ 0,
+    response == 2 ~ 1
+  ))
 
 mean_mod = brms::brm(response ~ intonation*modifier_type + (1 | subject.ID) + 
                             (1 | trial_object) + (1 | trial_modifier),
@@ -222,8 +230,8 @@ pcts_mean = mean_df %>% group_by(intonation, response) %>% summarise(n = round(n
 ```{r}
 mean_df %>% 
     mutate(response = case_when(
-    response == 1 ~ "No",
-    response == 2 ~ "Yes",
+    response == 0 ~ "No",
+    response == 1 ~ "Yes",
   )) %>% 
   ggplot(aes(intonation, fill = as.factor(response), group = as.factor(response))) + 
   geom_bar(position = "fill", color = "black") +
@@ -232,15 +240,15 @@ mean_df %>%
 ```
 
 The first plot shows the overall proportion of responses to declarative and sarcastic items (before taking other conditions into account).
-Again (like "approve" itmes), coding of "yes" was more frequent for the declarative items (`r pcts_mean$n[2]` percent) compared to `r pcts_mean$n[4]` percent in sarcastic responses.
+Again (like "approve" items), coding of "yes" was more frequent for the declarative items (`r pcts_mean$n[2]` percent) compared to `r pcts_mean$n[4]` percent in sarcastic responses.
 
 
 **Note: This is exactly the same as the approve section**
 
 A logistic regression model was fit in which response was predicted as a function of intonation (including the random effects mentioned above). 
-The model, described below, found substantial evidence that the overall difference between responses to sarcastic and declarative items was not due to chance (probability of direction approaching 1).
-The table below shows the predicted log-odds for a selection of "no" for the declarative condition (represented by the intercept in the first row) and the effect (change in log-odds) of sarcastic (second row).
-The negative effect suggests that a selection of "no" is less likely for sarcastic items than declarative ones.
+The model, described below, found substantial evidence that the overall difference between responses to sarcastic and declarative items was not due to chance.
+The table below shows the predicted log-odds for a selection of "yes" for the declarative condition (β = 2.545; 95% HDI = 2.146 - 2.981; pd = 1.0) and the effect (change in log-odds) of sarcastic (second row).
+The negative effect suggests that a selection of "yes" is less likely for sarcastic items than declarative ones (β = -0.994; 95% HDI = -1.305 - -0.709; pd = 1.0).
 
 ```{r}
 mean_mod_int = brms::brm(response ~ intonation + (1 | subject.ID) + 
@@ -266,8 +274,8 @@ describe_posterior(
 ```{r}
 mean_df %>% 
     mutate(response = case_when(
-    response == 1 ~ "No",
-    response == 2 ~ "Yes",
+    response == 0 ~ "No",
+    response == 1 ~ "Yes",
   )) %>% 
   ggplot(aes(modifier_type, fill = as.factor(response), group = as.factor(response))) + 
   geom_bar(position = "fill", color = "black") +
@@ -283,11 +291,9 @@ Overall, coding of "yes" was most frequent for the `grad+subj+neg` items (`r pct
 Finally, `grad+subj+pos` showed very few responses of "yes" (only `r pcts_app_mod$n[4]` percent).
 
 A logistic regression model was fit in which response was predicted as a function of modifier type (including the random effects mentioned above). 
-
-The model, described below, found substantial evidence that, relative to the baseline `–grad–subj`, there was compelling evidence that both of the other modifier types were distinctly responded to by participants. 
-The table below shows the predicted log-odds for a selection of "no" for the `grad–subj` condition (represented by the intercept in the first row).
-The model predicts that a choice of "no" for `modifier_typegradPsubjPneg` (second row) relative to `grad–subj` is higher overall.
-The opposite was found for the modifier type `b_modifier_typegradPsubjPpos` relative to `grad-subj`, in which the log-odds of a choice of "no" was lower
+The model, described below, found substantial evidence that, relative to the baseline modifier type `–grad–subj`, there was compelling evidence that both of the other modifier types were distinctly responded to by participants. 
+We cannot conclude from the model that the log-odds of a choice of "yes" for `modifier_typegradPsubjPneg` (second row) relative to `grad–subj` is distinct overall (β = 3.89; 95% HDI = -0.091 - - 0.878; pd = .804).
+The opposite was found for the modifier type `b_modifier_typegradPsubjPpos` relative to `grad-subj`, in which the log-odds of a choice of "yes" was lower  (β = -0.750; 95% HDI = -1.191 - -0.302; pd = 1.0).
 
 ```{r}
 mean_mod_int_mt = brms::brm(response ~ modifier_type + (1 | subject.ID) + 
@@ -313,8 +319,8 @@ describe_posterior(
 ```{r}
 mean_df %>% 
     mutate(response = case_when(
-    response == 1 ~ "No",
-    response == 2 ~ "Yes",
+    response == 0 ~ "No",
+    response == 1 ~ "Yes",
   )) %>% 
   ggplot(aes(modifier_type, fill = as.factor(response), group = as.factor(response))) + 
   geom_bar(position = "fill", color = "black") + facet_wrap(~intonation) +
@@ -342,14 +348,18 @@ When the intonation was `r mean_all$intonation[8]` and the modifier type was `r 
 When the intonation was `r mean_all$intonation[9]` and the modifier type was `r mean_all$modifier_type[9]`, `r mean_all$n[9]` percent of responses were "no".
 
 
-Like the previous model with an interaction (for "approve"), this model predicts to log-odds of a response of as a function of both intonation (2 levels) and modifier type (3 levels) and their interaction. 
-As a result, the intercept of this model represents the log-odds of a choice of "no" when the modifier type is `grad–subj` and the intonation is `declarative`. 
-The fixed effect `b_intonationsarcastic` represents the change in the predicted log-dds of choosing "no" when we change the predictor for intonation from `declarative` to `sarcastic`. It's negative, which suggests that it the probability of choosing "no" is less for sarcastic intonation relative to declarative when the modifier type is `grad–subj`. 
+Like the previous model with an interaction (for "approve"), this model predicts to log-odds of a "yes" response of as a function of both intonation (2 levels) and modifier type (3 levels) and their interaction. 
+As a result, the intercept of this model represents the log-odds of a choice of "yes" when the modifier type is `grad–subj` and the intonation is `declarative` (β = 2.214; 95% HDI = 1.175 - 2.773; pd = 1.0). 
+The fixed effect `b_intonationsarcastic` represents the change in the predicted log-dds of choosing "yes" when we change the predictor for intonation from `declarative` to `sarcastic` and maintain the modifier type as `grad–subj`. 
+The model did not find evidence of a difference in this case (β = -0.160; 95% HDI = -0.663 - 0.356; pd = 0.73).
+
 Rows 3 and 4 make similar adjustments, but this time change modifier type while holding the intonation constant. 
-The final two terms are the interaction terms. 
-These represent the change relative to the declarative modifier combinations. The negative estimate for row 5 suggests that the probability of choosing "no" when the modifier type is `grad+subj+neg` is lower for when the intonation is sarcastic than declarative. 
-The negative value for row 6 suggests that the probability of choosing "no" when the modifier type is `grad+subj+pos` is lower for when the intonation is sarcastic than declarative. 
-This model does not provide compelling evidence for each comparison (see the "pd" column - those lower than .95 are uncertain).
+In particular, for declarative items, the modifier type `b_modifier_typegradPsubjPneg` was more likely to elicit a response of "yes" relative to the baseline `grad–subj` (β = 1.188; 95% HDI = 0.479 - 1.966; pd = 1.0).
+On the other hand, there was no evidence the modifier type `b_modifier_typegradPsubjPpos` was more or less likely to elicit a "yes" response than the baseline (β = -0.055; 95% HDI = -0.678 - 0.548; pd = 0.55).
+
+Finally, the model predicted whether there were differences in the log-odds of a "yes" response holding modifier type constant and comparing intonation. 
+Both cases were negative; meaning that sarcastic items with both `grad+subj+neg` (β = -1.260; 95% HDI = -2.124 - 0.490; pd = 1.0) and `grad+subj+pos` (β = -1.242; 95% HDI = -1.927 - 0.542; pd = 1.0) were less likely to be answered "yes" than declarative items with the same modifier type. 
+
 
 ```{r}
 mead_mod = brms::brm(response ~ intonation*modifier_type + (1 | subject.ID) + 
@@ -455,7 +465,6 @@ describe_posterior(
   mutate(across(where(is.numeric), round, 3)) %>% 
   knitr::kable(row.names = FALSE)
 ```
-
 
 The final plot breaks down ratings into modifier type and intonation. A table below lists each specific percentage. 
 
