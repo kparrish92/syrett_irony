@@ -6,6 +6,10 @@ library(lme4)
 tidy_data = read.csv(here("data", "tidy_data.csv")) %>% 
   filter(trial_number > 6) # removing practice trials 
 
+child_data = read.csv(here("data", "child_data.csv")) %>% 
+  filter(trial_number > 6) 
+
+
 syrett_theme <- function() {
   theme(
     axis.text = element_text(colour = "black", family = "Arial", size = 12),
@@ -14,12 +18,18 @@ syrett_theme <- function() {
 
 
 length(unique(tidy_data$subject.ID))# check no. ppts 
+length(unique(child_data$subject.ID))# check no. ppts 
 
 length(unique(tidy_data$modifier_type)) # check unique modifier types
+length(unique(child_data$modifier_type))# check unique modifier types
 
 length(unique(tidy_data$probe_type)) # check probe types 
+length(unique(child_data$probe_type))
 
 mean_df = tidy_data %>% 
+  filter(probe_type == "mean") 
+
+mean_df_child = child_data %>% 
   filter(probe_type == "mean") 
 
 
@@ -28,10 +38,20 @@ mean_df %>%
   geom_bar(position = "dodge", color = "black") + facet_wrap(~response) +
   theme_minimal() + syrett_theme()
 
+mean_df_child %>% 
+  ggplot(aes(x = intonation, fill = modifier_type)) + 
+  geom_bar(position = "dodge", color = "black") + facet_wrap(~response) +
+  theme_minimal() + syrett_theme()
+
 mean_mod = brms::brm(response ~ intonation*modifier_type + (1 | subject.ID) + 
                             (1 | trial_object) + (1 | trial_modifier),
                           family = "bernoulli",
                           data = mean_df)
+
+mean_mod_c = brms::brm(response ~ intonation*modifier_type + (1 | subject.ID) + 
+                       (1 | trial_object) + (1 | trial_modifier),
+                     family = "bernoulli",
+                     data = mean_df_child)
 
 conditional_effects(mean_mod)
 

@@ -1,7 +1,7 @@
 ---
 title: "Sarcasm/irony project"
 output: html_document
-date: "2025-03-18"
+date: "2025-05-27"
 ---
 
 ```{r setup, include=FALSE}
@@ -21,6 +21,41 @@ syrett_theme <- function() {
 
 tidy_data = read.csv(here("data", "tidy_data.csv")) %>% 
   filter(trial_number > 6) # removing practice trials 
+
+child_data = read.csv(here("data", "child_data.csv")) %>% 
+  filter(trial_number > 6) %>% 
+  filter(response != "N/A")
+
+adult_data = read.csv(here("data", "tidy_data.csv")) %>% 
+  filter(trial_number > 6) %>% # removing practice trials %>% 
+  select(response, intonation, modifier_type, subject.ID, trial_object, probe_type, trial_modifier) %>% 
+  mutate(group = "adults")
+child_data_n = read.csv(here("data", "child_data.csv")) %>% 
+  filter(trial_number > 6) %>% 
+  filter(response != "N/A") %>% 
+  select(response, intonation, modifier_type, subject.ID, trial_object, probe_type, trial_modifier) %>% 
+  mutate(group = "children")
+
+full_df = rbind(adult_data, child_data_n) 
+
+full_df$response = as.integer(full_df$response)
+
+full_df_nice = full_df %>% filter(probe_type == "nice") %>% 
+  filter(!is.na(response))
+
+full_df_mean = full_df %>% filter(probe_type == "mean") %>% 
+  mutate(response = case_when(
+    response == 1 ~ 0,
+    response == 2 ~ 1
+  )) %>% 
+  filter(!is.na(response))
+
+full_df_approve = full_df %>% filter(probe_type == "approve") %>% 
+  mutate(response = case_when(
+    response == 1 ~ 0,
+    response == 2 ~ 1
+  )) %>% 
+  filter(!is.na(response))
 ```
 
 <details>
@@ -36,6 +71,7 @@ Finally, both predictors are visualized and considered in tandem as they relate 
 In each case, a Bayesian multilevel logistic regression was run in which the binary outcome (log-odds of choosing "yes") was analyzed as a function of the relevant predictors (detailed below) and a random intercept for subject id, trial object, and trial modifier. 
 Each model was estimated using MCMC
 sampling with 4 chains of 2000 iterations and a warmup of 1000 distributed between 6 processing cores.
+Next, additional models were run to compare groups for intonation only and modifier type only.
 
 **Intonation only**
 
@@ -47,7 +83,16 @@ approve_df = tidy_data %>%
     response == 2 ~ 1
   ))
 
+approve_df_child = child_data %>% 
+  filter(probe_type == "approve")
+
 pcts_app = approve_df %>% group_by(intonation, response) %>% summarise(n = round(n()/834, digits = 2)*100)
+
+pcts_app_child = approve_df_child %>% group_by(intonation, response) %>% summarise(n_p = n())
+
+pcts_app_child$totals = c(361, 361, 366, 366)
+
+pcts_app_child$n = pcts_app_child$n_p/pcts_app_child$totals 
 ```
 
 ```{r}
@@ -58,16 +103,28 @@ approve_df %>%
   )) %>% 
   ggplot(aes(intonation, fill = as.factor(response), group = as.factor(response))) + 
   geom_bar(position = "fill", color = "black") +
-  theme_minimal() + syrett_theme() + scale_fill_discrete(name = "Response") + ggtitle("Overall proportion of responses to declarative and sarcastic items")
+  theme_minimal() + syrett_theme() + scale_fill_discrete(name = "Response") + ggtitle("Overall proportion of responses to declarative and sarcastic items in adults")
 
 ```
 
-The first plot shows the overall proportion of responses to declarative and sarcastic items (before taking other conditions into account).
+```{r}
+approve_df_child %>% 
+  mutate(response = case_when(
+    response == 0 ~ "No",
+    response == 1 ~ "Yes",
+  )) %>% 
+  ggplot(aes(intonation, fill = as.factor(response), group = as.factor(response))) + 
+  geom_bar(position = "fill", color = "black") +
+  theme_minimal() + syrett_theme() + scale_fill_discrete(name = "Response") + ggtitle("Overall proportion of responses to declarative and sarcastic items in children")
+```
+
+<!---The first plot shows the overall proportion of responses to declarative and sarcastic items (before taking other conditions into account).
 Overall, choosing "yes" was slightly more frequent for the declarative items (`r pcts_app$n[2]` percent) compared to `r pcts_app$n[4]` percent in sarcastic responses.
 
 A logistic regression model was fit in which response was predicted as a function of intonation (including the random effects mentioned above). 
-The model, described below, found substantial evidence that the overall difference between responses to sarcastic and declarative items was not due to chance (β = -0.636; 95% HDI = -0.934 - -0.034; pd = 1.0).
+The model, described below, found substantial evidence that the overall difference between responses to sarcastic and declarative items was not due to chance (β = -0.636; 95% HDI = -0.934 - -0.034; pd = 1.0). --->
 
+**Adult model for approve with intonation only**
 
 ```{r}
 approve_mod_int = brms::brm(response ~ intonation + (1 | subject.ID) + 
@@ -88,7 +145,48 @@ describe_posterior(
   knitr::kable(row.names = FALSE)
 ```
 
-**Modifier type only**
+**Child model for approve with intonation only**
+
+```{r}
+approve_mod_int_c = brms::brm(response ~ intonation + (1 | subject.ID) + 
+                       (1 | trial_object) + (1 | trial_modifier),
+                     family = "bernoulli",
+                     data = approve_df_child,
+                     file = here("data", "models", "approve_mod_intonation_only_children.rds"))
+
+describe_posterior(
+  approve_mod_int_c,
+  effects = "fixed",
+  component = "all",
+  test = c("p_direction", "p_significance"),
+  centrality = "all"
+) %>%
+  as.data.frame() %>% 
+  mutate(across(where(is.numeric), round, 3)) %>% 
+  knitr::kable(row.names = FALSE)
+```
+
+**Comparison Model for approve and for intonation only**
+
+```{r}
+approve_mod_int_comp = brms::brm(response ~ intonation*group + (1 | subject.ID) + 
+                       (1 | trial_object) + (1 | trial_modifier),
+                     family = "bernoulli",
+                     data = full_df_approve,
+                     file = here("data", "models", "approve_mod_comp.rds"))
+
+describe_posterior(
+  approve_mod_int_comp,
+  effects = "fixed",
+  component = "all",
+  test = c("p_direction", "p_significance"),
+  centrality = "all"
+) %>%
+  as.data.frame() %>% 
+  mutate(across(where(is.numeric), round, 3)) %>% 
+  knitr::kable(row.names = FALSE)
+```
+
 
 ```{r}
 approve_df %>% 
@@ -98,21 +196,35 @@ approve_df %>%
   )) %>% 
   ggplot(aes(modifier_type, fill = as.factor(response), group = as.factor(response))) + 
   geom_bar(position = "fill", color = "black") +
-  theme_minimal() + syrett_theme() + scale_fill_discrete(name = "Response") + ggtitle("Overall proportion of responses to the modifier types")
+  theme_minimal() + syrett_theme() + scale_fill_discrete(name = "Response") + ggtitle("Overall proportion of responses to the modifier types in adults")
+```
+
+```{r}
+approve_df_child %>% 
+    mutate(response = case_when(
+    response == 0 ~ "No",
+    response == 1 ~ "Yes",
+  )) %>% 
+  ggplot(aes(modifier_type, fill = as.factor(response), group = as.factor(response))) + 
+  geom_bar(position = "fill", color = "black") +
+  theme_minimal() + syrett_theme() + scale_fill_discrete(name = "Response") + ggtitle("Overall proportion of responses to the modifier types in children")
 ```
 
 ```{r, include=FALSE}
 pcts_app_mod = approve_df %>% group_by(modifier_type, response) %>% summarise(n = round(n()/556, digits = 2)*100)
 ```
 
-This plot shows the overall proportion of responses to the three modifier types .
+<!--- This plot shows the overall proportion of responses to the three modifier types .
 Overall, a response of "yes" was most frequent for the `grad+subj+pos` items (`r pcts_app_mod$n[4]` percent), followed by `–grad–subj` with `r pcts_app_mod$n[6]` percent of responses of "yes".
 Finally, `grad+subj+neg` showed very few responses of "yes" (only `r pcts_app_mod$n[2]` percent).
 
 A logistic regression model was fit in which response was predicted as a function of modifier type (including the random effects mentioned above). 
 The model, described below, found substantial evidence that, relative to the baseline `–grad–subj`, there was compelling evidence that both of the other modifier types were distinctly responded to by participants. 
 The model predicts that a choice of "yes" for `modifier_typegradPsubjPneg` (second row) relative to `grad–subj` is lower overall (β = -1.35; 95% HDI = -2.13 - -0.59; pd = 1.0).
-The opposite was found for the modifier type `b_modifier_typegradPsubjPpos` relative to `grad-subj`, in which the log-odds of a choice of "yes" was higher (β = 2.79; 95% HDI = 2.05 - 3.52; pd = 1.0).
+The opposite was found for the modifier type `b_modifier_typegradPsubjPpos` relative to `grad-subj`, in which the log-odds of a choice of "yes" was higher (β = 2.79; 95% HDI = 2.05 - 3.52; pd = 1.0). --->
+
+
+**Adult model for approve for modifier type only**
 
 ```{r}
 approve_mod_int_mt = brms::brm(response ~ modifier_type + (1 | subject.ID) + 
@@ -133,7 +245,50 @@ describe_posterior(
   knitr::kable(row.names = FALSE)
 ```
 
-**Intonation and Modifier type**
+**Child model for approve for modifier type only**
+
+```{r}
+approve_mod_int_mt_child = brms::brm(response ~ modifier_type + (1 | subject.ID) + 
+                       (1 | trial_object) + (1 | trial_modifier),
+                     family = "bernoulli",
+                     data = approve_df_child,
+                     file = here("data", "models", "approve_mod_mod_type_only_child.rds"))
+
+describe_posterior(
+  approve_mod_int_mt_child,
+  effects = "fixed",
+  component = "all",
+  test = c("p_direction", "p_significance"),
+  centrality = "all"
+) %>%
+  as.data.frame() %>% 
+  mutate(across(where(is.numeric), round, 3)) %>% 
+  knitr::kable(row.names = FALSE)
+```
+
+**Comparison Model for approve and for modifier type only**
+
+```{r}
+approve_mod_mod_comp = brms::brm(response ~ modifier_type*group + (1 | subject.ID) + 
+                       (1 | trial_object) + (1 | trial_modifier),
+                     family = "bernoulli",
+                     data = full_df_approve,
+                     file = here("data", "models", "approve_mod_mod_comp.rds"))
+
+describe_posterior(
+  approve_mod_mod_comp,
+  effects = "fixed",
+  component = "all",
+  test = c("p_direction", "p_significance"),
+  centrality = "all"
+) %>%
+  as.data.frame() %>% 
+  mutate(across(where(is.numeric), round, 3)) %>% 
+  knitr::kable(row.names = FALSE)
+```
+
+
+**Adults: approve**
 
 ```{r}
 approve_df %>% 
@@ -149,20 +304,33 @@ approve_df %>%
 
 ```{r, include=FALSE}
 approve_all = approve_df %>% group_by(intonation, response, modifier_type) %>% summarise(n = round(n()/278, digits = 2))
-
 ```
 
+**Children: approve**
+
+```{r}
+approve_df_child %>% 
+    mutate(response = case_when(
+    response == 0 ~ "No",
+    response == 1 ~ "Yes",
+  )) %>% 
+  ggplot(aes(modifier_type, fill = as.factor(response), group = as.factor(response))) + 
+  geom_bar(position = "fill", color = "black") + facet_wrap(~intonation) +
+  theme_minimal() + syrett_theme() + scale_fill_discrete(name = "Response") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+```
+
+
+<!---
 Please see a descriptive summary of each of the six cases below:
 
 When the intonation was `r approve_all$intonation[1]` and the modifier type was `r approve_all$modifier_type[1]`, `r approve_all$n[1]` percent of responses were "no".
 
 When the intonation was `r approve_all$intonation[2]` and the modifier type was `r approve_all$modifier_type[2]`, `r approve_all$n[2]` percent of responses were "no".
 
-
 When the intonation was `r approve_all$intonation[3]` and the modifier type was `r approve_all$modifier_type[3]`, `r approve_all$n[3]` percent of responses were "no".
 
 When the intonation was `r approve_all$intonation[7]` and the modifier type was `r approve_all$modifier_type[7]`, `r approve_all$n[7]` percent of responses were "no".
-
 
 When the intonation was `r approve_all$intonation[8]` and the modifier type was `r approve_all$modifier_type[8]`, `r approve_all$n[8]` percent of responses were "no".
 
@@ -181,6 +349,9 @@ These represent the change relative to the declarative modifier combinations.
 The positive estimate for row 5 suggests that the probability of choosing "yes" when the modifier type is `grad+subj+neg` is higher for when the intonation is sarcastic than declarative (β = 1.277; 95% HDI = 0.455 - 2.168; pd = 1.0). 
 The negative value for row 6 suggests that the probability of choosing "yes" when the modifier type is `grad+subj+pos` is lower for when the intonation is sarcastic than declarative (β = -1.021; 95% HDI = -1.709 - -0.379; pd = 1.0). 
 In each comparison, the row "pd" (probability of direction) tell us how sure we can be about the given comparison. In this case, all of the comparisons' directions are highly probable (over .95). 
+--->
+
+**Adult model for approve for both intonation and modifier type**
 
 ```{r}
 approve_mod = brms::brm(response ~ intonation*modifier_type + (1 | subject.ID) + 
@@ -191,6 +362,27 @@ approve_mod = brms::brm(response ~ intonation*modifier_type + (1 | subject.ID) +
 
 describe_posterior(
   approve_mod,
+  effects = "fixed",
+  component = "all",
+  test = c("p_direction", "p_significance"),
+  centrality = "all"
+) %>%
+  as.data.frame() %>% 
+  mutate(across(where(is.numeric), round, 3)) %>% 
+  knitr::kable(row.names = FALSE)
+```
+
+**Child model for approve for both intonation and modifier type**
+
+```{r}
+approve_mod_children = brms::brm(response ~ intonation*modifier_type + (1 | subject.ID) + 
+                       (1 | trial_object) + (1 | trial_modifier),
+                     family = "bernoulli",
+                     data = approve_df_child,
+                     file = here("data", "models", "approve_mod_children.rds"))
+
+describe_posterior(
+  approve_mod_children,
   effects = "fixed",
   component = "all",
   test = c("p_direction", "p_significance"),
@@ -214,6 +406,9 @@ mean_df = tidy_data %>%
     response == 2 ~ 1
   ))
 
+mean_df_child = child_data %>% 
+  filter(probe_type == "mean") 
+
 mean_mod = brms::brm(response ~ intonation*modifier_type + (1 | subject.ID) + 
                             (1 | trial_object) + (1 | trial_modifier),
                           family = "bernoulli",
@@ -235,20 +430,32 @@ mean_df %>%
   )) %>% 
   ggplot(aes(intonation, fill = as.factor(response), group = as.factor(response))) + 
   geom_bar(position = "fill", color = "black") +
-  theme_minimal() + syrett_theme() + scale_fill_discrete(name = "Response") + ggtitle("Overall proportion of responses to declarative and sarcastic items")
+  theme_minimal() + syrett_theme() + scale_fill_discrete(name = "Response") + ggtitle("Overall proportion of responses to declarative and sarcastic items in adults")
 
 ```
 
-The first plot shows the overall proportion of responses to declarative and sarcastic items (before taking other conditions into account).
+```{r}
+mean_df_child %>% 
+    mutate(response = case_when(
+    response == 0 ~ "No",
+    response == 1 ~ "Yes",
+  )) %>% 
+  ggplot(aes(intonation, fill = as.factor(response), group = as.factor(response))) + 
+  geom_bar(position = "fill", color = "black") +
+  theme_minimal() + syrett_theme() + scale_fill_discrete(name = "Response") + ggtitle("Overall proportion of responses to declarative and sarcastic items in children")
+
+```
+
+<!--- The first plot shows the overall proportion of responses to declarative and sarcastic items (before taking other conditions into account).
 Again (like "approve" items), coding of "yes" was more frequent for the declarative items (`r pcts_mean$n[2]` percent) compared to `r pcts_mean$n[4]` percent in sarcastic responses.
-
-
-**Note: This is exactly the same as the approve section**
 
 A logistic regression model was fit in which response was predicted as a function of intonation (including the random effects mentioned above). 
 The model, described below, found substantial evidence that the overall difference between responses to sarcastic and declarative items was not due to chance.
 The table below shows the predicted log-odds for a selection of "yes" for the declarative condition (β = 2.545; 95% HDI = 2.146 - 2.981; pd = 1.0) and the effect (change in log-odds) of sarcastic (second row).
-The negative effect suggests that a selection of "yes" is less likely for sarcastic items than declarative ones (β = -0.994; 95% HDI = -1.305 - -0.709; pd = 1.0).
+The negative effect suggests that a selection of "yes" is less likely for sarcastic items than declarative ones (β = -0.994; 95% HDI = -1.305 - -0.709; pd = 1.0).--->
+
+
+**Adult model for mean with intonation only**
 
 ```{r}
 mean_mod_int = brms::brm(response ~ intonation + (1 | subject.ID) + 
@@ -269,7 +476,49 @@ describe_posterior(
   knitr::kable(row.names = FALSE)
 ```
 
-**Modifier type only**
+
+**Child model for mean with intonation only**
+
+```{r}
+mean_mod_int_child = brms::brm(response ~ intonation + (1 | subject.ID) + 
+                       (1 | trial_object) + (1 | trial_modifier),
+                     family = "bernoulli",
+                     data = mean_df_child,
+                     file = here("data", "models", "mean_mod_intonation_on;y.rds"))
+
+describe_posterior(
+  mean_mod_int_child,
+  effects = "fixed",
+  component = "all",
+  test = c("p_direction", "p_significance"),
+  centrality = "all"
+) %>%
+  as.data.frame() %>% 
+  mutate(across(where(is.numeric), round, 3)) %>% 
+  knitr::kable(row.names = FALSE)
+```
+
+
+```{r}
+mean_mod_int_comp = brms::brm(response ~ intonation*group + (1 | subject.ID) + 
+                       (1 | trial_object) + (1 | trial_modifier),
+                     family = "bernoulli",
+                     data = full_df_mean,
+                     file = here("data", "models", "mean_mod_intonation_comp.rds"))
+
+describe_posterior(
+  mean_mod_int_comp,
+  effects = "fixed",
+  component = "all",
+  test = c("p_direction", "p_significance"),
+  centrality = "all"
+) %>%
+  as.data.frame() %>% 
+  mutate(across(where(is.numeric), round, 3)) %>% 
+  knitr::kable(row.names = FALSE)
+```
+
+
 
 ```{r}
 mean_df %>% 
@@ -279,21 +528,34 @@ mean_df %>%
   )) %>% 
   ggplot(aes(modifier_type, fill = as.factor(response), group = as.factor(response))) + 
   geom_bar(position = "fill", color = "black") +
-  theme_minimal() + syrett_theme() + scale_fill_discrete(name = "Response") + ggtitle("Overall proportion of responses to the modifier types")
+  theme_minimal() + syrett_theme() + scale_fill_discrete(name = "Response") + ggtitle("Overall proportion of responses to the modifier types in adults")
+```
+
+```{r}
+mean_df_child %>% 
+    mutate(response = case_when(
+    response == 0 ~ "No",
+    response == 1 ~ "Yes",
+  )) %>% 
+  ggplot(aes(modifier_type, fill = as.factor(response), group = as.factor(response))) + 
+  geom_bar(position = "fill", color = "black") +
+  theme_minimal() + syrett_theme() + scale_fill_discrete(name = "Response") + ggtitle("Overall proportion of responses to the modifier types in children")
 ```
 
 ```{r, include=FALSE}
 pcts_mean_mod = mean_df %>% group_by(modifier_type, response) %>% summarise(n = round(n()/556, digits = 2)*100)
 ```
 
-This plot shows the overall proportion of responses to the three modifier types .
+<!--- This plot shows the overall proportion of responses to the three modifier types .
 Overall, coding of "yes" was most frequent for the `grad+subj+neg` items (`r pcts_app_mod$n[2]` percent), followed by `–grad–subj` with `r pcts_app_mod$n[6]` percent of responses of "yes".
 Finally, `grad+subj+pos` showed very few responses of "yes" (only `r pcts_app_mod$n[4]` percent).
 
 A logistic regression model was fit in which response was predicted as a function of modifier type (including the random effects mentioned above). 
 The model, described below, found substantial evidence that, relative to the baseline modifier type `–grad–subj`, there was compelling evidence that both of the other modifier types were distinctly responded to by participants. 
 We cannot conclude from the model that the log-odds of a choice of "yes" for `modifier_typegradPsubjPneg` (second row) relative to `grad–subj` is distinct overall (β = 3.89; 95% HDI = -0.091 - - 0.878; pd = .804).
-The opposite was found for the modifier type `b_modifier_typegradPsubjPpos` relative to `grad-subj`, in which the log-odds of a choice of "yes" was lower  (β = -0.750; 95% HDI = -1.191 - -0.302; pd = 1.0).
+The opposite was found for the modifier type `b_modifier_typegradPsubjPpos` relative to `grad-subj`, in which the log-odds of a choice of "yes" was lower  (β = -0.750; 95% HDI = -1.191 - -0.302; pd = 1.0).--->
+
+**Adult model for mean with modifier type only**
 
 ```{r}
 mean_mod_int_mt = brms::brm(response ~ modifier_type + (1 | subject.ID) + 
@@ -314,7 +576,48 @@ describe_posterior(
   knitr::kable(row.names = FALSE)
 ```
 
-**Intonation and Modifier type**
+**Child model for mean with modifier type only**
+
+```{r}
+mean_mod_int_mt_v = brms::brm(response ~ modifier_type + (1 | subject.ID) + 
+                       (1 | trial_object) + (1 | trial_modifier),
+                     family = "bernoulli",
+                     data = mean_df_child,
+                     file = here("data", "models", "mean_mod_mod_type_only_c.rds"))
+
+describe_posterior(
+  mean_mod_int_mt_v,
+  effects = "fixed",
+  component = "all",
+  test = c("p_direction", "p_significance"),
+  centrality = "all"
+) %>%
+  as.data.frame() %>% 
+  mutate(across(where(is.numeric), round, 3)) %>% 
+  knitr::kable(row.names = FALSE)
+```
+
+**Comparison model for mean with modifier type only**
+
+```{r}
+mean_mod_mod_comp = brms::brm(response ~ modifier_type*group + (1 | subject.ID) + 
+                       (1 | trial_object) + (1 | trial_modifier),
+                     family = "bernoulli",
+                     data = full_df_mean,
+                     file = here("data", "models", "mean_mod_mod_comp.rds"))
+
+describe_posterior(
+  mean_mod_mod_comp,
+  effects = "fixed",
+  component = "all",
+  test = c("p_direction", "p_significance"),
+  centrality = "all"
+) %>%
+  as.data.frame() %>% 
+  mutate(across(where(is.numeric), round, 3)) %>% 
+  knitr::kable(row.names = FALSE)
+```
+
 
 ```{r}
 mean_df %>% 
@@ -332,7 +635,7 @@ mean_df %>%
 mean_all = mean_df %>% group_by(intonation, response, modifier_type) %>% summarise(n = round(n()/278, digits = 2))
 ```
 
-Please see a descriptive summary of each of the six cases below:
+<!---Please see a descriptive summary of each of the six cases below:
 
 When the intonation was `r mean_all$intonation[1]` and the modifier type was `r mean_all$modifier_type[1]`, `r mean_all$n[1]` percent of responses were "no".
 
@@ -358,8 +661,9 @@ In particular, for declarative items, the modifier type `b_modifier_typegradPsub
 On the other hand, there was no evidence the modifier type `b_modifier_typegradPsubjPpos` was more or less likely to elicit a "yes" response than the baseline (β = -0.055; 95% HDI = -0.678 - 0.548; pd = 0.55).
 
 Finally, the model predicted whether there were differences in the log-odds of a "yes" response holding modifier type constant and comparing intonation. 
-Both cases were negative; meaning that sarcastic items with both `grad+subj+neg` (β = -1.260; 95% HDI = -2.124 - 0.490; pd = 1.0) and `grad+subj+pos` (β = -1.242; 95% HDI = -1.927 - 0.542; pd = 1.0) were less likely to be answered "yes" than declarative items with the same modifier type. 
+Both cases were negative; meaning that sarcastic items with both `grad+subj+neg` (β = -1.260; 95% HDI = -2.124 - 0.490; pd = 1.0) and `grad+subj+pos` (β = -1.242; 95% HDI = -1.927 - 0.542; pd = 1.0) were less likely to be answered "yes" than declarative items with the same modifier type. --->
 
+**Adult model for mean with Intonation and Modifier type**
 
 ```{r}
 mead_mod = brms::brm(response ~ intonation*modifier_type + (1 | subject.ID) + 
@@ -380,20 +684,43 @@ describe_posterior(
   knitr::kable(row.names = FALSE)
 ```
 
+**Child model for mean with Intonation and Modifier type**
+
+```{r}
+mean_mod_child = brms::brm(response ~ intonation*modifier_type + (1 | subject.ID) + 
+                            (1 | trial_object) + (1 | trial_modifier),
+                          family = "bernoulli",
+                          data = mean_df_child,
+                     file = here("data", "models", "mean_mod_child.rds"))
+
+describe_posterior(
+  mean_mod_child,
+  effects = "fixed",
+  component = "all",
+  test = c("p_direction", "p_significance"),
+  centrality = "all"
+) %>%
+  as.data.frame() %>% 
+  mutate(across(where(is.numeric), round, 3)) %>% 
+  knitr::kable(row.names = FALSE)
+```
 
 </details> 
 
 <details>
   <summary>**Trial probe: Nice**</summary>
+  
 ```{r, include=FALSE}
 nice_df = tidy_data %>% 
+  filter(probe_type == "nice") 
+
+nice_df_child = child_data %>% 
   filter(probe_type == "nice") 
 
 overall_pcts = tidy_data %>% 
   filter(probe_type == "nice") %>% 
   group_by(response) %>% 
   summarize(pct_rating = n()/1668)
-
 
 intonation_pcts = tidy_data %>% 
   filter(probe_type == "nice") %>% 
@@ -405,25 +732,47 @@ intonation_mt_pcts = tidy_data %>%
   group_by(intonation, modifier_type, response) %>% 
   summarize(pct_rating = n()/278)
 
+overall_pcts_child = nice_df_child %>% 
+  filter(probe_type == "nice") %>% 
+  group_by(response) %>% 
+  summarize(pct_rating = n()/740)
+
+intonation_pcts_child = nice_df_child %>% 
+  filter(probe_type == "nice") %>% 
+  group_by(intonation, response) %>% 
+  summarize(pct_rating = n()/370)
+
+intonation_mt_pcts_child = nice_df_child %>% 
+  filter(probe_type == "nice") %>% 
+  group_by(intonation, modifier_type, response) %>% 
+  summarize(pct_rating = n()/124)
 
 ```
 
-The plot below shows the distribution of ratings overall (not taking into account intonation or modifier type). 
+<!--- The plot below shows the distribution of ratings overall (not taking into account intonation or modifier type). 
 The most frequent ratings were 2 (chosen 33% of the time), 3 (26%) and 4 (18.55).
-5 was the least frequent rating (8.5%) followed by 1 (14%).
+5 was the least frequent rating (8.5%) followed by 1 (14%).-->
 
 ```{r}
 tidy_data %>% 
   filter(probe_type == "nice") %>% 
   ggplot(aes(x = response, fill = as.factor(response), group = as.factor(response))) + 
   geom_bar(position = "dodge", color = "black") +
-  theme_minimal() + syrett_theme() + theme(legend.position="none") + ggtitle("Overall distribution of ratings")
+  theme_minimal() + syrett_theme() + theme(legend.position="none") + ggtitle("Overall distribution of ratings in adults")
 ```
 
-This plot shows the ratings according to intonation.
+```{r}
+child_data %>% 
+  filter(probe_type == "nice") %>% 
+  ggplot(aes(x = response, fill = as.factor(response), group = as.factor(response))) + 
+  geom_bar(position = "dodge", color = "black") +
+  theme_minimal() + syrett_theme() + theme(legend.position="none") + ggtitle("Overall distribution of ratings in children")
+```
+
+<!--- This plot shows the ratings according to intonation.
 The declarative items (left) follow a normal distribution, in which 3 was chosen most often (31.2%), followed by 2 and 4 (26.4% and 21.6% respectively), and finally by the outer most choices, 1 (11.9%) and 5 (8.9%).
 The sarcastic items show a left skew. 
-The most frequent rating for these items was 2 (39.8%) of ratings, followed by 3 (20.7%), and 1 (16.1%). 4 and 5 were chosen the least (15.3% and 8% respectively).
+The most frequent rating for these items was 2 (39.8%) of ratings, followed by 3 (20.7%), and 1 (16.1%). 4 and 5 were chosen the least (15.3% and 8% respectively).-->
 
 ```{r}
 tidy_data %>% 
@@ -431,7 +780,7 @@ tidy_data %>%
   ggplot(aes(x = response, fill = as.factor(response), group = as.factor(response))) +
   geom_bar(position = "dodge", color = "black") +
   theme_minimal() + syrett_theme() + facet_wrap(~intonation) +
-  theme(legend.position="none") + ggtitle("Distribution of ratings according to intonation")
+  theme(legend.position="none") + ggtitle("Distribution of ratings according to intonation in adults")
 
 nice_mod_int = brms::brm(response ~ intonation + (1 | subject.ID) + 
                           (1 | trial_object) + (1 | trial_modifier),
@@ -441,7 +790,24 @@ nice_mod_int = brms::brm(response ~ intonation + (1 | subject.ID) +
 
 ```
 
-The ordinal model is reported below (a Bayesian ordinal logistic regression).
+```{r}
+child_data %>% 
+  filter(probe_type == "nice") %>% 
+  ggplot(aes(x = response, fill = as.factor(response), group = as.factor(response))) +
+  geom_bar(position = "dodge", color = "black") +
+  theme_minimal() + syrett_theme() + facet_wrap(~intonation) +
+  theme(legend.position="none") + ggtitle("Distribution of ratings according to intonation in children")
+
+nice_df_child$response = as.integer(nice_df_child$response)
+nice_mod_int_child = brms::brm(response ~ intonation + (1 | subject.ID) + 
+                          (1 | trial_object) + (1 | trial_modifier),
+                        family = "cumulative",
+                        data = nice_df_child, 
+                     file = here("data", "models", "nice_mod_int_child.rds"))
+
+```
+
+<!--- The ordinal model is reported below (a Bayesian ordinal logistic regression).
 In this model, the so-called "intercepts" are actually cut off points.
 Imagine we are drawing a rectangle on a piece of paper and we want to divide it into 5 parts, where each part represents one of the possible responses (1-5). We divide the rectangle by drawing a vertical line and creating a new section. 
 We want the area of the part of the rectangle to be proportional to the quantity of the response (e.g. if 38% of the choices are 2, we would want 38% of the rectangle to be the "2" block").
@@ -451,7 +817,9 @@ Basically, `Intercept[1]` predicts the first cut (and thus, the probability of a
 `Intercept[2]` is the second cut (the point between 2 and 3), and so on.
 The predictor `intonationsarcastic` assesses whether there is a difference in ratings based on whether the statement was declarative or a sarcastic. 
 The model suggests that there was - and specifically that the difference was -.75 log-odds [95% HDI -.94 - -.55]. 
-The probability of direction was (approaching) 1. 
+The probability of direction was (approaching) 1. --->
+
+**Adult model for nice and intonation only**
 
 ```{r}
 describe_posterior(
@@ -466,7 +834,44 @@ describe_posterior(
   knitr::kable(row.names = FALSE)
 ```
 
-The final plot breaks down ratings into modifier type and intonation. A table below lists each specific percentage. 
+**Child model for nice and intonation only**
+
+```{r}
+describe_posterior(
+  nice_mod_int_child,
+  effects = "fixed",
+  component = "all",
+  test = c("p_direction", "p_significance"),
+  centrality = "all"
+) %>%
+  as.data.frame() %>% 
+  mutate(across(where(is.numeric), round, 3)) %>% 
+  knitr::kable(row.names = FALSE)
+```
+
+**Comparison model for nice and intonation only**
+
+```{r}
+
+nice_mod_comp = brms::brm(response ~ intonation*group + (1 | subject.ID) + 
+                          (1 | trial_object) + (1 | trial_modifier),
+                        family = "cumulative",
+                        data = full_df_nice, 
+                     file = here("data", "models", "nice_mod_comp.rds"))
+
+describe_posterior(
+  nice_mod_comp,
+  effects = "fixed",
+  component = "all",
+  test = c("p_direction", "p_significance"),
+  centrality = "all"
+) %>%
+  as.data.frame() %>% 
+  mutate(across(where(is.numeric), round, 3)) %>% 
+  knitr::kable(row.names = FALSE)
+```
+
+<!--- The final plot breaks down ratings into modifier type and intonation. A table below lists each specific percentage. --->
 
 ```{r}
 tidy_data %>% 
@@ -474,13 +879,22 @@ tidy_data %>%
   ggplot(aes(x = response, fill = as.factor(response), group = as.factor(response))) +
   geom_bar(position = "dodge", color = "black") +
   theme_minimal() + syrett_theme() + facet_grid(modifier_type~intonation) +
-  theme(legend.position="none") + ggtitle("Distribution of ratings according to intonation and modifier type")
+  theme(legend.position="none") + ggtitle("Distribution of ratings according to intonation and modifier type in adults")
 ```
 
 ```{r}
 intonation_mt_pcts %>% 
   pivot_wider(names_from = response, values_from = pct_rating) %>% 
   knitr::kable(format = "pandoc")
+```
+
+```{r}
+child_data %>% 
+  filter(probe_type == "nice") %>% 
+  ggplot(aes(x = response, fill = as.factor(response), group = as.factor(response))) +
+  geom_bar(position = "dodge", color = "black") +
+  theme_minimal() + syrett_theme() + facet_grid(modifier_type~intonation) +
+  theme(legend.position="none") + ggtitle("Distribution of ratings according to intonation and modifier type in children")
 ```
 
 ```{r}
@@ -491,7 +905,15 @@ nice_mod = brms::brm(response ~ intonation*modifier_type + (1 | subject.ID) +
                      file = here("data", "models", "nice_mod.rds"))
 ```
 
-The complete model is detailed below. As usual, this one is more complicated due to the interaction. 
+```{r}
+nice_mod_c = brms::brm(response ~ intonation*modifier_type + (1 | subject.ID) + 
+                          (1 | trial_object) + (1 | trial_modifier),
+                        family = "cumulative",
+                        data = nice_df_child, 
+                     file = here("data", "models", "nice_mod_child.rds"))
+```
+
+<!---The complete model is detailed below. As usual, this one is more complicated due to the interaction. 
 In this model, the intercepts represent the break points for the baseline condition (declarative intonation and –grad–subj modifier type).
 The fixed effect for sarcastic now compares declarative intonation and –grad–subj modifier type with sarcastic intonation and –grad–subj modifier type (a negative, compelling effect).
 The effect `b_modifier_typegradPsubjPneg` compares `declarative-grad+subj+neg` to `declarative 	–grad–subj` (the baseline). 
@@ -499,8 +921,73 @@ The effect is a again negative and compelling (with `declarative-grad+subj+neg` 
 The fixed effect `b_modifier_typegradPsubjPpos` found the opposite: `declarative-grad+subj+pos` had higher ratings than the baseline `declarative 	–grad–subj`.	
 The effect `b_intonationsarcastic:modifier_typegradPsubjPneg` compares `declarative-grad+subj+pos` to `sarcastic-grad+subj+pos` and found higher ratings for the latter.
 Finally, `b_intonationsarcastic:modifier_typegradPsubjPpos` provides evidence that `sarcastic-grad+subj+pos` was rated lower than `declarative-grad+subj+pos`, though this difference was not compelling (pd = .81).
-The other comparisons were all compelling with their probabilities of direction approaching 1. 
+The other comparisons were all compelling with their probabilities of direction approaching 1. --->
 
+
+**Adult model for nice and modifier type only**
+
+```{r}
+nice_mod_mod_adult = brms::brm(response ~ modifier_type + (1 | subject.ID) + 
+                          (1 | trial_object) + (1 | trial_modifier),
+                        family = "cumulative",
+                        data = nice_df, 
+                     file = here("data", "models", "nice_mod_mod_adult.rds"))
+
+describe_posterior(
+  nice_mod_mod_adult,
+  effects = "fixed",
+  component = "all",
+  test = c("p_direction", "p_significance"),
+  centrality = "all"
+) %>%
+  as.data.frame() %>% 
+  mutate(across(where(is.numeric), round, 3)) %>% 
+  knitr::kable(row.names = FALSE)
+```
+
+**Child model for nice and modifier type only**
+
+```{r}
+nice_mod_mod_child = brms::brm(response ~ modifier_type + (1 | subject.ID) + 
+                          (1 | trial_object) + (1 | trial_modifier),
+                        family = "cumulative",
+                        data = nice_df_child, 
+                     file = here("data", "models", "nice_mod_mod_child.rds"))
+
+describe_posterior(
+  nice_mod_mod_child,
+  effects = "fixed",
+  component = "all",
+  test = c("p_direction", "p_significance"),
+  centrality = "all"
+) %>%
+  as.data.frame() %>% 
+  mutate(across(where(is.numeric), round, 3)) %>% 
+  knitr::kable(row.names = FALSE)
+```
+
+**Comparison model for nice and modifier type only**
+
+```{r}
+nice_mod_mod_comp = brms::brm(response ~ modifier_type*group + (1 | subject.ID) + 
+                          (1 | trial_object) + (1 | trial_modifier),
+                        family = "cumulative",
+                        data = full_df_nice, 
+                     file = here("data", "models", "nice_mod_mod_comp.rds"))
+
+describe_posterior(
+  nice_mod_mod_comp,
+  effects = "fixed",
+  component = "all",
+  test = c("p_direction", "p_significance"),
+  centrality = "all"
+) %>%
+  as.data.frame() %>% 
+  mutate(across(where(is.numeric), round, 3)) %>% 
+  knitr::kable(row.names = FALSE)
+```
+
+**Adult model with intonation and modifier type**
 
 ```{r}
 describe_posterior(
@@ -515,5 +1002,19 @@ describe_posterior(
   knitr::kable(row.names = FALSE)
 ```
 
+**Child model with intonation and modifier type**
+
+```{r}
+describe_posterior(
+  nice_mod_c,
+  effects = "fixed",
+  component = "all",
+  test = c("p_direction", "p_significance"),
+  centrality = "all"
+) %>%
+  as.data.frame() %>% 
+  mutate(across(where(is.numeric), round, 3)) %>% 
+  knitr::kable(row.names = FALSE)
+```
 
 </details> 

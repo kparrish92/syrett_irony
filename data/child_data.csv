@@ -1,0 +1,2605 @@
+subject ID,age (months),gender,list,trial_number,trial_object,trial_modifier,intonation,modifier_type,probe_type,response
+AP_01,68,F,A,1,book,n/a,declarative,training1 neg,approve,0
+AP_01,68,F,A,2,book,n/a,declarative,training1 neg,mean,0
+AP_01,68,F,A,3,book,n/a,declarative,training1 neg,nice,2
+AP_01,68,F,A,4,recital,n/a,declarative,training2 pos,approve,1
+AP_01,68,F,A,5,recital,n/a,declarative,training2 pos,mean,N/A
+AP_01,68,F,A,6,recital,n/a,declarative,training2 pos,nice,5
+AP_01,68,F,A,7,cake,yummy,declarative,grad+subj+pos,approve,1
+AP_01,68,F,A,8,cake,yummy,declarative,grad+subj+pos,mean,0
+AP_01,68,F,A,9,cake,yummy,declarative,grad+subj+pos,nice,5
+AP_01,68,F,A,10,gift,awesome,sarcastic,grad+subj+pos,approve,1
+AP_01,68,F,A,11,gift,awesome,sarcastic,grad+subj+pos,mean,0
+AP_01,68,F,A,12,gift,awesome,sarcastic,grad+subj+pos,nice,4
+AP_01,68,F,A,13,bouquet,messy,declarative,grad+subj+neg,approve,1
+AP_01,68,F,A,14,bouquet,messy,declarative,grad+subj+neg,mean,0
+AP_01,68,F,A,15,bouquet,messy,declarative,grad+subj+neg,nice,4
+AP_01,68,F,A,16,question,silly,sarcastic,grad+subj+neg,approve,0
+AP_01,68,F,A,17,question,silly,sarcastic,grad+subj+neg,mean,1
+AP_01,68,F,A,18,question,silly,sarcastic,grad+subj+neg,nice,1
+AP_01,68,F,A,19,dish,lobster,declarative,–grad–subj,approve,0
+AP_01,68,F,A,20,dish,lobster,declarative,–grad–subj,mean,0
+AP_01,68,F,A,21,dish,lobster,declarative,–grad–subj,nice,2
+AP_01,68,F,A,22,shirt,spotted,sarcastic,–grad–subj,approve,0
+AP_01,68,F,A,23,shirt,spotted,sarcastic,–grad–subj,mean,1
+AP_01,68,F,A,24,shirt,spotted,sarcastic,–grad–subj,nice,2
+AP_01,68,F,A,25,story,funny,declarative,grad+subj+pos,approve,0
+AP_01,68,F,A,26,story,funny,declarative,grad+subj+pos,mean,1
+AP_01,68,F,A,27,story,funny,declarative,grad+subj+pos,nice,2
+AP_01,68,F,A,28,tool,useful,sarcastic,grad+subj+pos,approve,0
+AP_01,68,F,A,29,tool,useful,sarcastic,grad+subj+pos,mean,1
+AP_01,68,F,A,30,tool,useful,sarcastic,grad+subj+pos,nice,2
+AP_01,68,F,A,31,hole,careless,declarative,grad+subj+neg,approve,0
+AP_01,68,F,A,32,hole,careless,declarative,grad+subj+neg,mean,1
+AP_01,68,F,A,33,hole,careless,declarative,grad+subj+neg,nice,1
+AP_01,68,F,A,34,solution,bossy,sarcastic,grad+subj+neg,approve,0
+AP_01,68,F,A,35,solution,bossy,sarcastic,grad+subj+neg,mean,1
+AP_01,68,F,A,36,solution,bossy,sarcastic,grad+subj+neg,nice,2
+AP_01,68,F,A,37,novel,fiction,declarative,–grad–subj,approve,0
+AP_01,68,F,A,38,novel,fiction,declarative,–grad–subj,mean,1
+AP_01,68,F,A,39,novel,fiction,declarative,–grad–subj,nice,4
+AP_01,68,F,A,40,video,tiktok,sarcastic,–grad–subj,approve,0
+AP_01,68,F,A,41,video,tiktok,sarcastic,–grad–subj,mean,1
+AP_01,68,F,A,42,video,tiktok,sarcastic,–grad–subj,nice,2
+AP_09,73,F,A,1,book,n/a,declarative,training1 neg,approve,0
+AP_09,73,F,A,2,book,n/a,declarative,training1 neg,mean,1
+AP_09,73,F,A,3,book,n/a,declarative,training1 neg,nice,1
+AP_09,73,F,A,4,recital,n/a,declarative,training2 pos,approve,1
+AP_09,73,F,A,5,recital,n/a,declarative,training2 pos,mean,1
+AP_09,73,F,A,6,recital,n/a,declarative,training2 pos,nice,5
+AP_09,73,F,A,7,cake,yummy,declarative,grad+subj+pos,approve,1
+AP_09,73,F,A,8,cake,yummy,declarative,grad+subj+pos,mean,1
+AP_09,73,F,A,9,cake,yummy,declarative,grad+subj+pos,nice,5
+AP_09,73,F,A,10,gift,awesome,sarcastic,grad+subj+pos,approve,1
+AP_09,73,F,A,11,gift,awesome,sarcastic,grad+subj+pos,mean,1
+AP_09,73,F,A,12,gift,awesome,sarcastic,grad+subj+pos,nice,5
+AP_09,73,F,A,13,bouquet,messy,declarative,grad+subj+neg,approve,1
+AP_09,73,F,A,14,bouquet,messy,declarative,grad+subj+neg,mean,1
+AP_09,73,F,A,15,bouquet,messy,declarative,grad+subj+neg,nice,5
+AP_09,73,F,A,16,question,silly,sarcastic,grad+subj+neg,approve,1
+AP_09,73,F,A,17,question,silly,sarcastic,grad+subj+neg,mean,1
+AP_09,73,F,A,18,question,silly,sarcastic,grad+subj+neg,nice,5
+AP_09,73,F,A,19,dish,lobster,declarative,–grad–subj,approve,1
+AP_09,73,F,A,20,dish,lobster,declarative,–grad–subj,mean,1
+AP_09,73,F,A,21,dish,lobster,declarative,–grad–subj,nice,5
+AP_09,73,F,A,22,shirt,spotted,sarcastic,–grad–subj,approve,0
+AP_09,73,F,A,23,shirt,spotted,sarcastic,–grad–subj,mean,1
+AP_09,73,F,A,24,shirt,spotted,sarcastic,–grad–subj,nice,1
+AP_09,73,F,A,25,story,funny,declarative,grad+subj+pos,approve,1
+AP_09,73,F,A,26,story,funny,declarative,grad+subj+pos,mean,1
+AP_09,73,F,A,27,story,funny,declarative,grad+subj+pos,nice,5
+AP_09,73,F,A,28,tool,useful,sarcastic,grad+subj+pos,approve,1
+AP_09,73,F,A,29,tool,useful,sarcastic,grad+subj+pos,mean,1
+AP_09,73,F,A,30,tool,useful,sarcastic,grad+subj+pos,nice,5
+AP_09,73,F,A,31,hole,careless,declarative,grad+subj+neg,approve,0
+AP_09,73,F,A,32,hole,careless,declarative,grad+subj+neg,mean,1
+AP_09,73,F,A,33,hole,careless,declarative,grad+subj+neg,nice,5
+AP_09,73,F,A,34,solution,bossy,sarcastic,grad+subj+neg,approve,1
+AP_09,73,F,A,35,solution,bossy,sarcastic,grad+subj+neg,mean,1
+AP_09,73,F,A,36,solution,bossy,sarcastic,grad+subj+neg,nice,5
+AP_09,73,F,A,37,novel,fiction,declarative,–grad–subj,approve,0
+AP_09,73,F,A,38,novel,fiction,declarative,–grad–subj,mean,1
+AP_09,73,F,A,39,novel,fiction,declarative,–grad–subj,nice,1
+AP_09,73,F,A,40,video,tiktok,sarcastic,–grad–subj,approve,0
+AP_09,73,F,A,41,video,tiktok,sarcastic,–grad–subj,mean,1
+AP_09,73,F,A,42,video,tiktok,sarcastic,–grad–subj,nice,1
+AP_14,61,F,A,1,book,n/a,declarative,training1 neg,approve,0
+AP_14,61,F,A,2,book,n/a,declarative,training1 neg,mean,0
+AP_14,61,F,A,3,book,n/a,declarative,training1 neg,nice,2
+AP_14,61,F,A,4,recital,n/a,declarative,training2 pos,approve,1
+AP_14,61,F,A,5,recital,n/a,declarative,training2 pos,mean,1
+AP_14,61,F,A,6,recital,n/a,declarative,training2 pos,nice,5
+AP_14,61,F,A,7,cake,yummy,declarative,grad+subj+pos,approve,1
+AP_14,61,F,A,8,cake,yummy,declarative,grad+subj+pos,mean,1
+AP_14,61,F,A,9,cake,yummy,declarative,grad+subj+pos,nice,5
+AP_14,61,F,A,10,gift,awesome,sarcastic,grad+subj+pos,approve,1
+AP_14,61,F,A,11,gift,awesome,sarcastic,grad+subj+pos,mean,1
+AP_14,61,F,A,12,gift,awesome,sarcastic,grad+subj+pos,nice,5
+AP_14,61,F,A,13,bouquet,messy,declarative,grad+subj+neg,approve,0
+AP_14,61,F,A,14,bouquet,messy,declarative,grad+subj+neg,mean,0
+AP_14,61,F,A,15,bouquet,messy,declarative,grad+subj+neg,nice,1
+AP_14,61,F,A,16,question,silly,sarcastic,grad+subj+neg,approve,N/A
+AP_14,61,F,A,17,question,silly,sarcastic,grad+subj+neg,mean,1
+AP_14,61,F,A,18,question,silly,sarcastic,grad+subj+neg,nice,5
+AP_14,61,F,A,19,dish,lobster,declarative,–grad–subj,approve,N/A
+AP_14,61,F,A,20,dish,lobster,declarative,–grad–subj,mean,0
+AP_14,61,F,A,21,dish,lobster,declarative,–grad–subj,nice,4
+AP_14,61,F,A,22,shirt,spotted,sarcastic,–grad–subj,approve,1
+AP_14,61,F,A,23,shirt,spotted,sarcastic,–grad–subj,mean,1
+AP_14,61,F,A,24,shirt,spotted,sarcastic,–grad–subj,nice,5
+AP_14,61,F,A,25,story,funny,declarative,grad+subj+pos,approve,1
+AP_14,61,F,A,26,story,funny,declarative,grad+subj+pos,mean,N/A
+AP_14,61,F,A,27,story,funny,declarative,grad+subj+pos,nice,5
+AP_14,61,F,A,28,tool,useful,sarcastic,grad+subj+pos,approve,1
+AP_14,61,F,A,29,tool,useful,sarcastic,grad+subj+pos,mean,1
+AP_14,61,F,A,30,tool,useful,sarcastic,grad+subj+pos,nice,4
+AP_14,61,F,A,31,hole,careless,declarative,grad+subj+neg,approve,1
+AP_14,61,F,A,32,hole,careless,declarative,grad+subj+neg,mean,0
+AP_14,61,F,A,33,hole,careless,declarative,grad+subj+neg,nice,3
+AP_14,61,F,A,34,solution,bossy,sarcastic,grad+subj+neg,approve,0
+AP_14,61,F,A,35,solution,bossy,sarcastic,grad+subj+neg,mean,1
+AP_14,61,F,A,36,solution,bossy,sarcastic,grad+subj+neg,nice,1
+AP_14,61,F,A,37,novel,fiction,declarative,–grad–subj,approve,1
+AP_14,61,F,A,38,novel,fiction,declarative,–grad–subj,mean,0
+AP_14,61,F,A,39,novel,fiction,declarative,–grad–subj,nice,3
+AP_14,61,F,A,40,video,tiktok,sarcastic,–grad–subj,approve,0
+AP_14,61,F,A,41,video,tiktok,sarcastic,–grad–subj,mean,0
+AP_14,61,F,A,42,video,tiktok,sarcastic,–grad–subj,nice,2
+AP_20,61,M,A,1,book,n/a,declarative,training1 neg,approve,0
+AP_20,61,M,A,2,book,n/a,declarative,training1 neg,mean,0
+AP_20,61,M,A,3,book,n/a,declarative,training1 neg,nice,1
+AP_20,61,M,A,4,recital,n/a,declarative,training2 pos,approve,1
+AP_20,61,M,A,5,recital,n/a,declarative,training2 pos,mean,1
+AP_20,61,M,A,6,recital,n/a,declarative,training2 pos,nice,5
+AP_20,61,M,A,7,cake,yummy,declarative,grad+subj+pos,approve,1
+AP_20,61,M,A,8,cake,yummy,declarative,grad+subj+pos,mean,1
+AP_20,61,M,A,9,cake,yummy,declarative,grad+subj+pos,nice,5
+AP_20,61,M,A,10,gift,awesome,sarcastic,grad+subj+pos,approve,1
+AP_20,61,M,A,11,gift,awesome,sarcastic,grad+subj+pos,mean,1
+AP_20,61,M,A,12,gift,awesome,sarcastic,grad+subj+pos,nice,2
+AP_20,61,M,A,13,bouquet,messy,declarative,grad+subj+neg,approve,0
+AP_20,61,M,A,14,bouquet,messy,declarative,grad+subj+neg,mean,1
+AP_20,61,M,A,15,bouquet,messy,declarative,grad+subj+neg,nice,3
+AP_20,61,M,A,16,question,silly,sarcastic,grad+subj+neg,approve,0
+AP_20,61,M,A,17,question,silly,sarcastic,grad+subj+neg,mean,1
+AP_20,61,M,A,18,question,silly,sarcastic,grad+subj+neg,nice,3
+AP_20,61,M,A,19,dish,lobster,declarative,–grad–subj,approve,0
+AP_20,61,M,A,20,dish,lobster,declarative,–grad–subj,mean,1
+AP_20,61,M,A,21,dish,lobster,declarative,–grad–subj,nice,2
+AP_20,61,M,A,22,shirt,spotted,sarcastic,–grad–subj,approve,0
+AP_20,61,M,A,23,shirt,spotted,sarcastic,–grad–subj,mean,1
+AP_20,61,M,A,24,shirt,spotted,sarcastic,–grad–subj,nice,3
+AP_20,61,M,A,25,story,funny,declarative,grad+subj+pos,approve,1
+AP_20,61,M,A,26,story,funny,declarative,grad+subj+pos,mean,1
+AP_20,61,M,A,27,story,funny,declarative,grad+subj+pos,nice,1
+AP_20,61,M,A,28,tool,useful,sarcastic,grad+subj+pos,approve,0
+AP_20,61,M,A,29,tool,useful,sarcastic,grad+subj+pos,mean,1
+AP_20,61,M,A,30,tool,useful,sarcastic,grad+subj+pos,nice,3
+AP_20,61,M,A,31,hole,careless,declarative,grad+subj+neg,approve,0
+AP_20,61,M,A,32,hole,careless,declarative,grad+subj+neg,mean,1
+AP_20,61,M,A,33,hole,careless,declarative,grad+subj+neg,nice,3
+AP_20,61,M,A,34,solution,bossy,sarcastic,grad+subj+neg,approve,1
+AP_20,61,M,A,35,solution,bossy,sarcastic,grad+subj+neg,mean,0
+AP_20,61,M,A,36,solution,bossy,sarcastic,grad+subj+neg,nice,2
+AP_20,61,M,A,37,novel,fiction,declarative,–grad–subj,approve,1
+AP_20,61,M,A,38,novel,fiction,declarative,–grad–subj,mean,1
+AP_20,61,M,A,39,novel,fiction,declarative,–grad–subj,nice,3
+AP_20,61,M,A,40,video,tiktok,sarcastic,–grad–subj,approve,1
+AP_20,61,M,A,41,video,tiktok,sarcastic,–grad–subj,mean,1
+AP_20,61,M,A,42,video,tiktok,sarcastic,–grad–subj,nice,1
+AP_26,65,F,A,1,book,n/a,declarative,training1 neg,approve,1
+AP_26,65,F,A,2,book,n/a,declarative,training1 neg,mean,0
+AP_26,65,F,A,3,book,n/a,declarative,training1 neg,nice,1
+AP_26,65,F,A,4,recital,n/a,declarative,training2 pos,approve,1
+AP_26,65,F,A,5,recital,n/a,declarative,training2 pos,mean,0
+AP_26,65,F,A,6,recital,n/a,declarative,training2 pos,nice,5
+AP_26,65,F,A,7,cake,yummy,declarative,grad+subj+pos,approve,1
+AP_26,65,F,A,8,cake,yummy,declarative,grad+subj+pos,mean,1
+AP_26,65,F,A,9,cake,yummy,declarative,grad+subj+pos,nice,5
+AP_26,65,F,A,10,gift,awesome,sarcastic,grad+subj+pos,approve,1
+AP_26,65,F,A,11,gift,awesome,sarcastic,grad+subj+pos,mean,1
+AP_26,65,F,A,12,gift,awesome,sarcastic,grad+subj+pos,nice,5
+AP_26,65,F,A,13,bouquet,messy,declarative,grad+subj+neg,approve,1
+AP_26,65,F,A,14,bouquet,messy,declarative,grad+subj+neg,mean,1
+AP_26,65,F,A,15,bouquet,messy,declarative,grad+subj+neg,nice,5
+AP_26,65,F,A,16,question,silly,sarcastic,grad+subj+neg,approve,1
+AP_26,65,F,A,17,question,silly,sarcastic,grad+subj+neg,mean,1
+AP_26,65,F,A,18,question,silly,sarcastic,grad+subj+neg,nice,5
+AP_26,65,F,A,19,dish,lobster,declarative,–grad–subj,approve,0
+AP_26,65,F,A,20,dish,lobster,declarative,–grad–subj,mean,1
+AP_26,65,F,A,21,dish,lobster,declarative,–grad–subj,nice,5
+AP_26,65,F,A,22,shirt,spotted,sarcastic,–grad–subj,approve,1
+AP_26,65,F,A,23,shirt,spotted,sarcastic,–grad–subj,mean,1
+AP_26,65,F,A,24,shirt,spotted,sarcastic,–grad–subj,nice,5
+AP_26,65,F,A,25,story,funny,declarative,grad+subj+pos,approve,1
+AP_26,65,F,A,26,story,funny,declarative,grad+subj+pos,mean,1
+AP_26,65,F,A,27,story,funny,declarative,grad+subj+pos,nice,5
+AP_26,65,F,A,28,tool,useful,sarcastic,grad+subj+pos,approve,1
+AP_26,65,F,A,29,tool,useful,sarcastic,grad+subj+pos,mean,1
+AP_26,65,F,A,30,tool,useful,sarcastic,grad+subj+pos,nice,5
+AP_26,65,F,A,31,hole,careless,declarative,grad+subj+neg,approve,1
+AP_26,65,F,A,32,hole,careless,declarative,grad+subj+neg,mean,1
+AP_26,65,F,A,33,hole,careless,declarative,grad+subj+neg,nice,5
+AP_26,65,F,A,34,solution,bossy,sarcastic,grad+subj+neg,approve,0
+AP_26,65,F,A,35,solution,bossy,sarcastic,grad+subj+neg,mean,1
+AP_26,65,F,A,36,solution,bossy,sarcastic,grad+subj+neg,nice,5
+AP_26,65,F,A,37,novel,fiction,declarative,–grad–subj,approve,1
+AP_26,65,F,A,38,novel,fiction,declarative,–grad–subj,mean,1
+AP_26,65,F,A,39,novel,fiction,declarative,–grad–subj,nice,5
+AP_26,65,F,A,40,video,tiktok,sarcastic,–grad–subj,approve,1
+AP_26,65,F,A,41,video,tiktok,sarcastic,–grad–subj,mean,1
+AP_26,65,F,A,42,video,tiktok,sarcastic,–grad–subj,nice,5
+AP_02,69,F,B,1,book,n/a,declarative,training1 neg,approve,0
+AP_02,69,F,B,2,book,n/a,declarative,training1 neg,mean,1
+AP_02,69,F,B,3,book,n/a,declarative,training1 neg,nice,1
+AP_02,69,F,B,4,recital,n/a,declarative,training2 pos,approve,1
+AP_02,69,F,B,5,recital,n/a,declarative,training2 pos,mean,1
+AP_02,69,F,B,6,recital,n/a,declarative,training2 pos,nice,5
+AP_02,69,F,B,7,cake,yummy,sarcastic,grad+subj+pos,approve,1
+AP_02,69,F,B,8,cake,yummy,sarcastic,grad+subj+pos,mean,1
+AP_02,69,F,B,9,cake,yummy,sarcastic,grad+subj+pos,nice,5
+AP_02,69,F,B,10,gift,awful,declarative,grad+subj+neg,approve,0
+AP_02,69,F,B,11,gift,awful,declarative,grad+subj+neg,mean,0
+AP_02,69,F,B,12,gift,awful,declarative,grad+subj+neg,nice,1
+AP_02,69,F,B,13,bouquet,messy,sarcastic,grad+subj+neg,approve,0
+AP_02,69,F,B,14,bouquet,messy,sarcastic,grad+subj+neg,mean,0
+AP_02,69,F,B,15,bouquet,messy,sarcastic,grad+subj+neg,nice,2
+AP_02,69,F,B,16,question,review,declarative,–grad–subj,approve,1
+AP_02,69,F,B,17,question,review,declarative,–grad–subj,mean,1
+AP_02,69,F,B,18,question,review,declarative,–grad–subj,nice,5
+AP_02,69,F,B,19,dish,lobster,sarcastic,–grad–subj,approve,0
+AP_02,69,F,B,20,dish,lobster,sarcastic,–grad–subj,mean,0
+AP_02,69,F,B,21,dish,lobster,sarcastic,–grad–subj,nice,1
+AP_02,69,F,B,22,shirt,lovely,declarative,grad+subj+pos,approve,1
+AP_02,69,F,B,23,shirt,lovely,declarative,grad+subj+pos,mean,1
+AP_02,69,F,B,24,shirt,lovely,declarative,grad+subj+pos,nice,5
+AP_02,69,F,B,25,story,funny,sarcastic,grad+subj+pos,approve,1
+AP_02,69,F,B,26,story,funny,sarcastic,grad+subj+pos,mean,1
+AP_02,69,F,B,27,story,funny,sarcastic,grad+subj+pos,nice,2
+AP_02,69,F,B,28,tool,useless,declarative,grad+subj+neg,approve,0
+AP_02,69,F,B,29,tool,useless,declarative,grad+subj+neg,mean,0
+AP_02,69,F,B,30,tool,useless,declarative,grad+subj+neg,nice,5
+AP_02,69,F,B,31,hole,careless,sarcastic,grad+subj+neg,approve,0
+AP_02,69,F,B,32,hole,careless,sarcastic,grad+subj+neg,mean,0
+AP_02,69,F,B,33,hole,careless,sarcastic,grad+subj+neg,nice,2
+AP_02,69,F,B,34,solution,partial,declarative,–grad–subj,approve,1
+AP_02,69,F,B,35,solution,partial,declarative,–grad–subj,mean,1
+AP_02,69,F,B,36,solution,partial,declarative,–grad–subj,nice,5
+AP_02,69,F,B,37,novel,fiction,sarcastic,–grad–subj,approve,0
+AP_02,69,F,B,38,novel,fiction,sarcastic,–grad–subj,mean,0
+AP_02,69,F,B,39,novel,fiction,sarcastic,–grad–subj,nice,4
+AP_02,69,F,B,40,video,witty,declarative,grad+subj+pos,approve,1
+AP_02,69,F,B,41,video,witty,declarative,grad+subj+pos,mean,1
+AP_02,69,F,B,42,video,witty,declarative,grad+subj+pos,nice,2
+AP_10,67,M,B,1,book,n/a,declarative,training1 neg,approve,0
+AP_10,67,M,B,2,book,n/a,declarative,training1 neg,mean,0
+AP_10,67,M,B,3,book,n/a,declarative,training1 neg,nice,1
+AP_10,67,M,B,4,recital,n/a,declarative,training2 pos,approve,1
+AP_10,67,M,B,5,recital,n/a,declarative,training2 pos,mean,1
+AP_10,67,M,B,6,recital,n/a,declarative,training2 pos,nice,5
+AP_10,67,M,B,7,cake,yummy,sarcastic,grad+subj+pos,approve,1
+AP_10,67,M,B,8,cake,yummy,sarcastic,grad+subj+pos,mean,1
+AP_10,67,M,B,9,cake,yummy,sarcastic,grad+subj+pos,nice,4
+AP_10,67,M,B,10,gift,awful,declarative,grad+subj+neg,approve,0
+AP_10,67,M,B,11,gift,awful,declarative,grad+subj+neg,mean,0
+AP_10,67,M,B,12,gift,awful,declarative,grad+subj+neg,nice,1
+AP_10,67,M,B,13,bouquet,messy,sarcastic,grad+subj+neg,approve,0
+AP_10,67,M,B,14,bouquet,messy,sarcastic,grad+subj+neg,mean,0
+AP_10,67,M,B,15,bouquet,messy,sarcastic,grad+subj+neg,nice,2
+AP_10,67,M,B,16,question,review,declarative,–grad–subj,approve,N/A
+AP_10,67,M,B,17,question,review,declarative,–grad–subj,mean,N/A
+AP_10,67,M,B,18,question,review,declarative,–grad–subj,nice,5
+AP_10,67,M,B,19,dish,lobster,sarcastic,–grad–subj,approve,1
+AP_10,67,M,B,20,dish,lobster,sarcastic,–grad–subj,mean,1
+AP_10,67,M,B,21,dish,lobster,sarcastic,–grad–subj,nice,5
+AP_10,67,M,B,22,shirt,lovely,declarative,grad+subj+pos,approve,1
+AP_10,67,M,B,23,shirt,lovely,declarative,grad+subj+pos,mean,1
+AP_10,67,M,B,24,shirt,lovely,declarative,grad+subj+pos,nice,5
+AP_10,67,M,B,25,story,funny,sarcastic,grad+subj+pos,approve,1
+AP_10,67,M,B,26,story,funny,sarcastic,grad+subj+pos,mean,1
+AP_10,67,M,B,27,story,funny,sarcastic,grad+subj+pos,nice,5
+AP_10,67,M,B,28,tool,useless,declarative,grad+subj+neg,approve,0
+AP_10,67,M,B,29,tool,useless,declarative,grad+subj+neg,mean,0
+AP_10,67,M,B,30,tool,useless,declarative,grad+subj+neg,nice,3
+AP_10,67,M,B,31,hole,careless,sarcastic,grad+subj+neg,approve,0
+AP_10,67,M,B,32,hole,careless,sarcastic,grad+subj+neg,mean,0
+AP_10,67,M,B,33,hole,careless,sarcastic,grad+subj+neg,nice,3
+AP_10,67,M,B,34,solution,partial,declarative,–grad–subj,approve,0
+AP_10,67,M,B,35,solution,partial,declarative,–grad–subj,mean,0
+AP_10,67,M,B,36,solution,partial,declarative,–grad–subj,nice,3
+AP_10,67,M,B,37,novel,fiction,sarcastic,–grad–subj,approve,1
+AP_10,67,M,B,38,novel,fiction,sarcastic,–grad–subj,mean,1
+AP_10,67,M,B,39,novel,fiction,sarcastic,–grad–subj,nice,3
+AP_10,67,M,B,40,video,witty,declarative,grad+subj+pos,approve,1
+AP_10,67,M,B,41,video,witty,declarative,grad+subj+pos,mean,1
+AP_10,67,M,B,42,video,witty,declarative,grad+subj+pos,nice,5
+AP_15,74,F,B,1,book,n/a,declarative,training1 neg,approve,0
+AP_15,74,F,B,2,book,n/a,declarative,training1 neg,mean,1
+AP_15,74,F,B,3,book,n/a,declarative,training1 neg,nice,3
+AP_15,74,F,B,4,recital,n/a,declarative,training2 pos,approve,1
+AP_15,74,F,B,5,recital,n/a,declarative,training2 pos,mean,1
+AP_15,74,F,B,6,recital,n/a,declarative,training2 pos,nice,4
+AP_15,74,F,B,7,cake,yummy,sarcastic,grad+subj+pos,approve,1
+AP_15,74,F,B,8,cake,yummy,sarcastic,grad+subj+pos,mean,N/A
+AP_15,74,F,B,9,cake,yummy,sarcastic,grad+subj+pos,nice,3
+AP_15,74,F,B,10,gift,awful,declarative,grad+subj+neg,approve,0
+AP_15,74,F,B,11,gift,awful,declarative,grad+subj+neg,mean,1
+AP_15,74,F,B,12,gift,awful,declarative,grad+subj+neg,nice,1
+AP_15,74,F,B,13,bouquet,messy,sarcastic,grad+subj+neg,approve,0
+AP_15,74,F,B,14,bouquet,messy,sarcastic,grad+subj+neg,mean,1
+AP_15,74,F,B,15,bouquet,messy,sarcastic,grad+subj+neg,nice,1
+AP_15,74,F,B,16,question,review,declarative,–grad–subj,approve,N/A
+AP_15,74,F,B,17,question,review,declarative,–grad–subj,mean,1
+AP_15,74,F,B,18,question,review,declarative,–grad–subj,nice,2
+AP_15,74,F,B,19,dish,lobster,sarcastic,–grad–subj,approve,N/A
+AP_15,74,F,B,20,dish,lobster,sarcastic,–grad–subj,mean,1
+AP_15,74,F,B,21,dish,lobster,sarcastic,–grad–subj,nice,1
+AP_15,74,F,B,22,shirt,lovely,declarative,grad+subj+pos,approve,1
+AP_15,74,F,B,23,shirt,lovely,declarative,grad+subj+pos,mean,1
+AP_15,74,F,B,24,shirt,lovely,declarative,grad+subj+pos,nice,5
+AP_15,74,F,B,25,story,funny,sarcastic,grad+subj+pos,approve,1
+AP_15,74,F,B,26,story,funny,sarcastic,grad+subj+pos,mean,1
+AP_15,74,F,B,27,story,funny,sarcastic,grad+subj+pos,nice,5
+AP_15,74,F,B,28,tool,useless,declarative,grad+subj+neg,approve,0
+AP_15,74,F,B,29,tool,useless,declarative,grad+subj+neg,mean,1
+AP_15,74,F,B,30,tool,useless,declarative,grad+subj+neg,nice,1
+AP_15,74,F,B,31,hole,careless,sarcastic,grad+subj+neg,approve,0
+AP_15,74,F,B,32,hole,careless,sarcastic,grad+subj+neg,mean,1
+AP_15,74,F,B,33,hole,careless,sarcastic,grad+subj+neg,nice,1
+AP_15,74,F,B,34,solution,partial,declarative,–grad–subj,approve,N/A
+AP_15,74,F,B,35,solution,partial,declarative,–grad–subj,mean,1
+AP_15,74,F,B,36,solution,partial,declarative,–grad–subj,nice,1
+AP_15,74,F,B,37,novel,fiction,sarcastic,–grad–subj,approve,N/A
+AP_15,74,F,B,38,novel,fiction,sarcastic,–grad–subj,mean,1
+AP_15,74,F,B,39,novel,fiction,sarcastic,–grad–subj,nice,3
+AP_15,74,F,B,40,video,witty,declarative,grad+subj+pos,approve,1
+AP_15,74,F,B,41,video,witty,declarative,grad+subj+pos,mean,1
+AP_15,74,F,B,42,video,witty,declarative,grad+subj+pos,nice,5
+AP_04,70,M,C,1,book,n/a,declarative,training1 neg,approve,0
+AP_04,70,M,C,2,book,n/a,declarative,training1 neg,mean,0
+AP_04,70,M,C,3,book,n/a,declarative,training1 neg,nice,1
+AP_04,70,M,C,4,recital,n/a,declarative,training2 pos,approve,1
+AP_04,70,M,C,5,recital,n/a,declarative,training2 pos,mean,0
+AP_04,70,M,C,6,recital,n/a,declarative,training2 pos,nice,5
+AP_04,70,M,C,7,cake,yucky,declarative,grad+subj+neg,approve,0
+AP_04,70,M,C,8,cake,yucky,declarative,grad+subj+neg,mean,0
+AP_04,70,M,C,9,cake,yucky,declarative,grad+subj+neg,nice,1
+AP_04,70,M,C,10,gift,awful,sarcastic,grad+subj+neg,approve,0
+AP_04,70,M,C,11,gift,awful,sarcastic,grad+subj+neg,mean,0
+AP_04,70,M,C,12,gift,awful,sarcastic,grad+subj+neg,nice,1
+AP_04,70,M,C,13,bouquet,floral,declarative,–grad–subj,approve,0
+AP_04,70,M,C,14,bouquet,floral,declarative,–grad–subj,mean,0
+AP_04,70,M,C,15,bouquet,floral,declarative,–grad–subj,nice,3
+AP_04,70,M,C,16,question,review,sarcastic,–grad–subj,approve,0
+AP_04,70,M,C,17,question,review,sarcastic,–grad–subj,mean,0
+AP_04,70,M,C,18,question,review,sarcastic,–grad–subj,nice,1
+AP_04,70,M,C,19,dish,tasty,declarative,grad+subj+pos,approve,0
+AP_04,70,M,C,20,dish,tasty,declarative,grad+subj+pos,mean,0
+AP_04,70,M,C,21,dish,tasty,declarative,grad+subj+pos,nice,5
+AP_04,70,M,C,22,shirt,lovely,sarcastic,grad+subj+pos,approve,1
+AP_04,70,M,C,23,shirt,lovely,sarcastic,grad+subj+pos,mean,0
+AP_04,70,M,C,24,shirt,lovely,sarcastic,grad+subj+pos,nice,5
+AP_04,70,M,C,25,story,boring,declarative,grad+subj+neg,approve,0
+AP_04,70,M,C,26,story,boring,declarative,grad+subj+neg,mean,0
+AP_04,70,M,C,27,story,boring,declarative,grad+subj+neg,nice,1
+AP_04,70,M,C,28,tool,useless,sarcastic,grad+subj+neg,approve,0
+AP_04,70,M,C,29,tool,useless,sarcastic,grad+subj+neg,mean,0
+AP_04,70,M,C,30,tool,useless,sarcastic,grad+subj+neg,nice,1
+AP_04,70,M,C,31,hole,half-inch,declarative,–grad–subj,approve,0
+AP_04,70,M,C,32,hole,half-inch,declarative,–grad–subj,mean,0
+AP_04,70,M,C,33,hole,half-inch,declarative,–grad–subj,nice,1
+AP_04,70,M,C,34,solution,partial,sarcastic,–grad–subj,approve,0
+AP_04,70,M,C,35,solution,partial,sarcastic,–grad–subj,mean,0
+AP_04,70,M,C,36,solution,partial,sarcastic,–grad–subj,nice,1
+AP_04,70,M,C,37,novel,easy,declarative,grad+subj+pos,approve,1
+AP_04,70,M,C,38,novel,easy,declarative,grad+subj+pos,mean,0
+AP_04,70,M,C,39,novel,easy,declarative,grad+subj+pos,nice,5
+AP_04,70,M,C,40,video,witty,sarcastic,grad+subj+pos,approve,1
+AP_04,70,M,C,41,video,witty,sarcastic,grad+subj+pos,mean,0
+AP_04,70,M,C,42,video,witty,sarcastic,grad+subj+pos,nice,5
+AP_05,82,M,C,1,book,n/a,declarative,training1 neg,approve,0
+AP_05,82,M,C,2,book,n/a,declarative,training1 neg,mean,1
+AP_05,82,M,C,3,book,n/a,declarative,training1 neg,nice,5
+AP_05,82,M,C,4,recital,n/a,declarative,training2 pos,approve,1
+AP_05,82,M,C,5,recital,n/a,declarative,training2 pos,mean,1
+AP_05,82,M,C,6,recital,n/a,declarative,training2 pos,nice,5
+AP_05,82,M,C,7,cake,yucky,declarative,grad+subj+neg,approve,0
+AP_05,82,M,C,8,cake,yucky,declarative,grad+subj+neg,mean,1
+AP_05,82,M,C,9,cake,yucky,declarative,grad+subj+neg,nice,1
+AP_05,82,M,C,10,gift,awful,sarcastic,grad+subj+neg,approve,0
+AP_05,82,M,C,11,gift,awful,sarcastic,grad+subj+neg,mean,1
+AP_05,82,M,C,12,gift,awful,sarcastic,grad+subj+neg,nice,1
+AP_05,82,M,C,13,bouquet,floral,declarative,–grad–subj,approve,N/A
+AP_05,82,M,C,14,bouquet,floral,declarative,–grad–subj,mean,1
+AP_05,82,M,C,15,bouquet,floral,declarative,–grad–subj,nice,4
+AP_05,82,M,C,16,question,review,sarcastic,–grad–subj,approve,0
+AP_05,82,M,C,17,question,review,sarcastic,–grad–subj,mean,N/A
+AP_05,82,M,C,18,question,review,sarcastic,–grad–subj,nice,3
+AP_05,82,M,C,19,dish,tasty,declarative,grad+subj+pos,approve,1
+AP_05,82,M,C,20,dish,tasty,declarative,grad+subj+pos,mean,1
+AP_05,82,M,C,21,dish,tasty,declarative,grad+subj+pos,nice,4
+AP_05,82,M,C,22,shirt,lovely,sarcastic,grad+subj+pos,approve,1
+AP_05,82,M,C,23,shirt,lovely,sarcastic,grad+subj+pos,mean,1
+AP_05,82,M,C,24,shirt,lovely,sarcastic,grad+subj+pos,nice,4
+AP_05,82,M,C,25,story,boring,declarative,grad+subj+neg,approve,0
+AP_05,82,M,C,26,story,boring,declarative,grad+subj+neg,mean,1
+AP_05,82,M,C,27,story,boring,declarative,grad+subj+neg,nice,2
+AP_05,82,M,C,28,tool,useless,sarcastic,grad+subj+neg,approve,0
+AP_05,82,M,C,29,tool,useless,sarcastic,grad+subj+neg,mean,1
+AP_05,82,M,C,30,tool,useless,sarcastic,grad+subj+neg,nice,1
+AP_05,82,M,C,31,hole,half-inch,declarative,–grad–subj,approve,N/A
+AP_05,82,M,C,32,hole,half-inch,declarative,–grad–subj,mean,1
+AP_05,82,M,C,33,hole,half-inch,declarative,–grad–subj,nice,N/A
+AP_05,82,M,C,34,solution,partial,sarcastic,–grad–subj,approve,N/A
+AP_05,82,M,C,35,solution,partial,sarcastic,–grad–subj,mean,1
+AP_05,82,M,C,36,solution,partial,sarcastic,–grad–subj,nice,N/A
+AP_05,82,M,C,37,novel,easy,declarative,grad+subj+pos,approve,N/A
+AP_05,82,M,C,38,novel,easy,declarative,grad+subj+pos,mean,1
+AP_05,82,M,C,39,novel,easy,declarative,grad+subj+pos,nice,N/A
+AP_05,82,M,C,40,video,witty,sarcastic,grad+subj+pos,approve,0
+AP_05,82,M,C,41,video,witty,sarcastic,grad+subj+pos,mean,N/A
+AP_05,82,M,C,42,video,witty,sarcastic,grad+subj+pos,nice,N/A
+AP_11,66,F,D,1,book,n/a,declarative,training1 neg,approve,0
+AP_11,66,F,D,2,book,n/a,declarative,training1 neg,mean,1
+AP_11,66,F,D,3,book,n/a,declarative,training1 neg,nice,2
+AP_11,66,F,D,4,recital,n/a,declarative,training2 pos,approve,1
+AP_11,66,F,D,5,recital,n/a,declarative,training2 pos,mean,1
+AP_11,66,F,D,6,recital,n/a,declarative,training2 pos,nice,5
+AP_11,66,F,D,7,cake,yucky,sarcastic,grad+subj+neg,approve,0
+AP_11,66,F,D,8,cake,yucky,sarcastic,grad+subj+neg,mean,1
+AP_11,66,F,D,9,cake,yucky,sarcastic,grad+subj+neg,nice,1
+AP_11,66,F,D,10,gift,birthday,declarative,–grad–subj,approve,1
+AP_11,66,F,D,11,gift,birthday,declarative,–grad–subj,mean,1
+AP_11,66,F,D,12,gift,birthday,declarative,–grad–subj,nice,5
+AP_11,66,F,D,13,bouquet,floral,sarcastic,–grad–subj,approve,0
+AP_11,66,F,D,14,bouquet,floral,sarcastic,–grad–subj,mean,1
+AP_11,66,F,D,15,bouquet,floral,sarcastic,–grad–subj,nice,2
+AP_11,66,F,D,16,question,clever,declarative,grad+subj+pos,approve,1
+AP_11,66,F,D,17,question,clever,declarative,grad+subj+pos,mean,1
+AP_11,66,F,D,18,question,clever,declarative,grad+subj+pos,nice,5
+AP_11,66,F,D,19,dish,tasty,sarcastic,grad+subj+pos,approve,1
+AP_11,66,F,D,20,dish,tasty,sarcastic,grad+subj+pos,mean,1
+AP_11,66,F,D,21,dish,tasty,sarcastic,grad+subj+pos,nice,5
+AP_11,66,F,D,22,shirt,ugly,declarative,grad+subj+neg,approve,0
+AP_11,66,F,D,23,shirt,ugly,declarative,grad+subj+neg,mean,1
+AP_11,66,F,D,24,shirt,ugly,declarative,grad+subj+neg,nice,1
+AP_11,66,F,D,25,story,boring,sarcastic,grad+subj+neg,approve,0
+AP_11,66,F,D,26,story,boring,sarcastic,grad+subj+neg,mean,1
+AP_11,66,F,D,27,story,boring,sarcastic,grad+subj+neg,nice,1
+AP_11,66,F,D,28,tool,wooden,declarative,–grad–subj,approve,0
+AP_11,66,F,D,29,tool,wooden,declarative,–grad–subj,mean,1
+AP_11,66,F,D,30,tool,wooden,declarative,–grad–subj,nice,1
+AP_11,66,F,D,31,hole,half-inch,sarcastic,–grad–subj,approve,0
+AP_11,66,F,D,32,hole,half-inch,sarcastic,–grad–subj,mean,1
+AP_11,66,F,D,33,hole,half-inch,sarcastic,–grad–subj,nice,1
+AP_11,66,F,D,34,solution,helpful,declarative,grad+subj+pos,approve,1
+AP_11,66,F,D,35,solution,helpful,declarative,grad+subj+pos,mean,1
+AP_11,66,F,D,36,solution,helpful,declarative,grad+subj+pos,nice,5
+AP_11,66,F,D,37,novel,easy,sarcastic,grad+subj+pos,approve,0
+AP_11,66,F,D,38,novel,easy,sarcastic,grad+subj+pos,mean,1
+AP_11,66,F,D,39,novel,easy,sarcastic,grad+subj+pos,nice,1
+AP_11,66,F,D,40,video,foolish,declarative,grad+subj+neg,approve,0
+AP_11,66,F,D,41,video,foolish,declarative,grad+subj+neg,mean,1
+AP_11,66,F,D,42,video,foolish,declarative,grad+subj+neg,nice,1
+AP_16,69,M,C,1,book,n/a,declarative,training1 neg,approve,0
+AP_16,69,M,C,2,book,n/a,declarative,training1 neg,mean,1
+AP_16,69,M,C,3,book,n/a,declarative,training1 neg,nice,4
+AP_16,69,M,C,4,recital,n/a,declarative,training2 pos,approve,1
+AP_16,69,M,C,5,recital,n/a,declarative,training2 pos,mean,1
+AP_16,69,M,C,6,recital,n/a,declarative,training2 pos,nice,5
+AP_16,69,M,C,7,cake,yucky,declarative,grad+subj+neg,approve,0
+AP_16,69,M,C,8,cake,yucky,declarative,grad+subj+neg,mean,1
+AP_16,69,M,C,9,cake,yucky,declarative,grad+subj+neg,nice,5
+AP_16,69,M,C,10,gift,awful,sarcastic,grad+subj+neg,approve,0
+AP_16,69,M,C,11,gift,awful,sarcastic,grad+subj+neg,mean,1
+AP_16,69,M,C,12,gift,awful,sarcastic,grad+subj+neg,nice,4
+AP_16,69,M,C,13,bouquet,floral,declarative,–grad–subj,approve,1
+AP_16,69,M,C,14,bouquet,floral,declarative,–grad–subj,mean,1
+AP_16,69,M,C,15,bouquet,floral,declarative,–grad–subj,nice,5
+AP_16,69,M,C,16,question,review,sarcastic,–grad–subj,approve,0
+AP_16,69,M,C,17,question,review,sarcastic,–grad–subj,mean,1
+AP_16,69,M,C,18,question,review,sarcastic,–grad–subj,nice,4
+AP_16,69,M,C,19,dish,tasty,declarative,grad+subj+pos,approve,1
+AP_16,69,M,C,20,dish,tasty,declarative,grad+subj+pos,mean,1
+AP_16,69,M,C,21,dish,tasty,declarative,grad+subj+pos,nice,5
+AP_16,69,M,C,22,shirt,lovely,sarcastic,grad+subj+pos,approve,1
+AP_16,69,M,C,23,shirt,lovely,sarcastic,grad+subj+pos,mean,1
+AP_16,69,M,C,24,shirt,lovely,sarcastic,grad+subj+pos,nice,5
+AP_16,69,M,C,25,story,boring,declarative,grad+subj+neg,approve,0
+AP_16,69,M,C,26,story,boring,declarative,grad+subj+neg,mean,1
+AP_16,69,M,C,27,story,boring,declarative,grad+subj+neg,nice,5
+AP_16,69,M,C,28,tool,useless,sarcastic,grad+subj+neg,approve,0
+AP_16,69,M,C,29,tool,useless,sarcastic,grad+subj+neg,mean,1
+AP_16,69,M,C,30,tool,useless,sarcastic,grad+subj+neg,nice,5
+AP_16,69,M,C,31,hole,half-inch,declarative,–grad–subj,approve,0
+AP_16,69,M,C,32,hole,half-inch,declarative,–grad–subj,mean,1
+AP_16,69,M,C,33,hole,half-inch,declarative,–grad–subj,nice,5
+AP_16,69,M,C,34,solution,partial,sarcastic,–grad–subj,approve,0
+AP_16,69,M,C,35,solution,partial,sarcastic,–grad–subj,mean,1
+AP_16,69,M,C,36,solution,partial,sarcastic,–grad–subj,nice,5
+AP_16,69,M,C,37,novel,easy,declarative,grad+subj+pos,approve,0
+AP_16,69,M,C,38,novel,easy,declarative,grad+subj+pos,mean,1
+AP_16,69,M,C,39,novel,easy,declarative,grad+subj+pos,nice,5
+AP_16,69,M,C,40,video,witty,sarcastic,grad+subj+pos,approve,0
+AP_16,69,M,C,41,video,witty,sarcastic,grad+subj+pos,mean,1
+AP_16,69,M,C,42,video,witty,sarcastic,grad+subj+pos,nice,5
+AP_06,61,F,D,1,book,n/a,declarative,training1 neg,approve,0
+AP_06,61,F,D,2,book,n/a,declarative,training1 neg,mean,1
+AP_06,61,F,D,3,book,n/a,declarative,training1 neg,nice,1
+AP_06,61,F,D,4,recital,n/a,declarative,training2 pos,approve,1
+AP_06,61,F,D,5,recital,n/a,declarative,training2 pos,mean,1
+AP_06,61,F,D,6,recital,n/a,declarative,training2 pos,nice,3
+AP_06,61,F,D,7,cake,yucky,sarcastic,grad+subj+neg,approve,0
+AP_06,61,F,D,8,cake,yucky,sarcastic,grad+subj+neg,mean,0
+AP_06,61,F,D,9,cake,yucky,sarcastic,grad+subj+neg,nice,2
+AP_06,61,F,D,10,gift,birthday,declarative,–grad–subj,approve,N/A
+AP_06,61,F,D,11,gift,birthday,declarative,–grad–subj,mean,0
+AP_06,61,F,D,12,gift,birthday,declarative,–grad–subj,nice,3
+AP_06,61,F,D,13,bouquet,floral,sarcastic,–grad–subj,approve,N/A
+AP_06,61,F,D,14,bouquet,floral,sarcastic,–grad–subj,mean,1
+AP_06,61,F,D,15,bouquet,floral,sarcastic,–grad–subj,nice,5
+AP_06,61,F,D,16,question,clever,declarative,grad+subj+pos,approve,1
+AP_06,61,F,D,17,question,clever,declarative,grad+subj+pos,mean,0
+AP_06,61,F,D,18,question,clever,declarative,grad+subj+pos,nice,3
+AP_06,61,F,D,19,dish,tasty,sarcastic,grad+subj+pos,approve,1
+AP_06,61,F,D,20,dish,tasty,sarcastic,grad+subj+pos,mean,1
+AP_06,61,F,D,21,dish,tasty,sarcastic,grad+subj+pos,nice,5
+AP_06,61,F,D,22,shirt,ugly,declarative,grad+subj+neg,approve,0
+AP_06,61,F,D,23,shirt,ugly,declarative,grad+subj+neg,mean,0
+AP_06,61,F,D,24,shirt,ugly,declarative,grad+subj+neg,nice,5
+AP_06,61,F,D,25,story,boring,sarcastic,grad+subj+neg,approve,0
+AP_06,61,F,D,26,story,boring,sarcastic,grad+subj+neg,mean,0
+AP_06,61,F,D,27,story,boring,sarcastic,grad+subj+neg,nice,5
+AP_06,61,F,D,28,tool,wooden,declarative,–grad–subj,approve,N/A
+AP_06,61,F,D,29,tool,wooden,declarative,–grad–subj,mean,0
+AP_06,61,F,D,30,tool,wooden,declarative,–grad–subj,nice,5
+AP_06,61,F,D,31,hole,half-inch,sarcastic,–grad–subj,approve,0
+AP_06,61,F,D,32,hole,half-inch,sarcastic,–grad–subj,mean,0
+AP_06,61,F,D,33,hole,half-inch,sarcastic,–grad–subj,nice,5
+AP_06,61,F,D,34,solution,helpful,declarative,grad+subj+pos,approve,1
+AP_06,61,F,D,35,solution,helpful,declarative,grad+subj+pos,mean,1
+AP_06,61,F,D,36,solution,helpful,declarative,grad+subj+pos,nice,5
+AP_06,61,F,D,37,novel,easy,sarcastic,grad+subj+pos,approve,0
+AP_06,61,F,D,38,novel,easy,sarcastic,grad+subj+pos,mean,1
+AP_06,61,F,D,39,novel,easy,sarcastic,grad+subj+pos,nice,5
+AP_06,61,F,D,40,video,foolish,declarative,grad+subj+neg,approve,0
+AP_06,61,F,D,41,video,foolish,declarative,grad+subj+neg,mean,1
+AP_06,61,F,D,42,video,foolish,declarative,grad+subj+neg,nice,3
+AP_12,71,F,E,1,book,n/a,declarative,training1 neg,approve,0
+AP_12,71,F,E,2,book,n/a,declarative,training1 neg,mean,1
+AP_12,71,F,E,3,book,n/a,declarative,training1 neg,nice,1
+AP_12,71,F,E,4,recital,n/a,declarative,training2 pos,approve,1
+AP_12,71,F,E,5,recital,n/a,declarative,training2 pos,mean,1
+AP_12,71,F,E,6,recital,n/a,declarative,training2 pos,nice,5
+AP_12,71,F,E,7,cake,lemon,declarative,–grad–subj,approve,1
+AP_12,71,F,E,8,cake,lemon,declarative,–grad–subj,mean,1
+AP_12,71,F,E,9,cake,lemon,declarative,–grad–subj,nice,5
+AP_12,71,F,E,10,gift,birthday,sarcastic,–grad–subj,approve,1
+AP_12,71,F,E,11,gift,birthday,sarcastic,–grad–subj,mean,1
+AP_12,71,F,E,12,gift,birthday,sarcastic,–grad–subj,nice,5
+AP_12,71,F,E,13,bouquet,pretty,declarative,grad+subj+pos,approve,1
+AP_12,71,F,E,14,bouquet,pretty,declarative,grad+subj+pos,mean,1
+AP_12,71,F,E,15,bouquet,pretty,declarative,grad+subj+pos,nice,5
+AP_12,71,F,E,16,question,clever,sarcastic,grad+subj+pos,approve,1
+AP_12,71,F,E,17,question,clever,sarcastic,grad+subj+pos,mean,1
+AP_12,71,F,E,18,question,clever,sarcastic,grad+subj+pos,nice,5
+AP_12,71,F,E,19,dish,nasty,declarative,grad+subj+neg,approve,1
+AP_12,71,F,E,20,dish,nasty,declarative,grad+subj+neg,mean,1
+AP_12,71,F,E,21,dish,nasty,declarative,grad+subj+neg,nice,5
+AP_12,71,F,E,22,shirt,ugly,sarcastic,grad+subj+neg,approve,1
+AP_12,71,F,E,23,shirt,ugly,sarcastic,grad+subj+neg,mean,1
+AP_12,71,F,E,24,shirt,ugly,sarcastic,grad+subj+neg,nice,5
+AP_12,71,F,E,25,story,bedtime,declarative,–grad–subj,approve,1
+AP_12,71,F,E,26,story,bedtime,declarative,–grad–subj,mean,1
+AP_12,71,F,E,27,story,bedtime,declarative,–grad–subj,nice,5
+AP_12,71,F,E,28,tool,wooden,sarcastic,–grad–subj,approve,1
+AP_12,71,F,E,29,tool,wooden,sarcastic,–grad–subj,mean,1
+AP_12,71,F,E,30,tool,wooden,sarcastic,–grad–subj,nice,5
+AP_12,71,F,E,31,hole,careful,declarative,grad+subj+pos,approve,1
+AP_12,71,F,E,32,hole,careful,declarative,grad+subj+pos,mean,1
+AP_12,71,F,E,33,hole,careful,declarative,grad+subj+pos,nice,5
+AP_12,71,F,E,34,solution,helpful,sarcastic,grad+subj+pos,approve,1
+AP_12,71,F,E,35,solution,helpful,sarcastic,grad+subj+pos,mean,1
+AP_12,71,F,E,36,solution,helpful,sarcastic,grad+subj+pos,nice,5
+AP_12,71,F,E,37,novel,tricky,declarative,grad+subj+neg,approve,1
+AP_12,71,F,E,38,novel,tricky,declarative,grad+subj+neg,mean,1
+AP_12,71,F,E,39,novel,tricky,declarative,grad+subj+neg,nice,5
+AP_12,71,F,E,40,video,foolish,sarcastic,grad+subj+neg,approve,1
+AP_12,71,F,E,41,video,foolish,sarcastic,grad+subj+neg,mean,1
+AP_12,71,F,E,42,video,foolish,sarcastic,grad+subj+neg,nice,5
+AP_17,78,M,D,1,book,n/a,declarative,training1 neg,approve,0
+AP_17,78,M,D,2,book,n/a,declarative,training1 neg,mean,1
+AP_17,78,M,D,3,book,n/a,declarative,training1 neg,nice,3
+AP_17,78,M,D,4,recital,n/a,declarative,training2 pos,approve,1
+AP_17,78,M,D,5,recital,n/a,declarative,training2 pos,mean,1
+AP_17,78,M,D,6,recital,n/a,declarative,training2 pos,nice,5
+AP_17,78,M,D,7,cake,yucky,sarcastic,grad+subj+neg,approve,0
+AP_17,78,M,D,8,cake,yucky,sarcastic,grad+subj+neg,mean,1
+AP_17,78,M,D,9,cake,yucky,sarcastic,grad+subj+neg,nice,1
+AP_17,78,M,D,10,gift,birthday,declarative,–grad–subj,approve,1
+AP_17,78,M,D,11,gift,birthday,declarative,–grad–subj,mean,1
+AP_17,78,M,D,12,gift,birthday,declarative,–grad–subj,nice,4
+AP_17,78,M,D,13,bouquet,floral,sarcastic,–grad–subj,approve,1
+AP_17,78,M,D,14,bouquet,floral,sarcastic,–grad–subj,mean,1
+AP_17,78,M,D,15,bouquet,floral,sarcastic,–grad–subj,nice,2
+AP_17,78,M,D,16,question,clever,declarative,grad+subj+pos,approve,1
+AP_17,78,M,D,17,question,clever,declarative,grad+subj+pos,mean,1
+AP_17,78,M,D,18,question,clever,declarative,grad+subj+pos,nice,5
+AP_17,78,M,D,19,dish,tasty,sarcastic,grad+subj+pos,approve,1
+AP_17,78,M,D,20,dish,tasty,sarcastic,grad+subj+pos,mean,1
+AP_17,78,M,D,21,dish,tasty,sarcastic,grad+subj+pos,nice,5
+AP_17,78,M,D,22,shirt,ugly,declarative,grad+subj+neg,approve,0
+AP_17,78,M,D,23,shirt,ugly,declarative,grad+subj+neg,mean,1
+AP_17,78,M,D,24,shirt,ugly,declarative,grad+subj+neg,nice,1
+AP_17,78,M,D,25,story,boring,sarcastic,grad+subj+neg,approve,0
+AP_17,78,M,D,26,story,boring,sarcastic,grad+subj+neg,mean,1
+AP_17,78,M,D,27,story,boring,sarcastic,grad+subj+neg,nice,2
+AP_17,78,M,D,28,tool,wooden,declarative,–grad–subj,approve,1
+AP_17,78,M,D,29,tool,wooden,declarative,–grad–subj,mean,1
+AP_17,78,M,D,30,tool,wooden,declarative,–grad–subj,nice,3
+AP_17,78,M,D,31,hole,half-inch,sarcastic,–grad–subj,approve,0
+AP_17,78,M,D,32,hole,half-inch,sarcastic,–grad–subj,mean,1
+AP_17,78,M,D,33,hole,half-inch,sarcastic,–grad–subj,nice,1
+AP_17,78,M,D,34,solution,helpful,declarative,grad+subj+pos,approve,1
+AP_17,78,M,D,35,solution,helpful,declarative,grad+subj+pos,mean,1
+AP_17,78,M,D,36,solution,helpful,declarative,grad+subj+pos,nice,5
+AP_17,78,M,D,37,novel,easy,sarcastic,grad+subj+pos,approve,0
+AP_17,78,M,D,38,novel,easy,sarcastic,grad+subj+pos,mean,1
+AP_17,78,M,D,39,novel,easy,sarcastic,grad+subj+pos,nice,3
+AP_17,78,M,D,40,video,foolish,declarative,grad+subj+neg,approve,0
+AP_17,78,M,D,41,video,foolish,declarative,grad+subj+neg,mean,1
+AP_17,78,M,D,42,video,foolish,declarative,grad+subj+neg,nice,2
+AP_23,73,M,D,1,book,n/a,declarative,training1 neg,approve,0
+AP_23,73,M,D,2,book,n/a,declarative,training1 neg,mean,1
+AP_23,73,M,D,3,book,n/a,declarative,training1 neg,nice,5
+AP_23,73,M,D,4,recital,n/a,declarative,training2 pos,approve,1
+AP_23,73,M,D,5,recital,n/a,declarative,training2 pos,mean,0
+AP_23,73,M,D,6,recital,n/a,declarative,training2 pos,nice,5
+AP_23,73,M,D,7,cake,yucky,sarcastic,grad+subj+neg,approve,0
+AP_23,73,M,D,8,cake,yucky,sarcastic,grad+subj+neg,mean,0
+AP_23,73,M,D,9,cake,yucky,sarcastic,grad+subj+neg,nice,1
+AP_23,73,M,D,10,gift,birthday,declarative,–grad–subj,approve,1
+AP_23,73,M,D,11,gift,birthday,declarative,–grad–subj,mean,1
+AP_23,73,M,D,12,gift,birthday,declarative,–grad–subj,nice,5
+AP_23,73,M,D,13,bouquet,floral,sarcastic,–grad–subj,approve,0
+AP_23,73,M,D,14,bouquet,floral,sarcastic,–grad–subj,mean,1
+AP_23,73,M,D,15,bouquet,floral,sarcastic,–grad–subj,nice,1
+AP_23,73,M,D,16,question,clever,declarative,grad+subj+pos,approve,1
+AP_23,73,M,D,17,question,clever,declarative,grad+subj+pos,mean,1
+AP_23,73,M,D,18,question,clever,declarative,grad+subj+pos,nice,5
+AP_23,73,M,D,19,dish,tasty,sarcastic,grad+subj+pos,approve,1
+AP_23,73,M,D,20,dish,tasty,sarcastic,grad+subj+pos,mean,1
+AP_23,73,M,D,21,dish,tasty,sarcastic,grad+subj+pos,nice,5
+AP_23,73,M,D,22,shirt,ugly,declarative,grad+subj+neg,approve,0
+AP_23,73,M,D,23,shirt,ugly,declarative,grad+subj+neg,mean,0
+AP_23,73,M,D,24,shirt,ugly,declarative,grad+subj+neg,nice,1
+AP_23,73,M,D,25,story,boring,sarcastic,grad+subj+neg,approve,0
+AP_23,73,M,D,26,story,boring,sarcastic,grad+subj+neg,mean,1
+AP_23,73,M,D,27,story,boring,sarcastic,grad+subj+neg,nice,1
+AP_23,73,M,D,28,tool,wooden,declarative,–grad–subj,approve,0
+AP_23,73,M,D,29,tool,wooden,declarative,–grad–subj,mean,1
+AP_23,73,M,D,30,tool,wooden,declarative,–grad–subj,nice,1
+AP_23,73,M,D,31,hole,half-inch,sarcastic,–grad–subj,approve,0
+AP_23,73,M,D,32,hole,half-inch,sarcastic,–grad–subj,mean,0
+AP_23,73,M,D,33,hole,half-inch,sarcastic,–grad–subj,nice,1
+AP_23,73,M,D,34,solution,helpful,declarative,grad+subj+pos,approve,1
+AP_23,73,M,D,35,solution,helpful,declarative,grad+subj+pos,mean,1
+AP_23,73,M,D,36,solution,helpful,declarative,grad+subj+pos,nice,2
+AP_23,73,M,D,37,novel,easy,sarcastic,grad+subj+pos,approve,1
+AP_23,73,M,D,38,novel,easy,sarcastic,grad+subj+pos,mean,1
+AP_23,73,M,D,39,novel,easy,sarcastic,grad+subj+pos,nice,2
+AP_23,73,M,D,40,video,foolish,declarative,grad+subj+neg,approve,1
+AP_23,73,M,D,41,video,foolish,declarative,grad+subj+neg,mean,1
+AP_23,73,M,D,42,video,foolish,declarative,grad+subj+neg,nice,2
+AP_07,65,F,E,1,book,n/a,declarative,training1 neg,approve,0
+AP_07,65,F,E,2,book,n/a,declarative,training1 neg,mean,0
+AP_07,65,F,E,3,book,n/a,declarative,training1 neg,nice,1
+AP_07,65,F,E,4,recital,n/a,declarative,training2 pos,approve,1
+AP_07,65,F,E,5,recital,n/a,declarative,training2 pos,mean,1
+AP_07,65,F,E,6,recital,n/a,declarative,training2 pos,nice,5
+AP_07,65,F,E,7,cake,lemon,declarative,–grad–subj,approve,0
+AP_07,65,F,E,8,cake,lemon,declarative,–grad–subj,mean,0
+AP_07,65,F,E,9,cake,lemon,declarative,–grad–subj,nice,1
+AP_07,65,F,E,10,gift,birthday,sarcastic,–grad–subj,approve,0
+AP_07,65,F,E,11,gift,birthday,sarcastic,–grad–subj,mean,0
+AP_07,65,F,E,12,gift,birthday,sarcastic,–grad–subj,nice,1
+AP_07,65,F,E,13,bouquet,pretty,declarative,grad+subj+pos,approve,1
+AP_07,65,F,E,14,bouquet,pretty,declarative,grad+subj+pos,mean,1
+AP_07,65,F,E,15,bouquet,pretty,declarative,grad+subj+pos,nice,5
+AP_07,65,F,E,16,question,clever,sarcastic,grad+subj+pos,approve,1
+AP_07,65,F,E,17,question,clever,sarcastic,grad+subj+pos,mean,1
+AP_07,65,F,E,18,question,clever,sarcastic,grad+subj+pos,nice,5
+AP_07,65,F,E,19,dish,nasty,declarative,grad+subj+neg,approve,0
+AP_07,65,F,E,20,dish,nasty,declarative,grad+subj+neg,mean,0
+AP_07,65,F,E,21,dish,nasty,declarative,grad+subj+neg,nice,1
+AP_07,65,F,E,22,shirt,ugly,sarcastic,grad+subj+neg,approve,0
+AP_07,65,F,E,23,shirt,ugly,sarcastic,grad+subj+neg,mean,0
+AP_07,65,F,E,24,shirt,ugly,sarcastic,grad+subj+neg,nice,1
+AP_07,65,F,E,25,story,bedtime,declarative,–grad–subj,approve,1
+AP_07,65,F,E,26,story,bedtime,declarative,–grad–subj,mean,1
+AP_07,65,F,E,27,story,bedtime,declarative,–grad–subj,nice,5
+AP_07,65,F,E,28,tool,wooden,sarcastic,–grad–subj,approve,0
+AP_07,65,F,E,29,tool,wooden,sarcastic,–grad–subj,mean,0
+AP_07,65,F,E,30,tool,wooden,sarcastic,–grad–subj,nice,1
+AP_07,65,F,E,31,hole,careful,declarative,grad+subj+pos,approve,1
+AP_07,65,F,E,32,hole,careful,declarative,grad+subj+pos,mean,1
+AP_07,65,F,E,33,hole,careful,declarative,grad+subj+pos,nice,5
+AP_07,65,F,E,34,solution,helpful,sarcastic,grad+subj+pos,approve,1
+AP_07,65,F,E,35,solution,helpful,sarcastic,grad+subj+pos,mean,1
+AP_07,65,F,E,36,solution,helpful,sarcastic,grad+subj+pos,nice,5
+AP_07,65,F,E,37,novel,tricky,declarative,grad+subj+neg,approve,1
+AP_07,65,F,E,38,novel,tricky,declarative,grad+subj+neg,mean,1
+AP_07,65,F,E,39,novel,tricky,declarative,grad+subj+neg,nice,5
+AP_07,65,F,E,40,video,foolish,sarcastic,grad+subj+neg,approve,1
+AP_07,65,F,E,41,video,foolish,sarcastic,grad+subj+neg,mean,1
+AP_07,65,F,E,42,video,foolish,sarcastic,grad+subj+neg,nice,5
+AP_13,66,F,F,1,book,n/a,declarative,training1 neg,approve,0
+AP_13,66,F,F,2,book,n/a,declarative,training1 neg,mean,1
+AP_13,66,F,F,3,book,n/a,declarative,training1 neg,nice,2
+AP_13,66,F,F,4,recital,n/a,declarative,training2 pos,approve,1
+AP_13,66,F,F,5,recital,n/a,declarative,training2 pos,mean,1
+AP_13,66,F,F,6,recital,n/a,declarative,training2 pos,nice,5
+AP_13,66,F,F,7,cake,lemon,sarcastic,–grad–subj,approve,0
+AP_13,66,F,F,8,cake,lemon,sarcastic,–grad–subj,mean,1
+AP_13,66,F,F,9,cake,lemon,sarcastic,–grad–subj,nice,3
+AP_13,66,F,F,10,gift,awesome,declarative,grad+subj+pos,approve,N/A
+AP_13,66,F,F,11,gift,awesome,declarative,grad+subj+pos,mean,0
+AP_13,66,F,F,12,gift,awesome,declarative,grad+subj+pos,nice,4
+AP_13,66,F,F,13,bouquet,pretty,sarcastic,grad+subj+pos,approve,1
+AP_13,66,F,F,14,bouquet,pretty,sarcastic,grad+subj+pos,mean,0
+AP_13,66,F,F,15,bouquet,pretty,sarcastic,grad+subj+pos,nice,3
+AP_13,66,F,F,16,question,silly,declarative,grad+subj+neg,approve,0
+AP_13,66,F,F,17,question,silly,declarative,grad+subj+neg,mean,1
+AP_13,66,F,F,18,question,silly,declarative,grad+subj+neg,nice,3
+AP_13,66,F,F,19,dish,nasty,sarcastic,grad+subj+neg,approve,1
+AP_13,66,F,F,20,dish,nasty,sarcastic,grad+subj+neg,mean,0
+AP_13,66,F,F,21,dish,nasty,sarcastic,grad+subj+neg,nice,3
+AP_13,66,F,F,22,shirt,spotted,declarative,–grad–subj,approve,0
+AP_13,66,F,F,23,shirt,spotted,declarative,–grad–subj,mean,1
+AP_13,66,F,F,24,shirt,spotted,declarative,–grad–subj,nice,3
+AP_13,66,F,F,25,story,bedtime,sarcastic,–grad–subj,approve,0
+AP_13,66,F,F,26,story,bedtime,sarcastic,–grad–subj,mean,1
+AP_13,66,F,F,27,story,bedtime,sarcastic,–grad–subj,nice,3
+AP_13,66,F,F,28,tool,useful,declarative,grad+subj+pos,approve,0
+AP_13,66,F,F,29,tool,useful,declarative,grad+subj+pos,mean,1
+AP_13,66,F,F,30,tool,useful,declarative,grad+subj+pos,nice,3
+AP_13,66,F,F,31,hole,careful,sarcastic,grad+subj+pos,approve,0
+AP_13,66,F,F,32,hole,careful,sarcastic,grad+subj+pos,mean,0
+AP_13,66,F,F,33,hole,careful,sarcastic,grad+subj+pos,nice,3
+AP_13,66,F,F,34,solution,bossy,declarative,grad+subj+neg,approve,0
+AP_13,66,F,F,35,solution,bossy,declarative,grad+subj+neg,mean,1
+AP_13,66,F,F,36,solution,bossy,declarative,grad+subj+neg,nice,3
+AP_13,66,F,F,37,novel,tricky,sarcastic,grad+subj+neg,approve,0
+AP_13,66,F,F,38,novel,tricky,sarcastic,grad+subj+neg,mean,1
+AP_13,66,F,F,39,novel,tricky,sarcastic,grad+subj+neg,nice,3
+AP_13,66,F,F,40,video,tiktok,declarative,–grad–subj,approve,0
+AP_13,66,F,F,41,video,tiktok,declarative,–grad–subj,mean,1
+AP_13,66,F,F,42,video,tiktok,declarative,–grad–subj,nice,3
+AP_18,67,M,E,1,book,n/a,declarative,training1 neg,approve,0
+AP_18,67,M,E,2,book,n/a,declarative,training1 neg,mean,0
+AP_18,67,M,E,3,book,n/a,declarative,training1 neg,nice,1
+AP_18,67,M,E,4,recital,n/a,declarative,training2 pos,approve,1
+AP_18,67,M,E,5,recital,n/a,declarative,training2 pos,mean,1
+AP_18,67,M,E,6,recital,n/a,declarative,training2 pos,nice,5
+AP_18,67,M,E,7,cake,lemon,declarative,–grad–subj,approve,1
+AP_18,67,M,E,8,cake,lemon,declarative,–grad–subj,mean,1
+AP_18,67,M,E,9,cake,lemon,declarative,–grad–subj,nice,4
+AP_18,67,M,E,10,gift,birthday,sarcastic,–grad–subj,approve,1
+AP_18,67,M,E,11,gift,birthday,sarcastic,–grad–subj,mean,0
+AP_18,67,M,E,12,gift,birthday,sarcastic,–grad–subj,nice,5
+AP_18,67,M,E,13,bouquet,pretty,declarative,grad+subj+pos,approve,1
+AP_18,67,M,E,14,bouquet,pretty,declarative,grad+subj+pos,mean,0
+AP_18,67,M,E,15,bouquet,pretty,declarative,grad+subj+pos,nice,5
+AP_18,67,M,E,16,question,clever,sarcastic,grad+subj+pos,approve,0
+AP_18,67,M,E,17,question,clever,sarcastic,grad+subj+pos,mean,0
+AP_18,67,M,E,18,question,clever,sarcastic,grad+subj+pos,nice,1
+AP_18,67,M,E,19,dish,nasty,declarative,grad+subj+neg,approve,0
+AP_18,67,M,E,20,dish,nasty,declarative,grad+subj+neg,mean,0
+AP_18,67,M,E,21,dish,nasty,declarative,grad+subj+neg,nice,1
+AP_18,67,M,E,22,shirt,ugly,sarcastic,grad+subj+neg,approve,0
+AP_18,67,M,E,23,shirt,ugly,sarcastic,grad+subj+neg,mean,0
+AP_18,67,M,E,24,shirt,ugly,sarcastic,grad+subj+neg,nice,1
+AP_18,67,M,E,25,story,bedtime,declarative,–grad–subj,approve,0
+AP_18,67,M,E,26,story,bedtime,declarative,–grad–subj,mean,0
+AP_18,67,M,E,27,story,bedtime,declarative,–grad–subj,nice,4
+AP_18,67,M,E,28,tool,wooden,sarcastic,–grad–subj,approve,0
+AP_18,67,M,E,29,tool,wooden,sarcastic,–grad–subj,mean,1
+AP_18,67,M,E,30,tool,wooden,sarcastic,–grad–subj,nice,1
+AP_18,67,M,E,31,hole,careful,declarative,grad+subj+pos,approve,0
+AP_18,67,M,E,32,hole,careful,declarative,grad+subj+pos,mean,0
+AP_18,67,M,E,33,hole,careful,declarative,grad+subj+pos,nice,1
+AP_18,67,M,E,34,solution,helpful,sarcastic,grad+subj+pos,approve,1
+AP_18,67,M,E,35,solution,helpful,sarcastic,grad+subj+pos,mean,0
+AP_18,67,M,E,36,solution,helpful,sarcastic,grad+subj+pos,nice,5
+AP_18,67,M,E,37,novel,tricky,declarative,grad+subj+neg,approve,1
+AP_18,67,M,E,38,novel,tricky,declarative,grad+subj+neg,mean,0
+AP_18,67,M,E,39,novel,tricky,declarative,grad+subj+neg,nice,4
+AP_18,67,M,E,40,video,foolish,sarcastic,grad+subj+neg,approve,0
+AP_18,67,M,E,41,video,foolish,sarcastic,grad+subj+neg,mean,0
+AP_18,67,M,E,42,video,foolish,sarcastic,grad+subj+neg,nice,1
+AP_24,75,M,E,1,book,n/a,declarative,training1 neg,approve,0
+AP_24,75,M,E,2,book,n/a,declarative,training1 neg,mean,0
+AP_24,75,M,E,3,book,n/a,declarative,training1 neg,nice,5
+AP_24,75,M,E,4,recital,n/a,declarative,training2 pos,approve,1
+AP_24,75,M,E,5,recital,n/a,declarative,training2 pos,mean,0
+AP_24,75,M,E,6,recital,n/a,declarative,training2 pos,nice,5
+AP_24,75,M,E,7,cake,lemon,declarative,–grad–subj,approve,1
+AP_24,75,M,E,8,cake,lemon,declarative,–grad–subj,mean,0
+AP_24,75,M,E,9,cake,lemon,declarative,–grad–subj,nice,5
+AP_24,75,M,E,10,gift,birthday,sarcastic,–grad–subj,approve,1
+AP_24,75,M,E,11,gift,birthday,sarcastic,–grad–subj,mean,0
+AP_24,75,M,E,12,gift,birthday,sarcastic,–grad–subj,nice,4
+AP_24,75,M,E,13,bouquet,pretty,declarative,grad+subj+pos,approve,1
+AP_24,75,M,E,14,bouquet,pretty,declarative,grad+subj+pos,mean,0
+AP_24,75,M,E,15,bouquet,pretty,declarative,grad+subj+pos,nice,5
+AP_24,75,M,E,16,question,clever,sarcastic,grad+subj+pos,approve,1
+AP_24,75,M,E,17,question,clever,sarcastic,grad+subj+pos,mean,0
+AP_24,75,M,E,18,question,clever,sarcastic,grad+subj+pos,nice,5
+AP_24,75,M,E,19,dish,nasty,declarative,grad+subj+neg,approve,0
+AP_24,75,M,E,20,dish,nasty,declarative,grad+subj+neg,mean,1
+AP_24,75,M,E,21,dish,nasty,declarative,grad+subj+neg,nice,2
+AP_24,75,M,E,22,shirt,ugly,sarcastic,grad+subj+neg,approve,0
+AP_24,75,M,E,23,shirt,ugly,sarcastic,grad+subj+neg,mean,0
+AP_24,75,M,E,24,shirt,ugly,sarcastic,grad+subj+neg,nice,2
+AP_24,75,M,E,25,story,bedtime,declarative,–grad–subj,approve,1
+AP_24,75,M,E,26,story,bedtime,declarative,–grad–subj,mean,0
+AP_24,75,M,E,27,story,bedtime,declarative,–grad–subj,nice,4
+AP_24,75,M,E,28,tool,wooden,sarcastic,–grad–subj,approve,0
+AP_24,75,M,E,29,tool,wooden,sarcastic,–grad–subj,mean,0
+AP_24,75,M,E,30,tool,wooden,sarcastic,–grad–subj,nice,4
+AP_24,75,M,E,31,hole,careful,declarative,grad+subj+pos,approve,1
+AP_24,75,M,E,32,hole,careful,declarative,grad+subj+pos,mean,0
+AP_24,75,M,E,33,hole,careful,declarative,grad+subj+pos,nice,5
+AP_24,75,M,E,34,solution,helpful,sarcastic,grad+subj+pos,approve,1
+AP_24,75,M,E,35,solution,helpful,sarcastic,grad+subj+pos,mean,0
+AP_24,75,M,E,36,solution,helpful,sarcastic,grad+subj+pos,nice,5
+AP_24,75,M,E,37,novel,tricky,declarative,grad+subj+neg,approve,0
+AP_24,75,M,E,38,novel,tricky,declarative,grad+subj+neg,mean,0
+AP_24,75,M,E,39,novel,tricky,declarative,grad+subj+neg,nice,5
+AP_24,75,M,E,40,video,foolish,sarcastic,grad+subj+neg,approve,0
+AP_24,75,M,E,41,video,foolish,sarcastic,grad+subj+neg,mean,0
+AP_24,75,M,E,42,video,foolish,sarcastic,grad+subj+neg,nice,3
+AP_08,63,F,F,1,book,n/a,declarative,training1 neg,approve,0
+AP_08,63,F,F,2,book,n/a,declarative,training1 neg,mean,1
+AP_08,63,F,F,3,book,n/a,declarative,training1 neg,nice,5
+AP_08,63,F,F,4,recital,n/a,declarative,training2 pos,approve,1
+AP_08,63,F,F,5,recital,n/a,declarative,training2 pos,mean,1
+AP_08,63,F,F,6,recital,n/a,declarative,training2 pos,nice,5
+AP_08,63,F,F,7,cake,lemon,sarcastic,–grad–subj,approve,0
+AP_08,63,F,F,8,cake,lemon,sarcastic,–grad–subj,mean,1
+AP_08,63,F,F,9,cake,lemon,sarcastic,–grad–subj,nice,1
+AP_08,63,F,F,10,gift,awesome,declarative,grad+subj+pos,approve,1
+AP_08,63,F,F,11,gift,awesome,declarative,grad+subj+pos,mean,1
+AP_08,63,F,F,12,gift,awesome,declarative,grad+subj+pos,nice,5
+AP_08,63,F,F,13,bouquet,pretty,sarcastic,grad+subj+pos,approve,1
+AP_08,63,F,F,14,bouquet,pretty,sarcastic,grad+subj+pos,mean,1
+AP_08,63,F,F,15,bouquet,pretty,sarcastic,grad+subj+pos,nice,5
+AP_08,63,F,F,16,question,silly,declarative,grad+subj+neg,approve,0
+AP_08,63,F,F,17,question,silly,declarative,grad+subj+neg,mean,1
+AP_08,63,F,F,18,question,silly,declarative,grad+subj+neg,nice,1
+AP_08,63,F,F,19,dish,nasty,sarcastic,grad+subj+neg,approve,1
+AP_08,63,F,F,20,dish,nasty,sarcastic,grad+subj+neg,mean,1
+AP_08,63,F,F,21,dish,nasty,sarcastic,grad+subj+neg,nice,1
+AP_08,63,F,F,22,shirt,spotted,declarative,–grad–subj,approve,0
+AP_08,63,F,F,23,shirt,spotted,declarative,–grad–subj,mean,1
+AP_08,63,F,F,24,shirt,spotted,declarative,–grad–subj,nice,1
+AP_08,63,F,F,25,story,bedtime,sarcastic,–grad–subj,approve,1
+AP_08,63,F,F,26,story,bedtime,sarcastic,–grad–subj,mean,1
+AP_08,63,F,F,27,story,bedtime,sarcastic,–grad–subj,nice,2
+AP_08,63,F,F,28,tool,useful,declarative,grad+subj+pos,approve,1
+AP_08,63,F,F,29,tool,useful,declarative,grad+subj+pos,mean,0
+AP_08,63,F,F,30,tool,useful,declarative,grad+subj+pos,nice,5
+AP_08,63,F,F,31,hole,careful,sarcastic,grad+subj+pos,approve,1
+AP_08,63,F,F,32,hole,careful,sarcastic,grad+subj+pos,mean,1
+AP_08,63,F,F,33,hole,careful,sarcastic,grad+subj+pos,nice,5
+AP_08,63,F,F,34,solution,bossy,declarative,grad+subj+neg,approve,1
+AP_08,63,F,F,35,solution,bossy,declarative,grad+subj+neg,mean,1
+AP_08,63,F,F,36,solution,bossy,declarative,grad+subj+neg,nice,1
+AP_08,63,F,F,37,novel,tricky,sarcastic,grad+subj+neg,approve,1
+AP_08,63,F,F,38,novel,tricky,sarcastic,grad+subj+neg,mean,1
+AP_08,63,F,F,39,novel,tricky,sarcastic,grad+subj+neg,nice,4
+AP_08,63,F,F,40,video,tiktok,declarative,–grad–subj,approve,0
+AP_08,63,F,F,41,video,tiktok,declarative,–grad–subj,mean,0
+AP_08,63,F,F,42,video,tiktok,declarative,–grad–subj,nice,1
+AP_19,82,M,F,1,book,n/a,declarative,training1 neg,approve,0
+AP_19,82,M,F,2,book,n/a,declarative,training1 neg,mean,1
+AP_19,82,M,F,3,book,n/a,declarative,training1 neg,nice,4
+AP_19,82,M,F,4,recital,n/a,declarative,training2 pos,approve,1
+AP_19,82,M,F,5,recital,n/a,declarative,training2 pos,mean,1
+AP_19,82,M,F,6,recital,n/a,declarative,training2 pos,nice,1
+AP_19,82,M,F,7,cake,lemon,sarcastic,–grad–subj,approve,1
+AP_19,82,M,F,8,cake,lemon,sarcastic,–grad–subj,mean,1
+AP_19,82,M,F,9,cake,lemon,sarcastic,–grad–subj,nice,2
+AP_19,82,M,F,10,gift,awesome,declarative,grad+subj+pos,approve,1
+AP_19,82,M,F,11,gift,awesome,declarative,grad+subj+pos,mean,1
+AP_19,82,M,F,12,gift,awesome,declarative,grad+subj+pos,nice,5
+AP_19,82,M,F,13,bouquet,pretty,sarcastic,grad+subj+pos,approve,0
+AP_19,82,M,F,14,bouquet,pretty,sarcastic,grad+subj+pos,mean,0
+AP_19,82,M,F,15,bouquet,pretty,sarcastic,grad+subj+pos,nice,5
+AP_19,82,M,F,16,question,silly,declarative,grad+subj+neg,approve,1
+AP_19,82,M,F,17,question,silly,declarative,grad+subj+neg,mean,1
+AP_19,82,M,F,18,question,silly,declarative,grad+subj+neg,nice,5
+AP_19,82,M,F,19,dish,nasty,sarcastic,grad+subj+neg,approve,0
+AP_19,82,M,F,20,dish,nasty,sarcastic,grad+subj+neg,mean,0
+AP_19,82,M,F,21,dish,nasty,sarcastic,grad+subj+neg,nice,1
+AP_19,82,M,F,22,shirt,spotted,declarative,–grad–subj,approve,1
+AP_19,82,M,F,23,shirt,spotted,declarative,–grad–subj,mean,1
+AP_19,82,M,F,24,shirt,spotted,declarative,–grad–subj,nice,5
+AP_19,82,M,F,25,story,bedtime,sarcastic,–grad–subj,approve,0
+AP_19,82,M,F,26,story,bedtime,sarcastic,–grad–subj,mean,1
+AP_19,82,M,F,27,story,bedtime,sarcastic,–grad–subj,nice,4
+AP_19,82,M,F,28,tool,useful,declarative,grad+subj+pos,approve,1
+AP_19,82,M,F,29,tool,useful,declarative,grad+subj+pos,mean,1
+AP_19,82,M,F,30,tool,useful,declarative,grad+subj+pos,nice,4
+AP_19,82,M,F,31,hole,careful,sarcastic,grad+subj+pos,approve,0
+AP_19,82,M,F,32,hole,careful,sarcastic,grad+subj+pos,mean,0
+AP_19,82,M,F,33,hole,careful,sarcastic,grad+subj+pos,nice,5
+AP_19,82,M,F,34,solution,bossy,declarative,grad+subj+neg,approve,1
+AP_19,82,M,F,35,solution,bossy,declarative,grad+subj+neg,mean,1
+AP_19,82,M,F,36,solution,bossy,declarative,grad+subj+neg,nice,4
+AP_19,82,M,F,37,novel,tricky,sarcastic,grad+subj+neg,approve,1
+AP_19,82,M,F,38,novel,tricky,sarcastic,grad+subj+neg,mean,1
+AP_19,82,M,F,39,novel,tricky,sarcastic,grad+subj+neg,nice,5
+AP_19,82,M,F,40,video,tiktok,declarative,–grad–subj,approve,1
+AP_19,82,M,F,41,video,tiktok,declarative,–grad–subj,mean,1
+AP_19,82,M,F,42,video,tiktok,declarative,–grad–subj,nice,4
+AP_25,69,M,F,1,book,n/a,declarative,training1 neg,approve,0
+AP_25,69,M,F,2,book,n/a,declarative,training1 neg,mean,1
+AP_25,69,M,F,3,book,n/a,declarative,training1 neg,nice,5
+AP_25,69,M,F,4,recital,n/a,declarative,training2 pos,approve,1
+AP_25,69,M,F,5,recital,n/a,declarative,training2 pos,mean,1
+AP_25,69,M,F,6,recital,n/a,declarative,training2 pos,nice,5
+AP_25,69,M,F,7,cake,lemon,sarcastic,–grad–subj,approve,1
+AP_25,69,M,F,8,cake,lemon,sarcastic,–grad–subj,mean,1
+AP_25,69,M,F,9,cake,lemon,sarcastic,–grad–subj,nice,5
+AP_25,69,M,F,10,gift,awesome,declarative,grad+subj+pos,approve,1
+AP_25,69,M,F,11,gift,awesome,declarative,grad+subj+pos,mean,1
+AP_25,69,M,F,12,gift,awesome,declarative,grad+subj+pos,nice,5
+AP_25,69,M,F,13,bouquet,pretty,sarcastic,grad+subj+pos,approve,1
+AP_25,69,M,F,14,bouquet,pretty,sarcastic,grad+subj+pos,mean,1
+AP_25,69,M,F,15,bouquet,pretty,sarcastic,grad+subj+pos,nice,5
+AP_25,69,M,F,16,question,silly,declarative,grad+subj+neg,approve,0
+AP_25,69,M,F,17,question,silly,declarative,grad+subj+neg,mean,0
+AP_25,69,M,F,18,question,silly,declarative,grad+subj+neg,nice,4
+AP_25,69,M,F,19,dish,nasty,sarcastic,grad+subj+neg,approve,0
+AP_25,69,M,F,20,dish,nasty,sarcastic,grad+subj+neg,mean,0
+AP_25,69,M,F,21,dish,nasty,sarcastic,grad+subj+neg,nice,2
+AP_25,69,M,F,22,shirt,spotted,declarative,–grad–subj,approve,0
+AP_25,69,M,F,23,shirt,spotted,declarative,–grad–subj,mean,0
+AP_25,69,M,F,24,shirt,spotted,declarative,–grad–subj,nice,4
+AP_25,69,M,F,25,story,bedtime,sarcastic,–grad–subj,approve,0
+AP_25,69,M,F,26,story,bedtime,sarcastic,–grad–subj,mean,0
+AP_25,69,M,F,27,story,bedtime,sarcastic,–grad–subj,nice,2
+AP_25,69,M,F,28,tool,useful,declarative,grad+subj+pos,approve,1
+AP_25,69,M,F,29,tool,useful,declarative,grad+subj+pos,mean,1
+AP_25,69,M,F,30,tool,useful,declarative,grad+subj+pos,nice,5
+AP_25,69,M,F,31,hole,careful,sarcastic,grad+subj+pos,approve,0
+AP_25,69,M,F,32,hole,careful,sarcastic,grad+subj+pos,mean,0
+AP_25,69,M,F,33,hole,careful,sarcastic,grad+subj+pos,nice,1
+AP_25,69,M,F,34,solution,bossy,declarative,grad+subj+neg,approve,1
+AP_25,69,M,F,35,solution,bossy,declarative,grad+subj+neg,mean,1
+AP_25,69,M,F,36,solution,bossy,declarative,grad+subj+neg,nice,4
+AP_25,69,M,F,37,novel,tricky,sarcastic,grad+subj+neg,approve,1
+AP_25,69,M,F,38,novel,tricky,sarcastic,grad+subj+neg,mean,1
+AP_25,69,M,F,39,novel,tricky,sarcastic,grad+subj+neg,nice,4
+AP_25,69,M,F,40,video,tiktok,declarative,–grad–subj,approve,1
+AP_25,69,M,F,41,video,tiktok,declarative,–grad–subj,mean,1
+AP_25,69,M,F,42,video,tiktok,declarative,–grad–subj,nice,5
+AP_27,77,F,B,1,book,n/a,declarative,training1 neg,approve,0
+AP_27,77,F,B,2,book,n/a,declarative,training1 neg,mean,1
+AP_27,77,F,B,3,book,n/a,declarative,training1 neg,nice,1
+AP_27,77,F,B,4,recital,n/a,declarative,training2 pos,approve,1
+AP_27,77,F,B,5,recital,n/a,declarative,training2 pos,mean,1
+AP_27,77,F,B,6,recital,n/a,declarative,training2 pos,nice,5
+AP_27,77,F,B,7,cake,yummy,sarcastic,grad+subj+pos,approve,1
+AP_27,77,F,B,8,cake,yummy,sarcastic,grad+subj+pos,mean,1
+AP_27,77,F,B,9,cake,yummy,sarcastic,grad+subj+pos,nice,5
+AP_27,77,F,B,10,gift,awful,declarative,grad+subj+neg,approve,0
+AP_27,77,F,B,11,gift,awful,declarative,grad+subj+neg,mean,1
+AP_27,77,F,B,12,gift,awful,declarative,grad+subj+neg,nice,1
+AP_27,77,F,B,13,bouquet,messy,sarcastic,grad+subj+neg,approve,0
+AP_27,77,F,B,14,bouquet,messy,sarcastic,grad+subj+neg,mean,1
+AP_27,77,F,B,15,bouquet,messy,sarcastic,grad+subj+neg,nice,1
+AP_27,77,F,B,16,question,review,declarative,–grad–subj,approve,0
+AP_27,77,F,B,17,question,review,declarative,–grad–subj,mean,1
+AP_27,77,F,B,18,question,review,declarative,–grad–subj,nice,1
+AP_27,77,F,B,19,dish,lobster,sarcastic,–grad–subj,approve,0
+AP_27,77,F,B,20,dish,lobster,sarcastic,–grad–subj,mean,1
+AP_27,77,F,B,21,dish,lobster,sarcastic,–grad–subj,nice,1
+AP_27,77,F,B,22,shirt,lovely,declarative,grad+subj+pos,approve,1
+AP_27,77,F,B,23,shirt,lovely,declarative,grad+subj+pos,mean,1
+AP_27,77,F,B,24,shirt,lovely,declarative,grad+subj+pos,nice,5
+AP_27,77,F,B,25,story,funny,sarcastic,grad+subj+pos,approve,1
+AP_27,77,F,B,26,story,funny,sarcastic,grad+subj+pos,mean,1
+AP_27,77,F,B,27,story,funny,sarcastic,grad+subj+pos,nice,5
+AP_27,77,F,B,28,tool,useless,declarative,grad+subj+neg,approve,0
+AP_27,77,F,B,29,tool,useless,declarative,grad+subj+neg,mean,1
+AP_27,77,F,B,30,tool,useless,declarative,grad+subj+neg,nice,1
+AP_27,77,F,B,31,hole,careless,sarcastic,grad+subj+neg,approve,0
+AP_27,77,F,B,32,hole,careless,sarcastic,grad+subj+neg,mean,1
+AP_27,77,F,B,33,hole,careless,sarcastic,grad+subj+neg,nice,1
+AP_27,77,F,B,34,solution,partial,declarative,–grad–subj,approve,1
+AP_27,77,F,B,35,solution,partial,declarative,–grad–subj,mean,1
+AP_27,77,F,B,36,solution,partial,declarative,–grad–subj,nice,4
+AP_27,77,F,B,37,novel,fiction,sarcastic,–grad–subj,approve,1
+AP_27,77,F,B,38,novel,fiction,sarcastic,–grad–subj,mean,1
+AP_27,77,F,B,39,novel,fiction,sarcastic,–grad–subj,nice,3
+AP_27,77,F,B,40,video,witty,declarative,grad+subj+pos,approve,1
+AP_27,77,F,B,41,video,witty,declarative,grad+subj+pos,mean,1
+AP_27,77,F,B,42,video,witty,declarative,grad+subj+pos,nice,5
+AP_28,69,F,B,1,book,n/a,declarative,training1 neg,approve,0
+AP_28,69,F,B,2,book,n/a,declarative,training1 neg,mean,1
+AP_28,69,F,B,3,book,n/a,declarative,training1 neg,nice,2
+AP_28,69,F,B,4,recital,n/a,declarative,training2 pos,approve,1
+AP_28,69,F,B,5,recital,n/a,declarative,training2 pos,mean,1
+AP_28,69,F,B,6,recital,n/a,declarative,training2 pos,nice,5
+AP_28,69,F,B,7,cake,yummy,sarcastic,grad+subj+pos,approve,1
+AP_28,69,F,B,8,cake,yummy,sarcastic,grad+subj+pos,mean,1
+AP_28,69,F,B,9,cake,yummy,sarcastic,grad+subj+pos,nice,5
+AP_28,69,F,B,10,gift,awful,declarative,grad+subj+neg,approve,0
+AP_28,69,F,B,11,gift,awful,declarative,grad+subj+neg,mean,1
+AP_28,69,F,B,12,gift,awful,declarative,grad+subj+neg,nice,1
+AP_28,69,F,B,13,bouquet,messy,sarcastic,grad+subj+neg,approve,0
+AP_28,69,F,B,14,bouquet,messy,sarcastic,grad+subj+neg,mean,1
+AP_28,69,F,B,15,bouquet,messy,sarcastic,grad+subj+neg,nice,1
+AP_28,69,F,B,16,question,review,declarative,–grad–subj,approve,0
+AP_28,69,F,B,17,question,review,declarative,–grad–subj,mean,1
+AP_28,69,F,B,18,question,review,declarative,–grad–subj,nice,1
+AP_28,69,F,B,19,dish,lobster,sarcastic,–grad–subj,approve,0
+AP_28,69,F,B,20,dish,lobster,sarcastic,–grad–subj,mean,1
+AP_28,69,F,B,21,dish,lobster,sarcastic,–grad–subj,nice,1
+AP_28,69,F,B,22,shirt,lovely,declarative,grad+subj+pos,approve,1
+AP_28,69,F,B,23,shirt,lovely,declarative,grad+subj+pos,mean,1
+AP_28,69,F,B,24,shirt,lovely,declarative,grad+subj+pos,nice,5
+AP_28,69,F,B,25,story,funny,sarcastic,grad+subj+pos,approve,1
+AP_28,69,F,B,26,story,funny,sarcastic,grad+subj+pos,mean,1
+AP_28,69,F,B,27,story,funny,sarcastic,grad+subj+pos,nice,5
+AP_28,69,F,B,28,tool,useless,declarative,grad+subj+neg,approve,1
+AP_28,69,F,B,29,tool,useless,declarative,grad+subj+neg,mean,1
+AP_28,69,F,B,30,tool,useless,declarative,grad+subj+neg,nice,5
+AP_28,69,F,B,31,hole,careless,sarcastic,grad+subj+neg,approve,0
+AP_28,69,F,B,32,hole,careless,sarcastic,grad+subj+neg,mean,1
+AP_28,69,F,B,33,hole,careless,sarcastic,grad+subj+neg,nice,2
+AP_28,69,F,B,34,solution,partial,declarative,–grad–subj,approve,1
+AP_28,69,F,B,35,solution,partial,declarative,–grad–subj,mean,1
+AP_28,69,F,B,36,solution,partial,declarative,–grad–subj,nice,4
+AP_28,69,F,B,37,novel,fiction,sarcastic,–grad–subj,approve,1
+AP_28,69,F,B,38,novel,fiction,sarcastic,–grad–subj,mean,1
+AP_28,69,F,B,39,novel,fiction,sarcastic,–grad–subj,nice,5
+AP_28,69,F,B,40,video,witty,declarative,grad+subj+pos,approve,1
+AP_28,69,F,B,41,video,witty,declarative,grad+subj+pos,mean,1
+AP_28,69,F,B,42,video,witty,declarative,grad+subj+pos,nice,4
+AP_29,64,F,C,1,book,n/a,declarative,training1 neg,approve,0
+AP_29,64,F,C,2,book,n/a,declarative,training1 neg,mean,0
+AP_29,64,F,C,3,book,n/a,declarative,training1 neg,nice,4
+AP_29,64,F,C,4,recital,n/a,declarative,training2 pos,approve,1
+AP_29,64,F,C,5,recital,n/a,declarative,training2 pos,mean,1
+AP_29,64,F,C,6,recital,n/a,declarative,training2 pos,nice,5
+AP_29,64,F,C,7,cake,yucky,declarative,grad+subj+neg,approve,0
+AP_29,64,F,C,8,cake,yucky,declarative,grad+subj+neg,mean,1
+AP_29,64,F,C,9,cake,yucky,declarative,grad+subj+neg,nice,1
+AP_29,64,F,C,10,gift,awful,sarcastic,grad+subj+neg,approve,0
+AP_29,64,F,C,11,gift,awful,sarcastic,grad+subj+neg,mean,1
+AP_29,64,F,C,12,gift,awful,sarcastic,grad+subj+neg,nice,1
+AP_29,64,F,C,13,bouquet,floral,declarative,–grad–subj,approve,1
+AP_29,64,F,C,14,bouquet,floral,declarative,–grad–subj,mean,1
+AP_29,64,F,C,15,bouquet,floral,declarative,–grad–subj,nice,5
+AP_29,64,F,C,16,question,review,sarcastic,–grad–subj,approve,0
+AP_29,64,F,C,17,question,review,sarcastic,–grad–subj,mean,1
+AP_29,64,F,C,18,question,review,sarcastic,–grad–subj,nice,2
+AP_29,64,F,C,19,dish,tasty,declarative,grad+subj+pos,approve,1
+AP_29,64,F,C,20,dish,tasty,declarative,grad+subj+pos,mean,1
+AP_29,64,F,C,21,dish,tasty,declarative,grad+subj+pos,nice,5
+AP_29,64,F,C,22,shirt,lovely,sarcastic,grad+subj+pos,approve,1
+AP_29,64,F,C,23,shirt,lovely,sarcastic,grad+subj+pos,mean,1
+AP_29,64,F,C,24,shirt,lovely,sarcastic,grad+subj+pos,nice,1
+AP_29,64,F,C,25,story,boring,declarative,grad+subj+neg,approve,0
+AP_29,64,F,C,26,story,boring,declarative,grad+subj+neg,mean,1
+AP_29,64,F,C,27,story,boring,declarative,grad+subj+neg,nice,1
+AP_29,64,F,C,28,tool,useless,sarcastic,grad+subj+neg,approve,0
+AP_29,64,F,C,29,tool,useless,sarcastic,grad+subj+neg,mean,1
+AP_29,64,F,C,30,tool,useless,sarcastic,grad+subj+neg,nice,1
+AP_29,64,F,C,31,hole,half-inch,declarative,–grad–subj,approve,0
+AP_29,64,F,C,32,hole,half-inch,declarative,–grad–subj,mean,1
+AP_29,64,F,C,33,hole,half-inch,declarative,–grad–subj,nice,1
+AP_29,64,F,C,34,solution,partial,sarcastic,–grad–subj,approve,0
+AP_29,64,F,C,35,solution,partial,sarcastic,–grad–subj,mean,1
+AP_29,64,F,C,36,solution,partial,sarcastic,–grad–subj,nice,1
+AP_29,64,F,C,37,novel,easy,declarative,grad+subj+pos,approve,1
+AP_29,64,F,C,38,novel,easy,declarative,grad+subj+pos,mean,1
+AP_29,64,F,C,39,novel,easy,declarative,grad+subj+pos,nice,1
+AP_29,64,F,C,40,video,witty,sarcastic,grad+subj+pos,approve,0
+AP_29,64,F,C,41,video,witty,sarcastic,grad+subj+pos,mean,1
+AP_29,64,F,C,42,video,witty,sarcastic,grad+subj+pos,nice,1
+AP_30,72,M,D,1,book,n/a,declarative,training1 neg,approve,0
+AP_30,72,M,D,2,book,n/a,declarative,training1 neg,mean,1
+AP_30,72,M,D,3,book,n/a,declarative,training1 neg,nice,3
+AP_30,72,M,D,4,recital,n/a,declarative,training2 pos,approve,1
+AP_30,72,M,D,5,recital,n/a,declarative,training2 pos,mean,1
+AP_30,72,M,D,6,recital,n/a,declarative,training2 pos,nice,5
+AP_30,72,M,D,7,cake,yucky,sarcastic,grad+subj+neg,approve,0
+AP_30,72,M,D,8,cake,yucky,sarcastic,grad+subj+neg,mean,1
+AP_30,72,M,D,9,cake,yucky,sarcastic,grad+subj+neg,nice,1
+AP_30,72,M,D,10,gift,birthday,declarative,–grad–subj,approve,1
+AP_30,72,M,D,11,gift,birthday,declarative,–grad–subj,mean,1
+AP_30,72,M,D,12,gift,birthday,declarative,–grad–subj,nice,3
+AP_30,72,M,D,13,bouquet,floral,sarcastic,–grad–subj,approve,0
+AP_30,72,M,D,14,bouquet,floral,sarcastic,–grad–subj,mean,1
+AP_30,72,M,D,15,bouquet,floral,sarcastic,–grad–subj,nice,2
+AP_30,72,M,D,16,question,clever,declarative,grad+subj+pos,approve,1
+AP_30,72,M,D,17,question,clever,declarative,grad+subj+pos,mean,1
+AP_30,72,M,D,18,question,clever,declarative,grad+subj+pos,nice,4
+AP_30,72,M,D,19,dish,tasty,sarcastic,grad+subj+pos,approve,1
+AP_30,72,M,D,20,dish,tasty,sarcastic,grad+subj+pos,mean,1
+AP_30,72,M,D,21,dish,tasty,sarcastic,grad+subj+pos,nice,1
+AP_30,72,M,D,22,shirt,ugly,declarative,grad+subj+neg,approve,0
+AP_30,72,M,D,23,shirt,ugly,declarative,grad+subj+neg,mean,1
+AP_30,72,M,D,24,shirt,ugly,declarative,grad+subj+neg,nice,1
+AP_30,72,M,D,25,story,boring,sarcastic,grad+subj+neg,approve,0
+AP_30,72,M,D,26,story,boring,sarcastic,grad+subj+neg,mean,1
+AP_30,72,M,D,27,story,boring,sarcastic,grad+subj+neg,nice,2
+AP_30,72,M,D,28,tool,wooden,declarative,–grad–subj,approve,1
+AP_30,72,M,D,29,tool,wooden,declarative,–grad–subj,mean,1
+AP_30,72,M,D,30,tool,wooden,declarative,–grad–subj,nice,3
+AP_30,72,M,D,31,hole,half-inch,sarcastic,–grad–subj,approve,0
+AP_30,72,M,D,32,hole,half-inch,sarcastic,–grad–subj,mean,1
+AP_30,72,M,D,33,hole,half-inch,sarcastic,–grad–subj,nice,2
+AP_30,72,M,D,34,solution,helpful,declarative,grad+subj+pos,approve,1
+AP_30,72,M,D,35,solution,helpful,declarative,grad+subj+pos,mean,1
+AP_30,72,M,D,36,solution,helpful,declarative,grad+subj+pos,nice,5
+AP_30,72,M,D,37,novel,easy,sarcastic,grad+subj+pos,approve,0
+AP_30,72,M,D,38,novel,easy,sarcastic,grad+subj+pos,mean,1
+AP_30,72,M,D,39,novel,easy,sarcastic,grad+subj+pos,nice,4
+AP_30,72,M,D,40,video,foolish,declarative,grad+subj+neg,approve,0
+AP_30,72,M,D,41,video,foolish,declarative,grad+subj+neg,mean,1
+AP_30,72,M,D,42,video,foolish,declarative,grad+subj+neg,nice,3
+AP_32,72,M,E,1,book,n/a,declarative,training1 neg,approve,0
+AP_32,72,M,E,2,book,n/a,declarative,training1 neg,mean,1
+AP_32,72,M,E,3,book,n/a,declarative,training1 neg,nice,2
+AP_32,72,M,E,4,recital,n/a,declarative,training2 pos,approve,1
+AP_32,72,M,E,5,recital,n/a,declarative,training2 pos,mean,1
+AP_32,72,M,E,6,recital,n/a,declarative,training2 pos,nice,5
+AP_32,72,M,E,7,cake,lemon,declarative,–grad–subj,approve,0
+AP_32,72,M,E,8,cake,lemon,declarative,–grad–subj,mean,1
+AP_32,72,M,E,9,cake,lemon,declarative,–grad–subj,nice,2
+AP_32,72,M,E,10,gift,birthday,sarcastic,–grad–subj,approve,0
+AP_32,72,M,E,11,gift,birthday,sarcastic,–grad–subj,mean,1
+AP_32,72,M,E,12,gift,birthday,sarcastic,–grad–subj,nice,1
+AP_32,72,M,E,13,bouquet,pretty,declarative,grad+subj+pos,approve,1
+AP_32,72,M,E,14,bouquet,pretty,declarative,grad+subj+pos,mean,1
+AP_32,72,M,E,15,bouquet,pretty,declarative,grad+subj+pos,nice,4
+AP_32,72,M,E,16,question,clever,sarcastic,grad+subj+pos,approve,0
+AP_32,72,M,E,17,question,clever,sarcastic,grad+subj+pos,mean,1
+AP_32,72,M,E,18,question,clever,sarcastic,grad+subj+pos,nice,2
+AP_32,72,M,E,19,dish,nasty,declarative,grad+subj+neg,approve,0
+AP_32,72,M,E,20,dish,nasty,declarative,grad+subj+neg,mean,1
+AP_32,72,M,E,21,dish,nasty,declarative,grad+subj+neg,nice,1
+AP_32,72,M,E,22,shirt,ugly,sarcastic,grad+subj+neg,approve,0
+AP_32,72,M,E,23,shirt,ugly,sarcastic,grad+subj+neg,mean,1
+AP_32,72,M,E,24,shirt,ugly,sarcastic,grad+subj+neg,nice,1
+AP_32,72,M,E,25,story,bedtime,declarative,–grad–subj,approve,0
+AP_32,72,M,E,26,story,bedtime,declarative,–grad–subj,mean,1
+AP_32,72,M,E,27,story,bedtime,declarative,–grad–subj,nice,2
+AP_32,72,M,E,28,tool,wooden,sarcastic,–grad–subj,approve,0
+AP_32,72,M,E,29,tool,wooden,sarcastic,–grad–subj,mean,1
+AP_32,72,M,E,30,tool,wooden,sarcastic,–grad–subj,nice,4
+AP_32,72,M,E,31,hole,careful,declarative,grad+subj+pos,approve,0
+AP_32,72,M,E,32,hole,careful,declarative,grad+subj+pos,mean,1
+AP_32,72,M,E,33,hole,careful,declarative,grad+subj+pos,nice,4
+AP_32,72,M,E,34,solution,helpful,sarcastic,grad+subj+pos,approve,0
+AP_32,72,M,E,35,solution,helpful,sarcastic,grad+subj+pos,mean,1
+AP_32,72,M,E,36,solution,helpful,sarcastic,grad+subj+pos,nice,4
+AP_32,72,M,E,37,novel,tricky,declarative,grad+subj+neg,approve,1
+AP_32,72,M,E,38,novel,tricky,declarative,grad+subj+neg,mean,1
+AP_32,72,M,E,39,novel,tricky,declarative,grad+subj+neg,nice,4
+AP_32,72,M,E,40,video,foolish,sarcastic,grad+subj+neg,approve,0
+AP_32,72,M,E,41,video,foolish,sarcastic,grad+subj+neg,mean,1
+AP_32,72,M,E,42,video,foolish,sarcastic,grad+subj+neg,nice,1
+AP_33,78,M,F,1,book,n/a,declarative,training1 neg,approve,0
+AP_33,78,M,F,2,book,n/a,declarative,training1 neg,mean,1
+AP_33,78,M,F,3,book,n/a,declarative,training1 neg,nice,3
+AP_33,78,M,F,4,recital,n/a,declarative,training2 pos,approve,1
+AP_33,78,M,F,5,recital,n/a,declarative,training2 pos,mean,1
+AP_33,78,M,F,6,recital,n/a,declarative,training2 pos,nice,5
+AP_33,78,M,F,7,cake,lemon,sarcastic,–grad–subj,approve,1
+AP_33,78,M,F,8,cake,lemon,sarcastic,–grad–subj,mean,1
+AP_33,78,M,F,9,cake,lemon,sarcastic,–grad–subj,nice,3
+AP_33,78,M,F,10,gift,awesome,declarative,grad+subj+pos,approve,1
+AP_33,78,M,F,11,gift,awesome,declarative,grad+subj+pos,mean,1
+AP_33,78,M,F,12,gift,awesome,declarative,grad+subj+pos,nice,4
+AP_33,78,M,F,13,bouquet,pretty,sarcastic,grad+subj+pos,approve,1
+AP_33,78,M,F,14,bouquet,pretty,sarcastic,grad+subj+pos,mean,1
+AP_33,78,M,F,15,bouquet,pretty,sarcastic,grad+subj+pos,nice,4
+AP_33,78,M,F,16,question,silly,declarative,grad+subj+neg,approve,1
+AP_33,78,M,F,17,question,silly,declarative,grad+subj+neg,mean,1
+AP_33,78,M,F,18,question,silly,declarative,grad+subj+neg,nice,3
+AP_33,78,M,F,19,dish,nasty,sarcastic,grad+subj+neg,approve,0
+AP_33,78,M,F,20,dish,nasty,sarcastic,grad+subj+neg,mean,1
+AP_33,78,M,F,21,dish,nasty,sarcastic,grad+subj+neg,nice,2
+AP_33,78,M,F,22,shirt,spotted,declarative,–grad–subj,approve,1
+AP_33,78,M,F,23,shirt,spotted,declarative,–grad–subj,mean,1
+AP_33,78,M,F,24,shirt,spotted,declarative,–grad–subj,nice,4
+AP_33,78,M,F,25,story,bedtime,sarcastic,–grad–subj,approve,1
+AP_33,78,M,F,26,story,bedtime,sarcastic,–grad–subj,mean,1
+AP_33,78,M,F,27,story,bedtime,sarcastic,–grad–subj,nice,3
+AP_33,78,M,F,28,tool,useful,declarative,grad+subj+pos,approve,1
+AP_33,78,M,F,29,tool,useful,declarative,grad+subj+pos,mean,1
+AP_33,78,M,F,30,tool,useful,declarative,grad+subj+pos,nice,4
+AP_33,78,M,F,31,hole,careful,sarcastic,grad+subj+pos,approve,1
+AP_33,78,M,F,32,hole,careful,sarcastic,grad+subj+pos,mean,1
+AP_33,78,M,F,33,hole,careful,sarcastic,grad+subj+pos,nice,3
+AP_33,78,M,F,34,solution,bossy,declarative,grad+subj+neg,approve,0
+AP_33,78,M,F,35,solution,bossy,declarative,grad+subj+neg,mean,1
+AP_33,78,M,F,36,solution,bossy,declarative,grad+subj+neg,nice,2
+AP_33,78,M,F,37,novel,tricky,sarcastic,grad+subj+neg,approve,1
+AP_33,78,M,F,38,novel,tricky,sarcastic,grad+subj+neg,mean,1
+AP_33,78,M,F,39,novel,tricky,sarcastic,grad+subj+neg,nice,3
+AP_33,78,M,F,40,video,tiktok,declarative,–grad–subj,approve,1
+AP_33,78,M,F,41,video,tiktok,declarative,–grad–subj,mean,1
+AP_33,78,M,F,42,video,tiktok,declarative,–grad–subj,nice,4
+AP_39,71,M,A,1,book,n/a,declarative,training1 neg,approve,0
+AP_39,71,M,A,2,book,n/a,declarative,training1 neg,mean,1
+AP_39,71,M,A,3,book,n/a,declarative,training1 neg,nice,1
+AP_39,71,M,A,4,recital,n/a,declarative,training2 pos,approve,1
+AP_39,71,M,A,5,recital,n/a,declarative,training2 pos,mean,1
+AP_39,71,M,A,6,recital,n/a,declarative,training2 pos,nice,4
+AP_39,71,M,A,7,cake,yummy,declarative,grad+subj+pos,approve,1
+AP_39,71,M,A,8,cake,yummy,declarative,grad+subj+pos,mean,1
+AP_39,71,M,A,9,cake,yummy,declarative,grad+subj+pos,nice,5
+AP_39,71,M,A,10,gift,awesome,sarcastic,grad+subj+pos,approve,1
+AP_39,71,M,A,11,gift,awesome,sarcastic,grad+subj+pos,mean,1
+AP_39,71,M,A,12,gift,awesome,sarcastic,grad+subj+pos,nice,5
+AP_39,71,M,A,13,bouquet,messy,declarative,grad+subj+neg,approve,0
+AP_39,71,M,A,14,bouquet,messy,declarative,grad+subj+neg,mean,1
+AP_39,71,M,A,15,bouquet,messy,declarative,grad+subj+neg,nice,3
+AP_39,71,M,A,16,question,silly,sarcastic,grad+subj+neg,approve,0
+AP_39,71,M,A,17,question,silly,sarcastic,grad+subj+neg,mean,1
+AP_39,71,M,A,18,question,silly,sarcastic,grad+subj+neg,nice,2
+AP_39,71,M,A,19,dish,lobster,declarative,–grad–subj,approve,0
+AP_39,71,M,A,20,dish,lobster,declarative,–grad–subj,mean,1
+AP_39,71,M,A,21,dish,lobster,declarative,–grad–subj,nice,1
+AP_39,71,M,A,22,shirt,spotted,sarcastic,–grad–subj,approve,0
+AP_39,71,M,A,23,shirt,spotted,sarcastic,–grad–subj,mean,0
+AP_39,71,M,A,24,shirt,spotted,sarcastic,–grad–subj,nice,3
+AP_39,71,M,A,25,story,funny,declarative,grad+subj+pos,approve,1
+AP_39,71,M,A,26,story,funny,declarative,grad+subj+pos,mean,1
+AP_39,71,M,A,27,story,funny,declarative,grad+subj+pos,nice,4
+AP_39,71,M,A,28,tool,useful,sarcastic,grad+subj+pos,approve,1
+AP_39,71,M,A,29,tool,useful,sarcastic,grad+subj+pos,mean,1
+AP_39,71,M,A,30,tool,useful,sarcastic,grad+subj+pos,nice,5
+AP_39,71,M,A,31,hole,careless,declarative,grad+subj+neg,approve,1
+AP_39,71,M,A,32,hole,careless,declarative,grad+subj+neg,mean,1
+AP_39,71,M,A,33,hole,careless,declarative,grad+subj+neg,nice,3
+AP_39,71,M,A,34,solution,bossy,sarcastic,grad+subj+neg,approve,0
+AP_39,71,M,A,35,solution,bossy,sarcastic,grad+subj+neg,mean,0
+AP_39,71,M,A,36,solution,bossy,sarcastic,grad+subj+neg,nice,1
+AP_39,71,M,A,37,novel,fiction,declarative,–grad–subj,approve,0
+AP_39,71,M,A,38,novel,fiction,declarative,–grad–subj,mean,1
+AP_39,71,M,A,39,novel,fiction,declarative,–grad–subj,nice,3
+AP_39,71,M,A,40,video,tiktok,sarcastic,–grad–subj,approve,0
+AP_39,71,M,A,41,video,tiktok,sarcastic,–grad–subj,mean,1
+AP_39,71,M,A,42,video,tiktok,sarcastic,–grad–subj,nice,3
+AP_35,62,M,C,1,book,n/a,declarative,training1 neg,approve,0
+AP_35,62,M,C,2,book,n/a,declarative,training1 neg,mean,1
+AP_35,62,M,C,3,book,n/a,declarative,training1 neg,nice,1
+AP_35,62,M,C,4,recital,n/a,declarative,training2 pos,approve,1
+AP_35,62,M,C,5,recital,n/a,declarative,training2 pos,mean,1
+AP_35,62,M,C,6,recital,n/a,declarative,training2 pos,nice,5
+AP_35,62,M,C,7,cake,yucky,declarative,grad+subj+neg,approve,0
+AP_35,62,M,C,8,cake,yucky,declarative,grad+subj+neg,mean,1
+AP_35,62,M,C,9,cake,yucky,declarative,grad+subj+neg,nice,1
+AP_35,62,M,C,10,gift,awful,sarcastic,grad+subj+neg,approve,0
+AP_35,62,M,C,11,gift,awful,sarcastic,grad+subj+neg,mean,0
+AP_35,62,M,C,12,gift,awful,sarcastic,grad+subj+neg,nice,1
+AP_35,62,M,C,13,bouquet,floral,declarative,–grad–subj,approve,0
+AP_35,62,M,C,14,bouquet,floral,declarative,–grad–subj,mean,1
+AP_35,62,M,C,15,bouquet,floral,declarative,–grad–subj,nice,1
+AP_35,62,M,C,16,question,review,sarcastic,–grad–subj,approve,0
+AP_35,62,M,C,17,question,review,sarcastic,–grad–subj,mean,1
+AP_35,62,M,C,18,question,review,sarcastic,–grad–subj,nice,1
+AP_35,62,M,C,19,dish,tasty,declarative,grad+subj+pos,approve,1
+AP_35,62,M,C,20,dish,tasty,declarative,grad+subj+pos,mean,0
+AP_35,62,M,C,21,dish,tasty,declarative,grad+subj+pos,nice,2
+AP_35,62,M,C,22,shirt,lovely,sarcastic,grad+subj+pos,approve,1
+AP_35,62,M,C,23,shirt,lovely,sarcastic,grad+subj+pos,mean,0
+AP_35,62,M,C,24,shirt,lovely,sarcastic,grad+subj+pos,nice,4
+AP_35,62,M,C,25,story,boring,declarative,grad+subj+neg,approve,0
+AP_35,62,M,C,26,story,boring,declarative,grad+subj+neg,mean,1
+AP_35,62,M,C,27,story,boring,declarative,grad+subj+neg,nice,1
+AP_35,62,M,C,28,tool,useless,sarcastic,grad+subj+neg,approve,0
+AP_35,62,M,C,29,tool,useless,sarcastic,grad+subj+neg,mean,0
+AP_35,62,M,C,30,tool,useless,sarcastic,grad+subj+neg,nice,2
+AP_35,62,M,C,31,hole,half-inch,declarative,–grad–subj,approve,1
+AP_35,62,M,C,32,hole,half-inch,declarative,–grad–subj,mean,1
+AP_35,62,M,C,33,hole,half-inch,declarative,–grad–subj,nice,5
+AP_35,62,M,C,34,solution,partial,sarcastic,–grad–subj,approve,0
+AP_35,62,M,C,35,solution,partial,sarcastic,–grad–subj,mean,1
+AP_35,62,M,C,36,solution,partial,sarcastic,–grad–subj,nice,1
+AP_35,62,M,C,37,novel,easy,declarative,grad+subj+pos,approve,0
+AP_35,62,M,C,38,novel,easy,declarative,grad+subj+pos,mean,1
+AP_35,62,M,C,39,novel,easy,declarative,grad+subj+pos,nice,4
+AP_35,62,M,C,40,video,witty,sarcastic,grad+subj+pos,approve,0
+AP_35,62,M,C,41,video,witty,sarcastic,grad+subj+pos,mean,1
+AP_35,62,M,C,42,video,witty,sarcastic,grad+subj+pos,nice,1
+AP_37,60,F,E,1,book,n/a,declarative,training1 neg,approve,0
+AP_37,60,F,E,2,book,n/a,declarative,training1 neg,mean,1
+AP_37,60,F,E,3,book,n/a,declarative,training1 neg,nice,3
+AP_37,60,F,E,4,recital,n/a,declarative,training2 pos,approve,1
+AP_37,60,F,E,5,recital,n/a,declarative,training2 pos,mean,1
+AP_37,60,F,E,6,recital,n/a,declarative,training2 pos,nice,5
+AP_37,60,F,E,7,cake,lemon,declarative,–grad–subj,approve,1
+AP_37,60,F,E,8,cake,lemon,declarative,–grad–subj,mean,1
+AP_37,60,F,E,9,cake,lemon,declarative,–grad–subj,nice,5
+AP_37,60,F,E,10,gift,birthday,sarcastic,–grad–subj,approve,1
+AP_37,60,F,E,11,gift,birthday,sarcastic,–grad–subj,mean,1
+AP_37,60,F,E,12,gift,birthday,sarcastic,–grad–subj,nice,5
+AP_37,60,F,E,13,bouquet,pretty,declarative,grad+subj+pos,approve,1
+AP_37,60,F,E,14,bouquet,pretty,declarative,grad+subj+pos,mean,1
+AP_37,60,F,E,15,bouquet,pretty,declarative,grad+subj+pos,nice,5
+AP_37,60,F,E,16,question,clever,sarcastic,grad+subj+pos,approve,1
+AP_37,60,F,E,17,question,clever,sarcastic,grad+subj+pos,mean,1
+AP_37,60,F,E,18,question,clever,sarcastic,grad+subj+pos,nice,5
+AP_37,60,F,E,19,dish,nasty,declarative,grad+subj+neg,approve,0
+AP_37,60,F,E,20,dish,nasty,declarative,grad+subj+neg,mean,1
+AP_37,60,F,E,21,dish,nasty,declarative,grad+subj+neg,nice,3
+AP_37,60,F,E,22,shirt,ugly,sarcastic,grad+subj+neg,approve,0
+AP_37,60,F,E,23,shirt,ugly,sarcastic,grad+subj+neg,mean,1
+AP_37,60,F,E,24,shirt,ugly,sarcastic,grad+subj+neg,nice,2
+AP_37,60,F,E,25,story,bedtime,declarative,–grad–subj,approve,1
+AP_37,60,F,E,26,story,bedtime,declarative,–grad–subj,mean,1
+AP_37,60,F,E,27,story,bedtime,declarative,–grad–subj,nice,5
+AP_37,60,F,E,28,tool,wooden,sarcastic,–grad–subj,approve,1
+AP_37,60,F,E,29,tool,wooden,sarcastic,–grad–subj,mean,1
+AP_37,60,F,E,30,tool,wooden,sarcastic,–grad–subj,nice,5
+AP_37,60,F,E,31,hole,careful,declarative,grad+subj+pos,approve,1
+AP_37,60,F,E,32,hole,careful,declarative,grad+subj+pos,mean,1
+AP_37,60,F,E,33,hole,careful,declarative,grad+subj+pos,nice,5
+AP_37,60,F,E,34,solution,helpful,sarcastic,grad+subj+pos,approve,1
+AP_37,60,F,E,35,solution,helpful,sarcastic,grad+subj+pos,mean,1
+AP_37,60,F,E,36,solution,helpful,sarcastic,grad+subj+pos,nice,5
+AP_37,60,F,E,37,novel,tricky,declarative,grad+subj+neg,approve,0
+AP_37,60,F,E,38,novel,tricky,declarative,grad+subj+neg,mean,1
+AP_37,60,F,E,39,novel,tricky,declarative,grad+subj+neg,nice,5
+AP_37,60,F,E,40,video,foolish,sarcastic,grad+subj+neg,approve,0
+AP_37,60,F,E,41,video,foolish,sarcastic,grad+subj+neg,mean,1
+AP_37,60,F,E,42,video,foolish,sarcastic,grad+subj+neg,nice,5
+AP_39,71,M,A,1,book,n/a,declarative,training1 neg,approve,0
+AP_39,71,M,A,2,book,n/a,declarative,training1 neg,mean,1
+AP_39,71,M,A,3,book,n/a,declarative,training1 neg,nice,1
+AP_39,71,M,A,4,recital,n/a,declarative,training2 pos,approve,1
+AP_39,71,M,A,5,recital,n/a,declarative,training2 pos,mean,1
+AP_39,71,M,A,6,recital,n/a,declarative,training2 pos,nice,4
+AP_39,71,M,A,7,cake,yummy,declarative,grad+subj+pos,approve,1
+AP_39,71,M,A,8,cake,yummy,declarative,grad+subj+pos,mean,1
+AP_39,71,M,A,9,cake,yummy,declarative,grad+subj+pos,nice,5
+AP_39,71,M,A,10,gift,awesome,sarcastic,grad+subj+pos,approve,1
+AP_39,71,M,A,11,gift,awesome,sarcastic,grad+subj+pos,mean,1
+AP_39,71,M,A,12,gift,awesome,sarcastic,grad+subj+pos,nice,5
+AP_39,71,M,A,13,bouquet,messy,declarative,grad+subj+neg,approve,0
+AP_39,71,M,A,14,bouquet,messy,declarative,grad+subj+neg,mean,1
+AP_39,71,M,A,15,bouquet,messy,declarative,grad+subj+neg,nice,3
+AP_39,71,M,A,16,question,silly,sarcastic,grad+subj+neg,approve,0
+AP_39,71,M,A,17,question,silly,sarcastic,grad+subj+neg,mean,1
+AP_39,71,M,A,18,question,silly,sarcastic,grad+subj+neg,nice,2
+AP_39,71,M,A,19,dish,lobster,declarative,–grad–subj,approve,0
+AP_39,71,M,A,20,dish,lobster,declarative,–grad–subj,mean,1
+AP_39,71,M,A,21,dish,lobster,declarative,–grad–subj,nice,1
+AP_39,71,M,A,22,shirt,spotted,sarcastic,–grad–subj,approve,0
+AP_39,71,M,A,23,shirt,spotted,sarcastic,–grad–subj,mean,0
+AP_39,71,M,A,24,shirt,spotted,sarcastic,–grad–subj,nice,3
+AP_39,71,M,A,25,story,funny,declarative,grad+subj+pos,approve,1
+AP_39,71,M,A,26,story,funny,declarative,grad+subj+pos,mean,1
+AP_39,71,M,A,27,story,funny,declarative,grad+subj+pos,nice,4
+AP_39,71,M,A,28,tool,useful,sarcastic,grad+subj+pos,approve,1
+AP_39,71,M,A,29,tool,useful,sarcastic,grad+subj+pos,mean,1
+AP_39,71,M,A,30,tool,useful,sarcastic,grad+subj+pos,nice,5
+AP_39,71,M,A,31,hole,careless,declarative,grad+subj+neg,approve,1
+AP_39,71,M,A,32,hole,careless,declarative,grad+subj+neg,mean,1
+AP_39,71,M,A,33,hole,careless,declarative,grad+subj+neg,nice,3
+AP_39,71,M,A,34,solution,bossy,sarcastic,grad+subj+neg,approve,0
+AP_39,71,M,A,35,solution,bossy,sarcastic,grad+subj+neg,mean,0
+AP_39,71,M,A,36,solution,bossy,sarcastic,grad+subj+neg,nice,1
+AP_39,71,M,A,37,novel,fiction,declarative,–grad–subj,approve,0
+AP_39,71,M,A,38,novel,fiction,declarative,–grad–subj,mean,1
+AP_39,71,M,A,39,novel,fiction,declarative,–grad–subj,nice,3
+AP_39,71,M,A,40,video,tiktok,sarcastic,–grad–subj,approve,0
+AP_39,71,M,A,41,video,tiktok,sarcastic,–grad–subj,mean,1
+AP_39,71,M,A,42,video,tiktok,sarcastic,–grad–subj,nice,3
+AP_45,73,F,A,1,book,n/a,declarative,training1 neg,approve,1
+AP_45,73,F,A,2,book,n/a,declarative,training1 neg,mean,1
+AP_45,73,F,A,3,book,n/a,declarative,training1 neg,nice,1
+AP_45,73,F,A,4,recital,n/a,declarative,training2 pos,approve,1
+AP_45,73,F,A,5,recital,n/a,declarative,training2 pos,mean,1
+AP_45,73,F,A,6,recital,n/a,declarative,training2 pos,nice,5
+AP_45,73,F,A,7,cake,yummy,declarative,grad+subj+pos,approve,1
+AP_45,73,F,A,8,cake,yummy,declarative,grad+subj+pos,mean,1
+AP_45,73,F,A,9,cake,yummy,declarative,grad+subj+pos,nice,4
+AP_45,73,F,A,10,gift,awesome,sarcastic,grad+subj+pos,approve,1
+AP_45,73,F,A,11,gift,awesome,sarcastic,grad+subj+pos,mean,1
+AP_45,73,F,A,12,gift,awesome,sarcastic,grad+subj+pos,nice,5
+AP_45,73,F,A,13,bouquet,messy,declarative,grad+subj+neg,approve,0
+AP_45,73,F,A,14,bouquet,messy,declarative,grad+subj+neg,mean,1
+AP_45,73,F,A,15,bouquet,messy,declarative,grad+subj+neg,nice,1
+AP_45,73,F,A,16,question,silly,sarcastic,grad+subj+neg,approve,1
+AP_45,73,F,A,17,question,silly,sarcastic,grad+subj+neg,mean,1
+AP_45,73,F,A,18,question,silly,sarcastic,grad+subj+neg,nice,2
+AP_45,73,F,A,19,dish,lobster,declarative,–grad–subj,approve,0
+AP_45,73,F,A,20,dish,lobster,declarative,–grad–subj,mean,1
+AP_45,73,F,A,21,dish,lobster,declarative,–grad–subj,nice,3
+AP_45,73,F,A,22,shirt,spotted,sarcastic,–grad–subj,approve,0
+AP_45,73,F,A,23,shirt,spotted,sarcastic,–grad–subj,mean,1
+AP_45,73,F,A,24,shirt,spotted,sarcastic,–grad–subj,nice,1
+AP_45,73,F,A,25,story,funny,declarative,grad+subj+pos,approve,1
+AP_45,73,F,A,26,story,funny,declarative,grad+subj+pos,mean,1
+AP_45,73,F,A,27,story,funny,declarative,grad+subj+pos,nice,5
+AP_45,73,F,A,28,tool,useful,sarcastic,grad+subj+pos,approve,1
+AP_45,73,F,A,29,tool,useful,sarcastic,grad+subj+pos,mean,1
+AP_45,73,F,A,30,tool,useful,sarcastic,grad+subj+pos,nice,5
+AP_45,73,F,A,31,hole,careless,declarative,grad+subj+neg,approve,1
+AP_45,73,F,A,32,hole,careless,declarative,grad+subj+neg,mean,1
+AP_45,73,F,A,33,hole,careless,declarative,grad+subj+neg,nice,5
+AP_45,73,F,A,34,solution,bossy,sarcastic,grad+subj+neg,approve,0
+AP_45,73,F,A,35,solution,bossy,sarcastic,grad+subj+neg,mean,1
+AP_45,73,F,A,36,solution,bossy,sarcastic,grad+subj+neg,nice,2
+AP_45,73,F,A,37,novel,fiction,declarative,–grad–subj,approve,0
+AP_45,73,F,A,38,novel,fiction,declarative,–grad–subj,mean,1
+AP_45,73,F,A,39,novel,fiction,declarative,–grad–subj,nice,5
+AP_45,73,F,A,40,video,tiktok,sarcastic,–grad–subj,approve,1
+AP_45,73,F,A,41,video,tiktok,sarcastic,–grad–subj,mean,1
+AP_45,73,F,A,42,video,tiktok,sarcastic,–grad–subj,nice,5
+AP_53,77,M,A,1,book,n/a,declarative,training1 neg,approve,0
+AP_53,77,M,A,2,book,n/a,declarative,training1 neg,mean,0
+AP_53,77,M,A,3,book,n/a,declarative,training1 neg,nice,3
+AP_53,77,M,A,4,recital,n/a,declarative,training2 pos,approve,1
+AP_53,77,M,A,5,recital,n/a,declarative,training2 pos,mean,1
+AP_53,77,M,A,6,recital,n/a,declarative,training2 pos,nice,5
+AP_53,77,M,A,7,cake,yummy,declarative,grad+subj+pos,approve,1
+AP_53,77,M,A,8,cake,yummy,declarative,grad+subj+pos,mean,1
+AP_53,77,M,A,9,cake,yummy,declarative,grad+subj+pos,nice,5
+AP_53,77,M,A,10,gift,awesome,sarcastic,grad+subj+pos,approve,1
+AP_53,77,M,A,11,gift,awesome,sarcastic,grad+subj+pos,mean,1
+AP_53,77,M,A,12,gift,awesome,sarcastic,grad+subj+pos,nice,5
+AP_53,77,M,A,13,bouquet,messy,declarative,grad+subj+neg,approve,0
+AP_53,77,M,A,14,bouquet,messy,declarative,grad+subj+neg,mean,0
+AP_53,77,M,A,15,bouquet,messy,declarative,grad+subj+neg,nice,1
+AP_53,77,M,A,16,question,silly,sarcastic,grad+subj+neg,approve,0
+AP_53,77,M,A,17,question,silly,sarcastic,grad+subj+neg,mean,0
+AP_53,77,M,A,18,question,silly,sarcastic,grad+subj+neg,nice,1
+AP_53,77,M,A,19,dish,lobster,declarative,–grad–subj,approve,0
+AP_53,77,M,A,20,dish,lobster,declarative,–grad–subj,mean,0
+AP_53,77,M,A,21,dish,lobster,declarative,–grad–subj,nice,3
+AP_53,77,M,A,22,shirt,spotted,sarcastic,–grad–subj,approve,1
+AP_53,77,M,A,23,shirt,spotted,sarcastic,–grad–subj,mean,1
+AP_53,77,M,A,24,shirt,spotted,sarcastic,–grad–subj,nice,3
+AP_53,77,M,A,25,story,funny,declarative,grad+subj+pos,approve,1
+AP_53,77,M,A,26,story,funny,declarative,grad+subj+pos,mean,1
+AP_53,77,M,A,27,story,funny,declarative,grad+subj+pos,nice,3
+AP_53,77,M,A,28,tool,useful,sarcastic,grad+subj+pos,approve,1
+AP_53,77,M,A,29,tool,useful,sarcastic,grad+subj+pos,mean,1
+AP_53,77,M,A,30,tool,useful,sarcastic,grad+subj+pos,nice,5
+AP_53,77,M,A,31,hole,careless,declarative,grad+subj+neg,approve,1
+AP_53,77,M,A,32,hole,careless,declarative,grad+subj+neg,mean,1
+AP_53,77,M,A,33,hole,careless,declarative,grad+subj+neg,nice,5
+AP_53,77,M,A,34,solution,bossy,sarcastic,grad+subj+neg,approve,0
+AP_53,77,M,A,35,solution,bossy,sarcastic,grad+subj+neg,mean,0
+AP_53,77,M,A,36,solution,bossy,sarcastic,grad+subj+neg,nice,1
+AP_53,77,M,A,37,novel,fiction,declarative,–grad–subj,approve,1
+AP_53,77,M,A,38,novel,fiction,declarative,–grad–subj,mean,1
+AP_53,77,M,A,39,novel,fiction,declarative,–grad–subj,nice,5
+AP_53,77,M,A,40,video,tiktok,sarcastic,–grad–subj,approve,0
+AP_53,77,M,A,41,video,tiktok,sarcastic,–grad–subj,mean,0
+AP_53,77,M,A,42,video,tiktok,sarcastic,–grad–subj,nice,3
+AP_56,80,M,A,1,book,n/a,declarative,training1 neg,approve,0
+AP_56,80,M,A,2,book,n/a,declarative,training1 neg,mean,1
+AP_56,80,M,A,3,book,n/a,declarative,training1 neg,nice,3
+AP_56,80,M,A,4,recital,n/a,declarative,training2 pos,approve,1
+AP_56,80,M,A,5,recital,n/a,declarative,training2 pos,mean,1
+AP_56,80,M,A,6,recital,n/a,declarative,training2 pos,nice,5
+AP_56,80,M,A,7,cake,yummy,declarative,grad+subj+pos,approve,1
+AP_56,80,M,A,8,cake,yummy,declarative,grad+subj+pos,mean,1
+AP_56,80,M,A,9,cake,yummy,declarative,grad+subj+pos,nice,4
+AP_56,80,M,A,10,gift,awesome,sarcastic,grad+subj+pos,approve,1
+AP_56,80,M,A,11,gift,awesome,sarcastic,grad+subj+pos,mean,1
+AP_56,80,M,A,12,gift,awesome,sarcastic,grad+subj+pos,nice,5
+AP_56,80,M,A,13,bouquet,messy,declarative,grad+subj+neg,approve,0
+AP_56,80,M,A,14,bouquet,messy,declarative,grad+subj+neg,mean,1
+AP_56,80,M,A,15,bouquet,messy,declarative,grad+subj+neg,nice,2
+AP_56,80,M,A,16,question,silly,sarcastic,grad+subj+neg,approve,0
+AP_56,80,M,A,17,question,silly,sarcastic,grad+subj+neg,mean,1
+AP_56,80,M,A,18,question,silly,sarcastic,grad+subj+neg,nice,2
+AP_56,80,M,A,19,dish,lobster,declarative,–grad–subj,approve,1
+AP_56,80,M,A,20,dish,lobster,declarative,–grad–subj,mean,1
+AP_56,80,M,A,21,dish,lobster,declarative,–grad–subj,nice,3
+AP_56,80,M,A,22,shirt,spotted,sarcastic,–grad–subj,approve,0
+AP_56,80,M,A,23,shirt,spotted,sarcastic,–grad–subj,mean,1
+AP_56,80,M,A,24,shirt,spotted,sarcastic,–grad–subj,nice,2
+AP_56,80,M,A,25,story,funny,declarative,grad+subj+pos,approve,1
+AP_56,80,M,A,26,story,funny,declarative,grad+subj+pos,mean,1
+AP_56,80,M,A,27,story,funny,declarative,grad+subj+pos,nice,4
+AP_56,80,M,A,28,tool,useful,sarcastic,grad+subj+pos,approve,1
+AP_56,80,M,A,29,tool,useful,sarcastic,grad+subj+pos,mean,1
+AP_56,80,M,A,30,tool,useful,sarcastic,grad+subj+pos,nice,5
+AP_56,80,M,A,31,hole,careless,declarative,grad+subj+neg,approve,0
+AP_56,80,M,A,32,hole,careless,declarative,grad+subj+neg,mean,1
+AP_56,80,M,A,33,hole,careless,declarative,grad+subj+neg,nice,2
+AP_56,80,M,A,34,solution,bossy,sarcastic,grad+subj+neg,approve,0
+AP_56,80,M,A,35,solution,bossy,sarcastic,grad+subj+neg,mean,1
+AP_56,80,M,A,36,solution,bossy,sarcastic,grad+subj+neg,nice,2
+AP_56,80,M,A,37,novel,fiction,declarative,–grad–subj,approve,1
+AP_56,80,M,A,38,novel,fiction,declarative,–grad–subj,mean,1
+AP_56,80,M,A,39,novel,fiction,declarative,–grad–subj,nice,3
+AP_56,80,M,A,40,video,tiktok,sarcastic,–grad–subj,approve,1
+AP_56,80,M,A,41,video,tiktok,sarcastic,–grad–subj,mean,1
+AP_56,80,M,A,42,video,tiktok,sarcastic,–grad–subj,nice,3
+AP_46,67,F,B,1,book,n/a,declarative,training1 neg,approve,0
+AP_46,67,F,B,2,book,n/a,declarative,training1 neg,mean,1
+AP_46,67,F,B,3,book,n/a,declarative,training1 neg,nice,1
+AP_46,67,F,B,4,recital,n/a,declarative,training2 pos,approve,1
+AP_46,67,F,B,5,recital,n/a,declarative,training2 pos,mean,1
+AP_46,67,F,B,6,recital,n/a,declarative,training2 pos,nice,5
+AP_46,67,F,B,7,cake,yummy,sarcastic,grad+subj+pos,approve,1
+AP_46,67,F,B,8,cake,yummy,sarcastic,grad+subj+pos,mean,1
+AP_46,67,F,B,9,cake,yummy,sarcastic,grad+subj+pos,nice,4
+AP_46,67,F,B,10,gift,awful,declarative,grad+subj+neg,approve,0
+AP_46,67,F,B,11,gift,awful,declarative,grad+subj+neg,mean,1
+AP_46,67,F,B,12,gift,awful,declarative,grad+subj+neg,nice,2
+AP_46,67,F,B,13,bouquet,messy,sarcastic,grad+subj+neg,approve,0
+AP_46,67,F,B,14,bouquet,messy,sarcastic,grad+subj+neg,mean,1
+AP_46,67,F,B,15,bouquet,messy,sarcastic,grad+subj+neg,nice,1
+AP_46,67,F,B,16,question,review,declarative,–grad–subj,approve,1
+AP_46,67,F,B,17,question,review,declarative,–grad–subj,mean,1
+AP_46,67,F,B,18,question,review,declarative,–grad–subj,nice,5
+AP_46,67,F,B,19,dish,lobster,sarcastic,–grad–subj,approve,0
+AP_46,67,F,B,20,dish,lobster,sarcastic,–grad–subj,mean,1
+AP_46,67,F,B,21,dish,lobster,sarcastic,–grad–subj,nice,3
+AP_46,67,F,B,22,shirt,lovely,declarative,grad+subj+pos,approve,1
+AP_46,67,F,B,23,shirt,lovely,declarative,grad+subj+pos,mean,1
+AP_46,67,F,B,24,shirt,lovely,declarative,grad+subj+pos,nice,5
+AP_46,67,F,B,25,story,funny,sarcastic,grad+subj+pos,approve,1
+AP_46,67,F,B,26,story,funny,sarcastic,grad+subj+pos,mean,0
+AP_46,67,F,B,27,story,funny,sarcastic,grad+subj+pos,nice,5
+AP_46,67,F,B,28,tool,useless,declarative,grad+subj+neg,approve,0
+AP_46,67,F,B,29,tool,useless,declarative,grad+subj+neg,mean,1
+AP_46,67,F,B,30,tool,useless,declarative,grad+subj+neg,nice,1
+AP_46,67,F,B,31,hole,careless,sarcastic,grad+subj+neg,approve,0
+AP_46,67,F,B,32,hole,careless,sarcastic,grad+subj+neg,mean,0
+AP_46,67,F,B,33,hole,careless,sarcastic,grad+subj+neg,nice,5
+AP_46,67,F,B,34,solution,partial,declarative,–grad–subj,approve,1
+AP_46,67,F,B,35,solution,partial,declarative,–grad–subj,mean,1
+AP_46,67,F,B,36,solution,partial,declarative,–grad–subj,nice,4
+AP_46,67,F,B,37,novel,fiction,sarcastic,–grad–subj,approve,0
+AP_46,67,F,B,38,novel,fiction,sarcastic,–grad–subj,mean,0
+AP_46,67,F,B,39,novel,fiction,sarcastic,–grad–subj,nice,5
+AP_46,67,F,B,40,video,witty,declarative,grad+subj+pos,approve,1
+AP_46,67,F,B,41,video,witty,declarative,grad+subj+pos,mean,1
+AP_46,67,F,B,42,video,witty,declarative,grad+subj+pos,nice,5
+AP_49,77,F,B,1,book,n/a,declarative,training1 neg,approve,0
+AP_49,77,F,B,2,book,n/a,declarative,training1 neg,mean,1
+AP_49,77,F,B,3,book,n/a,declarative,training1 neg,nice,5
+AP_49,77,F,B,4,recital,n/a,declarative,training2 pos,approve,1
+AP_49,77,F,B,5,recital,n/a,declarative,training2 pos,mean,0
+AP_49,77,F,B,6,recital,n/a,declarative,training2 pos,nice,5
+AP_49,77,F,B,7,cake,yummy,sarcastic,grad+subj+pos,approve,1
+AP_49,77,F,B,8,cake,yummy,sarcastic,grad+subj+pos,mean,1
+AP_49,77,F,B,9,cake,yummy,sarcastic,grad+subj+pos,nice,5
+AP_49,77,F,B,10,gift,awful,declarative,grad+subj+neg,approve,1
+AP_49,77,F,B,11,gift,awful,declarative,grad+subj+neg,mean,1
+AP_49,77,F,B,12,gift,awful,declarative,grad+subj+neg,nice,5
+AP_49,77,F,B,13,bouquet,messy,sarcastic,grad+subj+neg,approve,0
+AP_49,77,F,B,14,bouquet,messy,sarcastic,grad+subj+neg,mean,0
+AP_49,77,F,B,15,bouquet,messy,sarcastic,grad+subj+neg,nice,1
+AP_49,77,F,B,16,question,review,declarative,–grad–subj,approve,1
+AP_49,77,F,B,17,question,review,declarative,–grad–subj,mean,0
+AP_49,77,F,B,18,question,review,declarative,–grad–subj,nice,2
+AP_49,77,F,B,19,dish,lobster,sarcastic,–grad–subj,approve,1
+AP_49,77,F,B,20,dish,lobster,sarcastic,–grad–subj,mean,1
+AP_49,77,F,B,21,dish,lobster,sarcastic,–grad–subj,nice,4
+AP_49,77,F,B,22,shirt,lovely,declarative,grad+subj+pos,approve,1
+AP_49,77,F,B,23,shirt,lovely,declarative,grad+subj+pos,mean,1
+AP_49,77,F,B,24,shirt,lovely,declarative,grad+subj+pos,nice,5
+AP_49,77,F,B,25,story,funny,sarcastic,grad+subj+pos,approve,1
+AP_49,77,F,B,26,story,funny,sarcastic,grad+subj+pos,mean,0
+AP_49,77,F,B,27,story,funny,sarcastic,grad+subj+pos,nice,5
+AP_49,77,F,B,28,tool,useless,declarative,grad+subj+neg,approve,1
+AP_49,77,F,B,29,tool,useless,declarative,grad+subj+neg,mean,0
+AP_49,77,F,B,30,tool,useless,declarative,grad+subj+neg,nice,5
+AP_49,77,F,B,31,hole,careless,sarcastic,grad+subj+neg,approve,1
+AP_49,77,F,B,32,hole,careless,sarcastic,grad+subj+neg,mean,1
+AP_49,77,F,B,33,hole,careless,sarcastic,grad+subj+neg,nice,5
+AP_49,77,F,B,34,solution,partial,declarative,–grad–subj,approve,0
+AP_49,77,F,B,35,solution,partial,declarative,–grad–subj,mean,1
+AP_49,77,F,B,36,solution,partial,declarative,–grad–subj,nice,5
+AP_49,77,F,B,37,novel,fiction,sarcastic,–grad–subj,approve,1
+AP_49,77,F,B,38,novel,fiction,sarcastic,–grad–subj,mean,1
+AP_49,77,F,B,39,novel,fiction,sarcastic,–grad–subj,nice,4
+AP_49,77,F,B,40,video,witty,declarative,grad+subj+pos,approve,1
+AP_49,77,F,B,41,video,witty,declarative,grad+subj+pos,mean,1
+AP_49,77,F,B,42,video,witty,declarative,grad+subj+pos,nice,4
+AP_54,75,F,B,1,book,n/a,declarative,training1 neg,approve,0
+AP_54,75,F,B,2,book,n/a,declarative,training1 neg,mean,1
+AP_54,75,F,B,3,book,n/a,declarative,training1 neg,nice,1
+AP_54,75,F,B,4,recital,n/a,declarative,training2 pos,approve,1
+AP_54,75,F,B,5,recital,n/a,declarative,training2 pos,mean,1
+AP_54,75,F,B,6,recital,n/a,declarative,training2 pos,nice,5
+AP_54,75,F,B,7,cake,yummy,sarcastic,grad+subj+pos,approve,1
+AP_54,75,F,B,8,cake,yummy,sarcastic,grad+subj+pos,mean,1
+AP_54,75,F,B,9,cake,yummy,sarcastic,grad+subj+pos,nice,5
+AP_54,75,F,B,10,gift,awful,declarative,grad+subj+neg,approve,0
+AP_54,75,F,B,11,gift,awful,declarative,grad+subj+neg,mean,0
+AP_54,75,F,B,12,gift,awful,declarative,grad+subj+neg,nice,1
+AP_54,75,F,B,13,bouquet,messy,sarcastic,grad+subj+neg,approve,0
+AP_54,75,F,B,14,bouquet,messy,sarcastic,grad+subj+neg,mean,0
+AP_54,75,F,B,15,bouquet,messy,sarcastic,grad+subj+neg,nice,1
+AP_54,75,F,B,16,question,review,declarative,–grad–subj,approve,N/A
+AP_54,75,F,B,17,question,review,declarative,–grad–subj,mean,0
+AP_54,75,F,B,18,question,review,declarative,–grad–subj,nice,3
+AP_54,75,F,B,19,dish,lobster,sarcastic,–grad–subj,approve,1
+AP_54,75,F,B,20,dish,lobster,sarcastic,–grad–subj,mean,0
+AP_54,75,F,B,21,dish,lobster,sarcastic,–grad–subj,nice,3
+AP_54,75,F,B,22,shirt,lovely,declarative,grad+subj+pos,approve,1
+AP_54,75,F,B,23,shirt,lovely,declarative,grad+subj+pos,mean,1
+AP_54,75,F,B,24,shirt,lovely,declarative,grad+subj+pos,nice,5
+AP_54,75,F,B,25,story,funny,sarcastic,grad+subj+pos,approve,1
+AP_54,75,F,B,26,story,funny,sarcastic,grad+subj+pos,mean,1
+AP_54,75,F,B,27,story,funny,sarcastic,grad+subj+pos,nice,3
+AP_54,75,F,B,28,tool,useless,declarative,grad+subj+neg,approve,0
+AP_54,75,F,B,29,tool,useless,declarative,grad+subj+neg,mean,1
+AP_54,75,F,B,30,tool,useless,declarative,grad+subj+neg,nice,1
+AP_54,75,F,B,31,hole,careless,sarcastic,grad+subj+neg,approve,N/A
+AP_54,75,F,B,32,hole,careless,sarcastic,grad+subj+neg,mean,1
+AP_54,75,F,B,33,hole,careless,sarcastic,grad+subj+neg,nice,1
+AP_54,75,F,B,34,solution,partial,declarative,–grad–subj,approve,1
+AP_54,75,F,B,35,solution,partial,declarative,–grad–subj,mean,1
+AP_54,75,F,B,36,solution,partial,declarative,–grad–subj,nice,1
+AP_54,75,F,B,37,novel,fiction,sarcastic,–grad–subj,approve,1
+AP_54,75,F,B,38,novel,fiction,sarcastic,–grad–subj,mean,1
+AP_54,75,F,B,39,novel,fiction,sarcastic,–grad–subj,nice,5
+AP_54,75,F,B,40,video,witty,declarative,grad+subj+pos,approve,1
+AP_54,75,F,B,41,video,witty,declarative,grad+subj+pos,mean,1
+AP_54,75,F,B,42,video,witty,declarative,grad+subj+pos,nice,5
+AP_60,67,F,B,1,book,n/a,declarative,training1 neg,approve,0
+AP_60,67,F,B,2,book,n/a,declarative,training1 neg,mean,1
+AP_60,67,F,B,3,book,n/a,declarative,training1 neg,nice,4
+AP_60,67,F,B,4,recital,n/a,declarative,training2 pos,approve,1
+AP_60,67,F,B,5,recital,n/a,declarative,training2 pos,mean,1
+AP_60,67,F,B,6,recital,n/a,declarative,training2 pos,nice,4
+AP_60,67,F,B,7,cake,yummy,sarcastic,grad+subj+pos,approve,1
+AP_60,67,F,B,8,cake,yummy,sarcastic,grad+subj+pos,mean,1
+AP_60,67,F,B,9,cake,yummy,sarcastic,grad+subj+pos,nice,4
+AP_60,67,F,B,10,gift,awful,declarative,grad+subj+neg,approve,0
+AP_60,67,F,B,11,gift,awful,declarative,grad+subj+neg,mean,1
+AP_60,67,F,B,12,gift,awful,declarative,grad+subj+neg,nice,2
+AP_60,67,F,B,13,bouquet,messy,sarcastic,grad+subj+neg,approve,0
+AP_60,67,F,B,14,bouquet,messy,sarcastic,grad+subj+neg,mean,1
+AP_60,67,F,B,15,bouquet,messy,sarcastic,grad+subj+neg,nice,2
+AP_60,67,F,B,16,question,review,declarative,–grad–subj,approve,0
+AP_60,67,F,B,17,question,review,declarative,–grad–subj,mean,0
+AP_60,67,F,B,18,question,review,declarative,–grad–subj,nice,4
+AP_60,67,F,B,19,dish,lobster,sarcastic,–grad–subj,approve,1
+AP_60,67,F,B,20,dish,lobster,sarcastic,–grad–subj,mean,1
+AP_60,67,F,B,21,dish,lobster,sarcastic,–grad–subj,nice,3
+AP_60,67,F,B,22,shirt,lovely,declarative,grad+subj+pos,approve,1
+AP_60,67,F,B,23,shirt,lovely,declarative,grad+subj+pos,mean,1
+AP_60,67,F,B,24,shirt,lovely,declarative,grad+subj+pos,nice,5
+AP_60,67,F,B,25,story,funny,sarcastic,grad+subj+pos,approve,1
+AP_60,67,F,B,26,story,funny,sarcastic,grad+subj+pos,mean,1
+AP_60,67,F,B,27,story,funny,sarcastic,grad+subj+pos,nice,4
+AP_60,67,F,B,28,tool,useless,declarative,grad+subj+neg,approve,0
+AP_60,67,F,B,29,tool,useless,declarative,grad+subj+neg,mean,1
+AP_60,67,F,B,30,tool,useless,declarative,grad+subj+neg,nice,2
+AP_60,67,F,B,31,hole,careless,sarcastic,grad+subj+neg,approve,1
+AP_60,67,F,B,32,hole,careless,sarcastic,grad+subj+neg,mean,0
+AP_60,67,F,B,33,hole,careless,sarcastic,grad+subj+neg,nice,2
+AP_60,67,F,B,34,solution,partial,declarative,–grad–subj,approve,1
+AP_60,67,F,B,35,solution,partial,declarative,–grad–subj,mean,1
+AP_60,67,F,B,36,solution,partial,declarative,–grad–subj,nice,4
+AP_60,67,F,B,37,novel,fiction,sarcastic,–grad–subj,approve,1
+AP_60,67,F,B,38,novel,fiction,sarcastic,–grad–subj,mean,1
+AP_60,67,F,B,39,novel,fiction,sarcastic,–grad–subj,nice,3
+AP_60,67,F,B,40,video,witty,declarative,grad+subj+pos,approve,1
+AP_60,67,F,B,41,video,witty,declarative,grad+subj+pos,mean,1
+AP_60,67,F,B,42,video,witty,declarative,grad+subj+pos,nice,4
+AP_50,76,M,C,1,book,n/a,declarative,training1 neg,approve,0
+AP_50,76,M,C,2,book,n/a,declarative,training1 neg,mean,1
+AP_50,76,M,C,3,book,n/a,declarative,training1 neg,nice,4
+AP_50,76,M,C,4,recital,n/a,declarative,training2 pos,approve,1
+AP_50,76,M,C,5,recital,n/a,declarative,training2 pos,mean,1
+AP_50,76,M,C,6,recital,n/a,declarative,training2 pos,nice,5
+AP_50,76,M,C,7,cake,yucky,declarative,grad+subj+neg,approve,0
+AP_50,76,M,C,8,cake,yucky,declarative,grad+subj+neg,mean,1
+AP_50,76,M,C,9,cake,yucky,declarative,grad+subj+neg,nice,2
+AP_50,76,M,C,10,gift,awful,sarcastic,grad+subj+neg,approve,0
+AP_50,76,M,C,11,gift,awful,sarcastic,grad+subj+neg,mean,1
+AP_50,76,M,C,12,gift,awful,sarcastic,grad+subj+neg,nice,2
+AP_50,76,M,C,13,bouquet,floral,declarative,–grad–subj,approve,1
+AP_50,76,M,C,14,bouquet,floral,declarative,–grad–subj,mean,1
+AP_50,76,M,C,15,bouquet,floral,declarative,–grad–subj,nice,5
+AP_50,76,M,C,16,question,review,sarcastic,–grad–subj,approve,0
+AP_50,76,M,C,17,question,review,sarcastic,–grad–subj,mean,1
+AP_50,76,M,C,18,question,review,sarcastic,–grad–subj,nice,2
+AP_50,76,M,C,19,dish,tasty,declarative,grad+subj+pos,approve,1
+AP_50,76,M,C,20,dish,tasty,declarative,grad+subj+pos,mean,1
+AP_50,76,M,C,21,dish,tasty,declarative,grad+subj+pos,nice,5
+AP_50,76,M,C,22,shirt,lovely,sarcastic,grad+subj+pos,approve,1
+AP_50,76,M,C,23,shirt,lovely,sarcastic,grad+subj+pos,mean,1
+AP_50,76,M,C,24,shirt,lovely,sarcastic,grad+subj+pos,nice,5
+AP_50,76,M,C,25,story,boring,declarative,grad+subj+neg,approve,0
+AP_50,76,M,C,26,story,boring,declarative,grad+subj+neg,mean,1
+AP_50,76,M,C,27,story,boring,declarative,grad+subj+neg,nice,2
+AP_50,76,M,C,28,tool,useless,sarcastic,grad+subj+neg,approve,0
+AP_50,76,M,C,29,tool,useless,sarcastic,grad+subj+neg,mean,1
+AP_50,76,M,C,30,tool,useless,sarcastic,grad+subj+neg,nice,2
+AP_50,76,M,C,31,hole,half-inch,declarative,–grad–subj,approve,1
+AP_50,76,M,C,32,hole,half-inch,declarative,–grad–subj,mean,1
+AP_50,76,M,C,33,hole,half-inch,declarative,–grad–subj,nice,3
+AP_50,76,M,C,34,solution,partial,sarcastic,–grad–subj,approve,0
+AP_50,76,M,C,35,solution,partial,sarcastic,–grad–subj,mean,1
+AP_50,76,M,C,36,solution,partial,sarcastic,–grad–subj,nice,2
+AP_50,76,M,C,37,novel,easy,declarative,grad+subj+pos,approve,0
+AP_50,76,M,C,38,novel,easy,declarative,grad+subj+pos,mean,1
+AP_50,76,M,C,39,novel,easy,declarative,grad+subj+pos,nice,2
+AP_50,76,M,C,40,video,witty,sarcastic,grad+subj+pos,approve,0
+AP_50,76,M,C,41,video,witty,sarcastic,grad+subj+pos,mean,1
+AP_50,76,M,C,42,video,witty,sarcastic,grad+subj+pos,nice,2
+AP_55,62,F,C,1,book,n/a,declarative,training1 neg,approve,0
+AP_55,62,F,C,2,book,n/a,declarative,training1 neg,mean,1
+AP_55,62,F,C,3,book,n/a,declarative,training1 neg,nice,2
+AP_55,62,F,C,4,recital,n/a,declarative,training2 pos,approve,1
+AP_55,62,F,C,5,recital,n/a,declarative,training2 pos,mean,1
+AP_55,62,F,C,6,recital,n/a,declarative,training2 pos,nice,5
+AP_55,62,F,C,7,cake,yucky,declarative,grad+subj+neg,approve,0
+AP_55,62,F,C,8,cake,yucky,declarative,grad+subj+neg,mean,1
+AP_55,62,F,C,9,cake,yucky,declarative,grad+subj+neg,nice,1
+AP_55,62,F,C,10,gift,awful,sarcastic,grad+subj+neg,approve,0
+AP_55,62,F,C,11,gift,awful,sarcastic,grad+subj+neg,mean,1
+AP_55,62,F,C,12,gift,awful,sarcastic,grad+subj+neg,nice,1
+AP_55,62,F,C,13,bouquet,floral,declarative,–grad–subj,approve,0
+AP_55,62,F,C,14,bouquet,floral,declarative,–grad–subj,mean,1
+AP_55,62,F,C,15,bouquet,floral,declarative,–grad–subj,nice,3
+AP_55,62,F,C,16,question,review,sarcastic,–grad–subj,approve,0
+AP_55,62,F,C,17,question,review,sarcastic,–grad–subj,mean,1
+AP_55,62,F,C,18,question,review,sarcastic,–grad–subj,nice,4
+AP_55,62,F,C,19,dish,tasty,declarative,grad+subj+pos,approve,1
+AP_55,62,F,C,20,dish,tasty,declarative,grad+subj+pos,mean,1
+AP_55,62,F,C,21,dish,tasty,declarative,grad+subj+pos,nice,5
+AP_55,62,F,C,22,shirt,lovely,sarcastic,grad+subj+pos,approve,1
+AP_55,62,F,C,23,shirt,lovely,sarcastic,grad+subj+pos,mean,1
+AP_55,62,F,C,24,shirt,lovely,sarcastic,grad+subj+pos,nice,3
+AP_55,62,F,C,25,story,boring,declarative,grad+subj+neg,approve,0
+AP_55,62,F,C,26,story,boring,declarative,grad+subj+neg,mean,1
+AP_55,62,F,C,27,story,boring,declarative,grad+subj+neg,nice,2
+AP_55,62,F,C,28,tool,useless,sarcastic,grad+subj+neg,approve,0
+AP_55,62,F,C,29,tool,useless,sarcastic,grad+subj+neg,mean,1
+AP_55,62,F,C,30,tool,useless,sarcastic,grad+subj+neg,nice,1
+AP_55,62,F,C,31,hole,half-inch,declarative,–grad–subj,approve,0
+AP_55,62,F,C,32,hole,half-inch,declarative,–grad–subj,mean,1
+AP_55,62,F,C,33,hole,half-inch,declarative,–grad–subj,nice,3
+AP_55,62,F,C,34,solution,partial,sarcastic,–grad–subj,approve,0
+AP_55,62,F,C,35,solution,partial,sarcastic,–grad–subj,mean,1
+AP_55,62,F,C,36,solution,partial,sarcastic,–grad–subj,nice,3
+AP_55,62,F,C,37,novel,easy,declarative,grad+subj+pos,approve,1
+AP_55,62,F,C,38,novel,easy,declarative,grad+subj+pos,mean,1
+AP_55,62,F,C,39,novel,easy,declarative,grad+subj+pos,nice,4
+AP_55,62,F,C,40,video,witty,sarcastic,grad+subj+pos,approve,1
+AP_55,62,F,C,41,video,witty,sarcastic,grad+subj+pos,mean,1
+AP_55,62,F,C,42,video,witty,sarcastic,grad+subj+pos,nice,5
+AP_61,63,M,C,1,book,n/a,declarative,training1 neg,approve,0
+AP_61,63,M,C,2,book,n/a,declarative,training1 neg,mean,1
+AP_61,63,M,C,3,book,n/a,declarative,training1 neg,nice,3
+AP_61,63,M,C,4,recital,n/a,declarative,training2 pos,approve,1
+AP_61,63,M,C,5,recital,n/a,declarative,training2 pos,mean,1
+AP_61,63,M,C,6,recital,n/a,declarative,training2 pos,nice,5
+AP_61,63,M,C,7,cake,yucky,declarative,grad+subj+neg,approve,0
+AP_61,63,M,C,8,cake,yucky,declarative,grad+subj+neg,mean,1
+AP_61,63,M,C,9,cake,yucky,declarative,grad+subj+neg,nice,2
+AP_61,63,M,C,10,gift,awful,sarcastic,grad+subj+neg,approve,0
+AP_61,63,M,C,11,gift,awful,sarcastic,grad+subj+neg,mean,1
+AP_61,63,M,C,12,gift,awful,sarcastic,grad+subj+neg,nice,3
+AP_61,63,M,C,13,bouquet,floral,declarative,–grad–subj,approve,0
+AP_61,63,M,C,14,bouquet,floral,declarative,–grad–subj,mean,1
+AP_61,63,M,C,15,bouquet,floral,declarative,–grad–subj,nice,3
+AP_61,63,M,C,16,question,review,sarcastic,–grad–subj,approve,1
+AP_61,63,M,C,17,question,review,sarcastic,–grad–subj,mean,1
+AP_61,63,M,C,18,question,review,sarcastic,–grad–subj,nice,4
+AP_61,63,M,C,19,dish,tasty,declarative,grad+subj+pos,approve,1
+AP_61,63,M,C,20,dish,tasty,declarative,grad+subj+pos,mean,1
+AP_61,63,M,C,21,dish,tasty,declarative,grad+subj+pos,nice,5
+AP_61,63,M,C,22,shirt,lovely,sarcastic,grad+subj+pos,approve,1
+AP_61,63,M,C,23,shirt,lovely,sarcastic,grad+subj+pos,mean,1
+AP_61,63,M,C,24,shirt,lovely,sarcastic,grad+subj+pos,nice,5
+AP_61,63,M,C,25,story,boring,declarative,grad+subj+neg,approve,0
+AP_61,63,M,C,26,story,boring,declarative,grad+subj+neg,mean,1
+AP_61,63,M,C,27,story,boring,declarative,grad+subj+neg,nice,4
+AP_61,63,M,C,28,tool,useless,sarcastic,grad+subj+neg,approve,0
+AP_61,63,M,C,29,tool,useless,sarcastic,grad+subj+neg,mean,1
+AP_61,63,M,C,30,tool,useless,sarcastic,grad+subj+neg,nice,2
+AP_61,63,M,C,31,hole,half-inch,declarative,–grad–subj,approve,0
+AP_61,63,M,C,32,hole,half-inch,declarative,–grad–subj,mean,1
+AP_61,63,M,C,33,hole,half-inch,declarative,–grad–subj,nice,2
+AP_61,63,M,C,34,solution,partial,sarcastic,–grad–subj,approve,0
+AP_61,63,M,C,35,solution,partial,sarcastic,–grad–subj,mean,1
+AP_61,63,M,C,36,solution,partial,sarcastic,–grad–subj,nice,2
+AP_61,63,M,C,37,novel,easy,declarative,grad+subj+pos,approve,0
+AP_61,63,M,C,38,novel,easy,declarative,grad+subj+pos,mean,1
+AP_61,63,M,C,39,novel,easy,declarative,grad+subj+pos,nice,2
+AP_61,63,M,C,40,video,witty,sarcastic,grad+subj+pos,approve,0
+AP_61,63,M,C,41,video,witty,sarcastic,grad+subj+pos,mean,1
+AP_61,63,M,C,42,video,witty,sarcastic,grad+subj+pos,nice,1
+AP_42,78,M,D,1,book,n/a,declarative,training1 neg,approve,0
+AP_42,78,M,D,2,book,n/a,declarative,training1 neg,mean,1
+AP_42,78,M,D,3,book,n/a,declarative,training1 neg,nice,5
+AP_42,78,M,D,4,recital,n/a,declarative,training2 pos,approve,1
+AP_42,78,M,D,5,recital,n/a,declarative,training2 pos,mean,1
+AP_42,78,M,D,6,recital,n/a,declarative,training2 pos,nice,5
+AP_42,78,M,D,7,cake,yucky,sarcastic,grad+subj+neg,approve,0
+AP_42,78,M,D,8,cake,yucky,sarcastic,grad+subj+neg,mean,1
+AP_42,78,M,D,9,cake,yucky,sarcastic,grad+subj+neg,nice,1
+AP_42,78,M,D,10,gift,birthday,declarative,–grad–subj,approve,1
+AP_42,78,M,D,11,gift,birthday,declarative,–grad–subj,mean,1
+AP_42,78,M,D,12,gift,birthday,declarative,–grad–subj,nice,5
+AP_42,78,M,D,13,bouquet,floral,sarcastic,–grad–subj,approve,0
+AP_42,78,M,D,14,bouquet,floral,sarcastic,–grad–subj,mean,1
+AP_42,78,M,D,15,bouquet,floral,sarcastic,–grad–subj,nice,1
+AP_42,78,M,D,16,question,clever,declarative,grad+subj+pos,approve,1
+AP_42,78,M,D,17,question,clever,declarative,grad+subj+pos,mean,1
+AP_42,78,M,D,18,question,clever,declarative,grad+subj+pos,nice,5
+AP_42,78,M,D,19,dish,tasty,sarcastic,grad+subj+pos,approve,1
+AP_42,78,M,D,20,dish,tasty,sarcastic,grad+subj+pos,mean,1
+AP_42,78,M,D,21,dish,tasty,sarcastic,grad+subj+pos,nice,5
+AP_42,78,M,D,22,shirt,ugly,declarative,grad+subj+neg,approve,0
+AP_42,78,M,D,23,shirt,ugly,declarative,grad+subj+neg,mean,1
+AP_42,78,M,D,24,shirt,ugly,declarative,grad+subj+neg,nice,1
+AP_42,78,M,D,25,story,boring,sarcastic,grad+subj+neg,approve,0
+AP_42,78,M,D,26,story,boring,sarcastic,grad+subj+neg,mean,1
+AP_42,78,M,D,27,story,boring,sarcastic,grad+subj+neg,nice,1
+AP_42,78,M,D,28,tool,wooden,declarative,–grad–subj,approve,1
+AP_42,78,M,D,29,tool,wooden,declarative,–grad–subj,mean,1
+AP_42,78,M,D,30,tool,wooden,declarative,–grad–subj,nice,1
+AP_42,78,M,D,31,hole,half-inch,sarcastic,–grad–subj,approve,0
+AP_42,78,M,D,32,hole,half-inch,sarcastic,–grad–subj,mean,1
+AP_42,78,M,D,33,hole,half-inch,sarcastic,–grad–subj,nice,1
+AP_42,78,M,D,34,solution,helpful,declarative,grad+subj+pos,approve,1
+AP_42,78,M,D,35,solution,helpful,declarative,grad+subj+pos,mean,1
+AP_42,78,M,D,36,solution,helpful,declarative,grad+subj+pos,nice,5
+AP_42,78,M,D,37,novel,easy,sarcastic,grad+subj+pos,approve,1
+AP_42,78,M,D,38,novel,easy,sarcastic,grad+subj+pos,mean,1
+AP_42,78,M,D,39,novel,easy,sarcastic,grad+subj+pos,nice,5
+AP_42,78,M,D,40,video,foolish,declarative,grad+subj+neg,approve,0
+AP_42,78,M,D,41,video,foolish,declarative,grad+subj+neg,mean,1
+AP_42,78,M,D,42,video,foolish,declarative,grad+subj+neg,nice,1
+AP_51,71,F,D,1,book,n/a,declarative,training1 neg,approve,0
+AP_51,71,F,D,2,book,n/a,declarative,training1 neg,mean,1
+AP_51,71,F,D,3,book,n/a,declarative,training1 neg,nice,4
+AP_51,71,F,D,4,recital,n/a,declarative,training2 pos,approve,1
+AP_51,71,F,D,5,recital,n/a,declarative,training2 pos,mean,0
+AP_51,71,F,D,6,recital,n/a,declarative,training2 pos,nice,1
+AP_51,71,F,D,7,cake,yucky,sarcastic,grad+subj+neg,approve,0
+AP_51,71,F,D,8,cake,yucky,sarcastic,grad+subj+neg,mean,0
+AP_51,71,F,D,9,cake,yucky,sarcastic,grad+subj+neg,nice,1
+AP_51,71,F,D,10,gift,birthday,declarative,–grad–subj,approve,1
+AP_51,71,F,D,11,gift,birthday,declarative,–grad–subj,mean,0
+AP_51,71,F,D,12,gift,birthday,declarative,–grad–subj,nice,5
+AP_51,71,F,D,13,bouquet,floral,sarcastic,–grad–subj,approve,0
+AP_51,71,F,D,14,bouquet,floral,sarcastic,–grad–subj,mean,0
+AP_51,71,F,D,15,bouquet,floral,sarcastic,–grad–subj,nice,2
+AP_51,71,F,D,16,question,clever,declarative,grad+subj+pos,approve,0
+AP_51,71,F,D,17,question,clever,declarative,grad+subj+pos,mean,1
+AP_51,71,F,D,18,question,clever,declarative,grad+subj+pos,nice,4
+AP_51,71,F,D,19,dish,tasty,sarcastic,grad+subj+pos,approve,1
+AP_51,71,F,D,20,dish,tasty,sarcastic,grad+subj+pos,mean,1
+AP_51,71,F,D,21,dish,tasty,sarcastic,grad+subj+pos,nice,5
+AP_51,71,F,D,22,shirt,ugly,declarative,grad+subj+neg,approve,0
+AP_51,71,F,D,23,shirt,ugly,declarative,grad+subj+neg,mean,1
+AP_51,71,F,D,24,shirt,ugly,declarative,grad+subj+neg,nice,4
+AP_51,71,F,D,25,story,boring,sarcastic,grad+subj+neg,approve,0
+AP_51,71,F,D,26,story,boring,sarcastic,grad+subj+neg,mean,0
+AP_51,71,F,D,27,story,boring,sarcastic,grad+subj+neg,nice,1
+AP_51,71,F,D,28,tool,wooden,declarative,–grad–subj,approve,0
+AP_51,71,F,D,29,tool,wooden,declarative,–grad–subj,mean,1
+AP_51,71,F,D,30,tool,wooden,declarative,–grad–subj,nice,4
+AP_51,71,F,D,31,hole,half-inch,sarcastic,–grad–subj,approve,0
+AP_51,71,F,D,32,hole,half-inch,sarcastic,–grad–subj,mean,0
+AP_51,71,F,D,33,hole,half-inch,sarcastic,–grad–subj,nice,4
+AP_51,71,F,D,34,solution,helpful,declarative,grad+subj+pos,approve,1
+AP_51,71,F,D,35,solution,helpful,declarative,grad+subj+pos,mean,0
+AP_51,71,F,D,36,solution,helpful,declarative,grad+subj+pos,nice,5
+AP_51,71,F,D,37,novel,easy,sarcastic,grad+subj+pos,approve,0
+AP_51,71,F,D,38,novel,easy,sarcastic,grad+subj+pos,mean,1
+AP_51,71,F,D,39,novel,easy,sarcastic,grad+subj+pos,nice,4
+AP_51,71,F,D,40,video,foolish,declarative,grad+subj+neg,approve,1
+AP_51,71,F,D,41,video,foolish,declarative,grad+subj+neg,mean,1
+AP_51,71,F,D,42,video,foolish,declarative,grad+subj+neg,nice,4
+AP_57,72,F,D,1,book,n/a,declarative,training1 neg,approve,0
+AP_57,72,F,D,2,book,n/a,declarative,training1 neg,mean,1
+AP_57,72,F,D,3,book,n/a,declarative,training1 neg,nice,3
+AP_57,72,F,D,4,recital,n/a,declarative,training2 pos,approve,1
+AP_57,72,F,D,5,recital,n/a,declarative,training2 pos,mean,1
+AP_57,72,F,D,6,recital,n/a,declarative,training2 pos,nice,4
+AP_57,72,F,D,7,cake,yucky,sarcastic,grad+subj+neg,approve,0
+AP_57,72,F,D,8,cake,yucky,sarcastic,grad+subj+neg,mean,1
+AP_57,72,F,D,9,cake,yucky,sarcastic,grad+subj+neg,nice,2
+AP_57,72,F,D,10,gift,birthday,declarative,–grad–subj,approve,1
+AP_57,72,F,D,11,gift,birthday,declarative,–grad–subj,mean,0
+AP_57,72,F,D,12,gift,birthday,declarative,–grad–subj,nice,2
+AP_57,72,F,D,13,bouquet,floral,sarcastic,–grad–subj,approve,0
+AP_57,72,F,D,14,bouquet,floral,sarcastic,–grad–subj,mean,1
+AP_57,72,F,D,15,bouquet,floral,sarcastic,–grad–subj,nice,3
+AP_57,72,F,D,16,question,clever,declarative,grad+subj+pos,approve,1
+AP_57,72,F,D,17,question,clever,declarative,grad+subj+pos,mean,1
+AP_57,72,F,D,18,question,clever,declarative,grad+subj+pos,nice,4
+AP_57,72,F,D,19,dish,tasty,sarcastic,grad+subj+pos,approve,1
+AP_57,72,F,D,20,dish,tasty,sarcastic,grad+subj+pos,mean,1
+AP_57,72,F,D,21,dish,tasty,sarcastic,grad+subj+pos,nice,4
+AP_57,72,F,D,22,shirt,ugly,declarative,grad+subj+neg,approve,0
+AP_57,72,F,D,23,shirt,ugly,declarative,grad+subj+neg,mean,1
+AP_57,72,F,D,24,shirt,ugly,declarative,grad+subj+neg,nice,3
+AP_57,72,F,D,25,story,boring,sarcastic,grad+subj+neg,approve,0
+AP_57,72,F,D,26,story,boring,sarcastic,grad+subj+neg,mean,1
+AP_57,72,F,D,27,story,boring,sarcastic,grad+subj+neg,nice,2
+AP_57,72,F,D,28,tool,wooden,declarative,–grad–subj,approve,1
+AP_57,72,F,D,29,tool,wooden,declarative,–grad–subj,mean,1
+AP_57,72,F,D,30,tool,wooden,declarative,–grad–subj,nice,3
+AP_57,72,F,D,31,hole,half-inch,sarcastic,–grad–subj,approve,0
+AP_57,72,F,D,32,hole,half-inch,sarcastic,–grad–subj,mean,1
+AP_57,72,F,D,33,hole,half-inch,sarcastic,–grad–subj,nice,2
+AP_57,72,F,D,34,solution,helpful,declarative,grad+subj+pos,approve,1
+AP_57,72,F,D,35,solution,helpful,declarative,grad+subj+pos,mean,1
+AP_57,72,F,D,36,solution,helpful,declarative,grad+subj+pos,nice,3
+AP_57,72,F,D,37,novel,easy,sarcastic,grad+subj+pos,approve,0
+AP_57,72,F,D,38,novel,easy,sarcastic,grad+subj+pos,mean,1
+AP_57,72,F,D,39,novel,easy,sarcastic,grad+subj+pos,nice,2
+AP_57,72,F,D,40,video,foolish,declarative,grad+subj+neg,approve,0
+AP_57,72,F,D,41,video,foolish,declarative,grad+subj+neg,mean,1
+AP_57,72,F,D,42,video,foolish,declarative,grad+subj+neg,nice,2
+AP_62,82,F,D,1,book,n/a,declarative,training1 neg,approve,0
+AP_62,82,F,D,2,book,n/a,declarative,training1 neg,mean,1
+AP_62,82,F,D,3,book,n/a,declarative,training1 neg,nice,4
+AP_62,82,F,D,4,recital,n/a,declarative,training2 pos,approve,1
+AP_62,82,F,D,5,recital,n/a,declarative,training2 pos,mean,1
+AP_62,82,F,D,6,recital,n/a,declarative,training2 pos,nice,4
+AP_62,82,F,D,7,cake,yucky,sarcastic,grad+subj+neg,approve,0
+AP_62,82,F,D,8,cake,yucky,sarcastic,grad+subj+neg,mean,1
+AP_62,82,F,D,9,cake,yucky,sarcastic,grad+subj+neg,nice,1
+AP_62,82,F,D,10,gift,birthday,declarative,–grad–subj,approve,1
+AP_62,82,F,D,11,gift,birthday,declarative,–grad–subj,mean,1
+AP_62,82,F,D,12,gift,birthday,declarative,–grad–subj,nice,4
+AP_62,82,F,D,13,bouquet,floral,sarcastic,–grad–subj,approve,0
+AP_62,82,F,D,14,bouquet,floral,sarcastic,–grad–subj,mean,1
+AP_62,82,F,D,15,bouquet,floral,sarcastic,–grad–subj,nice,1
+AP_62,82,F,D,16,question,clever,declarative,grad+subj+pos,approve,1
+AP_62,82,F,D,17,question,clever,declarative,grad+subj+pos,mean,1
+AP_62,82,F,D,18,question,clever,declarative,grad+subj+pos,nice,5
+AP_62,82,F,D,19,dish,tasty,sarcastic,grad+subj+pos,approve,1
+AP_62,82,F,D,20,dish,tasty,sarcastic,grad+subj+pos,mean,1
+AP_62,82,F,D,21,dish,tasty,sarcastic,grad+subj+pos,nice,5
+AP_62,82,F,D,22,shirt,ugly,declarative,grad+subj+neg,approve,0
+AP_62,82,F,D,23,shirt,ugly,declarative,grad+subj+neg,mean,1
+AP_62,82,F,D,24,shirt,ugly,declarative,grad+subj+neg,nice,1
+AP_62,82,F,D,25,story,boring,sarcastic,grad+subj+neg,approve,0
+AP_62,82,F,D,26,story,boring,sarcastic,grad+subj+neg,mean,1
+AP_62,82,F,D,27,story,boring,sarcastic,grad+subj+neg,nice,1
+AP_62,82,F,D,28,tool,wooden,declarative,–grad–subj,approve,0
+AP_62,82,F,D,29,tool,wooden,declarative,–grad–subj,mean,1
+AP_62,82,F,D,30,tool,wooden,declarative,–grad–subj,nice,4
+AP_62,82,F,D,31,hole,half-inch,sarcastic,–grad–subj,approve,0
+AP_62,82,F,D,32,hole,half-inch,sarcastic,–grad–subj,mean,1
+AP_62,82,F,D,33,hole,half-inch,sarcastic,–grad–subj,nice,1
+AP_62,82,F,D,34,solution,helpful,declarative,grad+subj+pos,approve,1
+AP_62,82,F,D,35,solution,helpful,declarative,grad+subj+pos,mean,1
+AP_62,82,F,D,36,solution,helpful,declarative,grad+subj+pos,nice,5
+AP_62,82,F,D,37,novel,easy,sarcastic,grad+subj+pos,approve,0
+AP_62,82,F,D,38,novel,easy,sarcastic,grad+subj+pos,mean,1
+AP_62,82,F,D,39,novel,easy,sarcastic,grad+subj+pos,nice,1
+AP_62,82,F,D,40,video,foolish,declarative,grad+subj+neg,approve,0
+AP_62,82,F,D,41,video,foolish,declarative,grad+subj+neg,mean,1
+AP_62,82,F,D,42,video,foolish,declarative,grad+subj+neg,nice,4
+AP_43,64,M,E,1,book,n/a,declarative,training1 neg,approve,0
+AP_43,64,M,E,2,book,n/a,declarative,training1 neg,mean,1
+AP_43,64,M,E,3,book,n/a,declarative,training1 neg,nice,1
+AP_43,64,M,E,4,recital,n/a,declarative,training2 pos,approve,1
+AP_43,64,M,E,5,recital,n/a,declarative,training2 pos,mean,0
+AP_43,64,M,E,6,recital,n/a,declarative,training2 pos,nice,5
+AP_43,64,M,E,7,cake,lemon,declarative,–grad–subj,approve,0
+AP_43,64,M,E,8,cake,lemon,declarative,–grad–subj,mean,1
+AP_43,64,M,E,9,cake,lemon,declarative,–grad–subj,nice,5
+AP_43,64,M,E,10,gift,birthday,sarcastic,–grad–subj,approve,1
+AP_43,64,M,E,11,gift,birthday,sarcastic,–grad–subj,mean,0
+AP_43,64,M,E,12,gift,birthday,sarcastic,–grad–subj,nice,5
+AP_43,64,M,E,13,bouquet,pretty,declarative,grad+subj+pos,approve,1
+AP_43,64,M,E,14,bouquet,pretty,declarative,grad+subj+pos,mean,1
+AP_43,64,M,E,15,bouquet,pretty,declarative,grad+subj+pos,nice,4
+AP_43,64,M,E,16,question,clever,sarcastic,grad+subj+pos,approve,1
+AP_43,64,M,E,17,question,clever,sarcastic,grad+subj+pos,mean,1
+AP_43,64,M,E,18,question,clever,sarcastic,grad+subj+pos,nice,3
+AP_43,64,M,E,19,dish,nasty,declarative,grad+subj+neg,approve,0
+AP_43,64,M,E,20,dish,nasty,declarative,grad+subj+neg,mean,1
+AP_43,64,M,E,21,dish,nasty,declarative,grad+subj+neg,nice,3
+AP_43,64,M,E,22,shirt,ugly,sarcastic,grad+subj+neg,approve,0
+AP_43,64,M,E,23,shirt,ugly,sarcastic,grad+subj+neg,mean,0
+AP_43,64,M,E,24,shirt,ugly,sarcastic,grad+subj+neg,nice,2
+AP_43,64,M,E,25,story,bedtime,declarative,–grad–subj,approve,1
+AP_43,64,M,E,26,story,bedtime,declarative,–grad–subj,mean,1
+AP_43,64,M,E,27,story,bedtime,declarative,–grad–subj,nice,5
+AP_43,64,M,E,28,tool,wooden,sarcastic,–grad–subj,approve,0
+AP_43,64,M,E,29,tool,wooden,sarcastic,–grad–subj,mean,1
+AP_43,64,M,E,30,tool,wooden,sarcastic,–grad–subj,nice,3
+AP_43,64,M,E,31,hole,careful,declarative,grad+subj+pos,approve,0
+AP_43,64,M,E,32,hole,careful,declarative,grad+subj+pos,mean,0
+AP_43,64,M,E,33,hole,careful,declarative,grad+subj+pos,nice,3
+AP_43,64,M,E,34,solution,helpful,sarcastic,grad+subj+pos,approve,1
+AP_43,64,M,E,35,solution,helpful,sarcastic,grad+subj+pos,mean,1
+AP_43,64,M,E,36,solution,helpful,sarcastic,grad+subj+pos,nice,5
+AP_43,64,M,E,37,novel,tricky,declarative,grad+subj+neg,approve,0
+AP_43,64,M,E,38,novel,tricky,declarative,grad+subj+neg,mean,1
+AP_43,64,M,E,39,novel,tricky,declarative,grad+subj+neg,nice,5
+AP_43,64,M,E,40,video,foolish,sarcastic,grad+subj+neg,approve,0
+AP_43,64,M,E,41,video,foolish,sarcastic,grad+subj+neg,mean,1
+AP_43,64,M,E,42,video,foolish,sarcastic,grad+subj+neg,nice,3
+AP_58,65,M,E,1,book,n/a,declarative,training1 neg,approve,0
+AP_58,65,M,E,2,book,n/a,declarative,training1 neg,mean,1
+AP_58,65,M,E,3,book,n/a,declarative,training1 neg,nice,3
+AP_58,65,M,E,4,recital,n/a,declarative,training2 pos,approve,1
+AP_58,65,M,E,5,recital,n/a,declarative,training2 pos,mean,0
+AP_58,65,M,E,6,recital,n/a,declarative,training2 pos,nice,5
+AP_58,65,M,E,7,cake,lemon,declarative,–grad–subj,approve,1
+AP_58,65,M,E,8,cake,lemon,declarative,–grad–subj,mean,1
+AP_58,65,M,E,9,cake,lemon,declarative,–grad–subj,nice,5
+AP_58,65,M,E,10,gift,birthday,sarcastic,–grad–subj,approve,1
+AP_58,65,M,E,11,gift,birthday,sarcastic,–grad–subj,mean,0
+AP_58,65,M,E,12,gift,birthday,sarcastic,–grad–subj,nice,3
+AP_58,65,M,E,13,bouquet,pretty,declarative,grad+subj+pos,approve,1
+AP_58,65,M,E,14,bouquet,pretty,declarative,grad+subj+pos,mean,0
+AP_58,65,M,E,15,bouquet,pretty,declarative,grad+subj+pos,nice,3
+AP_58,65,M,E,16,question,clever,sarcastic,grad+subj+pos,approve,1
+AP_58,65,M,E,17,question,clever,sarcastic,grad+subj+pos,mean,0
+AP_58,65,M,E,18,question,clever,sarcastic,grad+subj+pos,nice,1
+AP_58,65,M,E,19,dish,nasty,declarative,grad+subj+neg,approve,0
+AP_58,65,M,E,20,dish,nasty,declarative,grad+subj+neg,mean,1
+AP_58,65,M,E,21,dish,nasty,declarative,grad+subj+neg,nice,5
+AP_58,65,M,E,22,shirt,ugly,sarcastic,grad+subj+neg,approve,0
+AP_58,65,M,E,23,shirt,ugly,sarcastic,grad+subj+neg,mean,1
+AP_58,65,M,E,24,shirt,ugly,sarcastic,grad+subj+neg,nice,4
+AP_58,65,M,E,25,story,bedtime,declarative,–grad–subj,approve,0
+AP_58,65,M,E,26,story,bedtime,declarative,–grad–subj,mean,0
+AP_58,65,M,E,27,story,bedtime,declarative,–grad–subj,nice,4
+AP_58,65,M,E,28,tool,wooden,sarcastic,–grad–subj,approve,0
+AP_58,65,M,E,29,tool,wooden,sarcastic,–grad–subj,mean,0
+AP_58,65,M,E,30,tool,wooden,sarcastic,–grad–subj,nice,3
+AP_58,65,M,E,31,hole,careful,declarative,grad+subj+pos,approve,0
+AP_58,65,M,E,32,hole,careful,declarative,grad+subj+pos,mean,0
+AP_58,65,M,E,33,hole,careful,declarative,grad+subj+pos,nice,5
+AP_58,65,M,E,34,solution,helpful,sarcastic,grad+subj+pos,approve,1
+AP_58,65,M,E,35,solution,helpful,sarcastic,grad+subj+pos,mean,0
+AP_58,65,M,E,36,solution,helpful,sarcastic,grad+subj+pos,nice,5
+AP_58,65,M,E,37,novel,tricky,declarative,grad+subj+neg,approve,0
+AP_58,65,M,E,38,novel,tricky,declarative,grad+subj+neg,mean,1
+AP_58,65,M,E,39,novel,tricky,declarative,grad+subj+neg,nice,3
+AP_58,65,M,E,40,video,foolish,sarcastic,grad+subj+neg,approve,1
+AP_58,65,M,E,41,video,foolish,sarcastic,grad+subj+neg,mean,0
+AP_58,65,M,E,42,video,foolish,sarcastic,grad+subj+neg,nice,5
+AP_63,78,F,E,1,book,n/a,declarative,training1 neg,approve,0
+AP_63,78,F,E,2,book,n/a,declarative,training1 neg,mean,1
+AP_63,78,F,E,3,book,n/a,declarative,training1 neg,nice,3
+AP_63,78,F,E,4,recital,n/a,declarative,training2 pos,approve,1
+AP_63,78,F,E,5,recital,n/a,declarative,training2 pos,mean,1
+AP_63,78,F,E,6,recital,n/a,declarative,training2 pos,nice,5
+AP_63,78,F,E,7,cake,lemon,declarative,–grad–subj,approve,0
+AP_63,78,F,E,8,cake,lemon,declarative,–grad–subj,mean,1
+AP_63,78,F,E,9,cake,lemon,declarative,–grad–subj,nice,2
+AP_63,78,F,E,10,gift,birthday,sarcastic,–grad–subj,approve,0
+AP_63,78,F,E,11,gift,birthday,sarcastic,–grad–subj,mean,1
+AP_63,78,F,E,12,gift,birthday,sarcastic,–grad–subj,nice,2
+AP_63,78,F,E,13,bouquet,pretty,declarative,grad+subj+pos,approve,1
+AP_63,78,F,E,14,bouquet,pretty,declarative,grad+subj+pos,mean,0
+AP_63,78,F,E,15,bouquet,pretty,declarative,grad+subj+pos,nice,4
+AP_63,78,F,E,16,question,clever,sarcastic,grad+subj+pos,approve,0
+AP_63,78,F,E,17,question,clever,sarcastic,grad+subj+pos,mean,0
+AP_63,78,F,E,18,question,clever,sarcastic,grad+subj+pos,nice,2
+AP_63,78,F,E,19,dish,nasty,declarative,grad+subj+neg,approve,0
+AP_63,78,F,E,20,dish,nasty,declarative,grad+subj+neg,mean,0
+AP_63,78,F,E,21,dish,nasty,declarative,grad+subj+neg,nice,1
+AP_63,78,F,E,22,shirt,ugly,sarcastic,grad+subj+neg,approve,0
+AP_63,78,F,E,23,shirt,ugly,sarcastic,grad+subj+neg,mean,1
+AP_63,78,F,E,24,shirt,ugly,sarcastic,grad+subj+neg,nice,2
+AP_63,78,F,E,25,story,bedtime,declarative,–grad–subj,approve,1
+AP_63,78,F,E,26,story,bedtime,declarative,–grad–subj,mean,0
+AP_63,78,F,E,27,story,bedtime,declarative,–grad–subj,nice,5
+AP_63,78,F,E,28,tool,wooden,sarcastic,–grad–subj,approve,1
+AP_63,78,F,E,29,tool,wooden,sarcastic,–grad–subj,mean,1
+AP_63,78,F,E,30,tool,wooden,sarcastic,–grad–subj,nice,4
+AP_63,78,F,E,31,hole,careful,declarative,grad+subj+pos,approve,1
+AP_63,78,F,E,32,hole,careful,declarative,grad+subj+pos,mean,1
+AP_63,78,F,E,33,hole,careful,declarative,grad+subj+pos,nice,4
+AP_63,78,F,E,34,solution,helpful,sarcastic,grad+subj+pos,approve,1
+AP_63,78,F,E,35,solution,helpful,sarcastic,grad+subj+pos,mean,1
+AP_63,78,F,E,36,solution,helpful,sarcastic,grad+subj+pos,nice,4
+AP_63,78,F,E,37,novel,tricky,declarative,grad+subj+neg,approve,1
+AP_63,78,F,E,38,novel,tricky,declarative,grad+subj+neg,mean,1
+AP_63,78,F,E,39,novel,tricky,declarative,grad+subj+neg,nice,5
+AP_63,78,F,E,40,video,foolish,sarcastic,grad+subj+neg,approve,0
+AP_63,78,F,E,41,video,foolish,sarcastic,grad+subj+neg,mean,0
+AP_63,78,F,E,42,video,foolish,sarcastic,grad+subj+neg,nice,5
+AP_44,62,M,F,1,book,n/a,declarative,training1 neg,approve,0
+AP_44,62,M,F,2,book,n/a,declarative,training1 neg,mean,1
+AP_44,62,M,F,3,book,n/a,declarative,training1 neg,nice,1
+AP_44,62,M,F,4,recital,n/a,declarative,training2 pos,approve,1
+AP_44,62,M,F,5,recital,n/a,declarative,training2 pos,mean,1
+AP_44,62,M,F,6,recital,n/a,declarative,training2 pos,nice,5
+AP_44,62,M,F,7,cake,lemon,sarcastic,–grad–subj,approve,1
+AP_44,62,M,F,8,cake,lemon,sarcastic,–grad–subj,mean,0
+AP_44,62,M,F,9,cake,lemon,sarcastic,–grad–subj,nice,1
+AP_44,62,M,F,10,gift,awesome,declarative,grad+subj+pos,approve,1
+AP_44,62,M,F,11,gift,awesome,declarative,grad+subj+pos,mean,1
+AP_44,62,M,F,12,gift,awesome,declarative,grad+subj+pos,nice,5
+AP_44,62,M,F,13,bouquet,pretty,sarcastic,grad+subj+pos,approve,1
+AP_44,62,M,F,14,bouquet,pretty,sarcastic,grad+subj+pos,mean,1
+AP_44,62,M,F,15,bouquet,pretty,sarcastic,grad+subj+pos,nice,4
+AP_44,62,M,F,16,question,silly,declarative,grad+subj+neg,approve,0
+AP_44,62,M,F,17,question,silly,declarative,grad+subj+neg,mean,1
+AP_44,62,M,F,18,question,silly,declarative,grad+subj+neg,nice,3
+AP_44,62,M,F,19,dish,nasty,sarcastic,grad+subj+neg,approve,0
+AP_44,62,M,F,20,dish,nasty,sarcastic,grad+subj+neg,mean,1
+AP_44,62,M,F,21,dish,nasty,sarcastic,grad+subj+neg,nice,4
+AP_44,62,M,F,22,shirt,spotted,declarative,–grad–subj,approve,0
+AP_44,62,M,F,23,shirt,spotted,declarative,–grad–subj,mean,1
+AP_44,62,M,F,24,shirt,spotted,declarative,–grad–subj,nice,1
+AP_44,62,M,F,25,story,bedtime,sarcastic,–grad–subj,approve,0
+AP_44,62,M,F,26,story,bedtime,sarcastic,–grad–subj,mean,1
+AP_44,62,M,F,27,story,bedtime,sarcastic,–grad–subj,nice,2
+AP_44,62,M,F,28,tool,useful,declarative,grad+subj+pos,approve,1
+AP_44,62,M,F,29,tool,useful,declarative,grad+subj+pos,mean,1
+AP_44,62,M,F,30,tool,useful,declarative,grad+subj+pos,nice,5
+AP_44,62,M,F,31,hole,careful,sarcastic,grad+subj+pos,approve,1
+AP_44,62,M,F,32,hole,careful,sarcastic,grad+subj+pos,mean,1
+AP_44,62,M,F,33,hole,careful,sarcastic,grad+subj+pos,nice,4
+AP_44,62,M,F,34,solution,bossy,declarative,grad+subj+neg,approve,0
+AP_44,62,M,F,35,solution,bossy,declarative,grad+subj+neg,mean,0
+AP_44,62,M,F,36,solution,bossy,declarative,grad+subj+neg,nice,4
+AP_44,62,M,F,37,novel,tricky,sarcastic,grad+subj+neg,approve,0
+AP_44,62,M,F,38,novel,tricky,sarcastic,grad+subj+neg,mean,0
+AP_44,62,M,F,39,novel,tricky,sarcastic,grad+subj+neg,nice,4
+AP_44,62,M,F,40,video,tiktok,declarative,–grad–subj,approve,0
+AP_44,62,M,F,41,video,tiktok,declarative,–grad–subj,mean,0
+AP_44,62,M,F,42,video,tiktok,declarative,–grad–subj,nice,3
+AP_52,74,M,F,1,book,n/a,declarative,training1 neg,approve,0
+AP_52,74,M,F,2,book,n/a,declarative,training1 neg,mean,1
+AP_52,74,M,F,3,book,n/a,declarative,training1 neg,nice,2
+AP_52,74,M,F,4,recital,n/a,declarative,training2 pos,approve,1
+AP_52,74,M,F,5,recital,n/a,declarative,training2 pos,mean,1
+AP_52,74,M,F,6,recital,n/a,declarative,training2 pos,nice,4
+AP_52,74,M,F,7,cake,lemon,sarcastic,–grad–subj,approve,1
+AP_52,74,M,F,8,cake,lemon,sarcastic,–grad–subj,mean,1
+AP_52,74,M,F,9,cake,lemon,sarcastic,–grad–subj,nice,3
+AP_52,74,M,F,10,gift,awesome,declarative,grad+subj+pos,approve,1
+AP_52,74,M,F,11,gift,awesome,declarative,grad+subj+pos,mean,1
+AP_52,74,M,F,12,gift,awesome,declarative,grad+subj+pos,nice,5
+AP_52,74,M,F,13,bouquet,pretty,sarcastic,grad+subj+pos,approve,1
+AP_52,74,M,F,14,bouquet,pretty,sarcastic,grad+subj+pos,mean,0
+AP_52,74,M,F,15,bouquet,pretty,sarcastic,grad+subj+pos,nice,4
+AP_52,74,M,F,16,question,silly,declarative,grad+subj+neg,approve,1
+AP_52,74,M,F,17,question,silly,declarative,grad+subj+neg,mean,1
+AP_52,74,M,F,18,question,silly,declarative,grad+subj+neg,nice,5
+AP_52,74,M,F,19,dish,nasty,sarcastic,grad+subj+neg,approve,0
+AP_52,74,M,F,20,dish,nasty,sarcastic,grad+subj+neg,mean,1
+AP_52,74,M,F,21,dish,nasty,sarcastic,grad+subj+neg,nice,1
+AP_52,74,M,F,22,shirt,spotted,declarative,–grad–subj,approve,0
+AP_52,74,M,F,23,shirt,spotted,declarative,–grad–subj,mean,1
+AP_52,74,M,F,24,shirt,spotted,declarative,–grad–subj,nice,3
+AP_52,74,M,F,25,story,bedtime,sarcastic,–grad–subj,approve,1
+AP_52,74,M,F,26,story,bedtime,sarcastic,–grad–subj,mean,1
+AP_52,74,M,F,27,story,bedtime,sarcastic,–grad–subj,nice,4
+AP_52,74,M,F,28,tool,useful,declarative,grad+subj+pos,approve,0
+AP_52,74,M,F,29,tool,useful,declarative,grad+subj+pos,mean,1
+AP_52,74,M,F,30,tool,useful,declarative,grad+subj+pos,nice,3
+AP_52,74,M,F,31,hole,careful,sarcastic,grad+subj+pos,approve,1
+AP_52,74,M,F,32,hole,careful,sarcastic,grad+subj+pos,mean,1
+AP_52,74,M,F,33,hole,careful,sarcastic,grad+subj+pos,nice,5
+AP_52,74,M,F,34,solution,bossy,declarative,grad+subj+neg,approve,0
+AP_52,74,M,F,35,solution,bossy,declarative,grad+subj+neg,mean,1
+AP_52,74,M,F,36,solution,bossy,declarative,grad+subj+neg,nice,1
+AP_52,74,M,F,37,novel,tricky,sarcastic,grad+subj+neg,approve,1
+AP_52,74,M,F,38,novel,tricky,sarcastic,grad+subj+neg,mean,1
+AP_52,74,M,F,39,novel,tricky,sarcastic,grad+subj+neg,nice,5
+AP_52,74,M,F,40,video,tiktok,declarative,–grad–subj,approve,1
+AP_52,74,M,F,41,video,tiktok,declarative,–grad–subj,mean,1
+AP_52,74,M,F,42,video,tiktok,declarative,–grad–subj,nice,5
+AP_59,72,F,F,1,book,n/a,declarative,training1 neg,approve,0
+AP_59,72,F,F,2,book,n/a,declarative,training1 neg,mean,0
+AP_59,72,F,F,3,book,n/a,declarative,training1 neg,nice,5
+AP_59,72,F,F,4,recital,n/a,declarative,training2 pos,approve,1
+AP_59,72,F,F,5,recital,n/a,declarative,training2 pos,mean,1
+AP_59,72,F,F,6,recital,n/a,declarative,training2 pos,nice,5
+AP_59,72,F,F,7,cake,lemon,sarcastic,–grad–subj,approve,1
+AP_59,72,F,F,8,cake,lemon,sarcastic,–grad–subj,mean,0
+AP_59,72,F,F,9,cake,lemon,sarcastic,–grad–subj,nice,5
+AP_59,72,F,F,10,gift,awesome,declarative,grad+subj+pos,approve,1
+AP_59,72,F,F,11,gift,awesome,declarative,grad+subj+pos,mean,1
+AP_59,72,F,F,12,gift,awesome,declarative,grad+subj+pos,nice,5
+AP_59,72,F,F,13,bouquet,pretty,sarcastic,grad+subj+pos,approve,1
+AP_59,72,F,F,14,bouquet,pretty,sarcastic,grad+subj+pos,mean,1
+AP_59,72,F,F,15,bouquet,pretty,sarcastic,grad+subj+pos,nice,5
+AP_59,72,F,F,16,question,silly,declarative,grad+subj+neg,approve,1
+AP_59,72,F,F,17,question,silly,declarative,grad+subj+neg,mean,0
+AP_59,72,F,F,18,question,silly,declarative,grad+subj+neg,nice,5
+AP_59,72,F,F,19,dish,nasty,sarcastic,grad+subj+neg,approve,0
+AP_59,72,F,F,20,dish,nasty,sarcastic,grad+subj+neg,mean,1
+AP_59,72,F,F,21,dish,nasty,sarcastic,grad+subj+neg,nice,4
+AP_59,72,F,F,22,shirt,spotted,declarative,–grad–subj,approve,1
+AP_59,72,F,F,23,shirt,spotted,declarative,–grad–subj,mean,1
+AP_59,72,F,F,24,shirt,spotted,declarative,–grad–subj,nice,5
+AP_59,72,F,F,25,story,bedtime,sarcastic,–grad–subj,approve,1
+AP_59,72,F,F,26,story,bedtime,sarcastic,–grad–subj,mean,1
+AP_59,72,F,F,27,story,bedtime,sarcastic,–grad–subj,nice,5
+AP_59,72,F,F,28,tool,useful,declarative,grad+subj+pos,approve,1
+AP_59,72,F,F,29,tool,useful,declarative,grad+subj+pos,mean,1
+AP_59,72,F,F,30,tool,useful,declarative,grad+subj+pos,nice,5
+AP_59,72,F,F,31,hole,careful,sarcastic,grad+subj+pos,approve,1
+AP_59,72,F,F,32,hole,careful,sarcastic,grad+subj+pos,mean,1
+AP_59,72,F,F,33,hole,careful,sarcastic,grad+subj+pos,nice,5
+AP_59,72,F,F,34,solution,bossy,declarative,grad+subj+neg,approve,0
+AP_59,72,F,F,35,solution,bossy,declarative,grad+subj+neg,mean,1
+AP_59,72,F,F,36,solution,bossy,declarative,grad+subj+neg,nice,2
+AP_59,72,F,F,37,novel,tricky,sarcastic,grad+subj+neg,approve,1
+AP_59,72,F,F,38,novel,tricky,sarcastic,grad+subj+neg,mean,1
+AP_59,72,F,F,39,novel,tricky,sarcastic,grad+subj+neg,nice,4
+AP_59,72,F,F,40,video,tiktok,declarative,–grad–subj,approve,1
+AP_59,72,F,F,41,video,tiktok,declarative,–grad–subj,mean,1
+AP_59,72,F,F,42,video,tiktok,declarative,–grad–subj,nice,5
+AP_60,67,F,B,1,book,n/a,declarative,training1 neg,approve,0
+AP_60,67,F,B,2,book,n/a,declarative,training1 neg,mean,1
+AP_60,67,F,B,3,book,n/a,declarative,training1 neg,nice,4
+AP_60,67,F,B,4,recital,n/a,declarative,training2 pos,approve,1
+AP_60,67,F,B,5,recital,n/a,declarative,training2 pos,mean,1
+AP_60,67,F,B,6,recital,n/a,declarative,training2 pos,nice,4
+AP_60,67,F,B,7,cake,yummy,sarcastic,grad+subj+pos,approve,1
+AP_60,67,F,B,8,cake,yummy,sarcastic,grad+subj+pos,mean,1
+AP_60,67,F,B,9,cake,yummy,sarcastic,grad+subj+pos,nice,4
+AP_60,67,F,B,10,gift,awful,declarative,grad+subj+neg,approve,0
+AP_60,67,F,B,11,gift,awful,declarative,grad+subj+neg,mean,1
+AP_60,67,F,B,12,gift,awful,declarative,grad+subj+neg,nice,2
+AP_60,67,F,B,13,bouquet,messy,sarcastic,grad+subj+neg,approve,0
+AP_60,67,F,B,14,bouquet,messy,sarcastic,grad+subj+neg,mean,1
+AP_60,67,F,B,15,bouquet,messy,sarcastic,grad+subj+neg,nice,2
+AP_60,67,F,B,16,question,review,declarative,–grad–subj,approve,0
+AP_60,67,F,B,17,question,review,declarative,–grad–subj,mean,0
+AP_60,67,F,B,18,question,review,declarative,–grad–subj,nice,4
+AP_60,67,F,B,19,dish,lobster,sarcastic,–grad–subj,approve,1
+AP_60,67,F,B,20,dish,lobster,sarcastic,–grad–subj,mean,1
+AP_60,67,F,B,21,dish,lobster,sarcastic,–grad–subj,nice,3
+AP_60,67,F,B,22,shirt,lovely,declarative,grad+subj+pos,approve,1
+AP_60,67,F,B,23,shirt,lovely,declarative,grad+subj+pos,mean,1
+AP_60,67,F,B,24,shirt,lovely,declarative,grad+subj+pos,nice,5
+AP_60,67,F,B,25,story,funny,sarcastic,grad+subj+pos,approve,1
+AP_60,67,F,B,26,story,funny,sarcastic,grad+subj+pos,mean,1
+AP_60,67,F,B,27,story,funny,sarcastic,grad+subj+pos,nice,4
+AP_60,67,F,B,28,tool,useless,declarative,grad+subj+neg,approve,0
+AP_60,67,F,B,29,tool,useless,declarative,grad+subj+neg,mean,1
+AP_60,67,F,B,30,tool,useless,declarative,grad+subj+neg,nice,2
+AP_60,67,F,B,31,hole,careless,sarcastic,grad+subj+neg,approve,1
+AP_60,67,F,B,32,hole,careless,sarcastic,grad+subj+neg,mean,0
+AP_60,67,F,B,33,hole,careless,sarcastic,grad+subj+neg,nice,2
+AP_60,67,F,B,34,solution,partial,declarative,–grad–subj,approve,1
+AP_60,67,F,B,35,solution,partial,declarative,–grad–subj,mean,1
+AP_60,67,F,B,36,solution,partial,declarative,–grad–subj,nice,4
+AP_60,67,F,B,37,novel,fiction,sarcastic,–grad–subj,approve,1
+AP_60,67,F,B,38,novel,fiction,sarcastic,–grad–subj,mean,1
+AP_60,67,F,B,39,novel,fiction,sarcastic,–grad–subj,nice,3
+AP_60,67,F,B,40,video,witty,declarative,grad+subj+pos,approve,1
+AP_60,67,F,B,41,video,witty,declarative,grad+subj+pos,mean,1
+AP_60,67,F,B,42,video,witty,declarative,grad+subj+pos,nice,4
+AP_61,63,M,C,1,book,n/a,declarative,training1 neg,approve,0
+AP_61,63,M,C,2,book,n/a,declarative,training1 neg,mean,1
+AP_61,63,M,C,3,book,n/a,declarative,training1 neg,nice,3
+AP_61,63,M,C,4,recital,n/a,declarative,training2 pos,approve,1
+AP_61,63,M,C,5,recital,n/a,declarative,training2 pos,mean,1
+AP_61,63,M,C,6,recital,n/a,declarative,training2 pos,nice,5
+AP_61,63,M,C,7,cake,yucky,declarative,grad+subj+neg,approve,0
+AP_61,63,M,C,8,cake,yucky,declarative,grad+subj+neg,mean,1
+AP_61,63,M,C,9,cake,yucky,declarative,grad+subj+neg,nice,2
+AP_61,63,M,C,10,gift,awful,sarcastic,grad+subj+neg,approve,0
+AP_61,63,M,C,11,gift,awful,sarcastic,grad+subj+neg,mean,1
+AP_61,63,M,C,12,gift,awful,sarcastic,grad+subj+neg,nice,3
+AP_61,63,M,C,13,bouquet,floral,declarative,–grad–subj,approve,0
+AP_61,63,M,C,14,bouquet,floral,declarative,–grad–subj,mean,1
+AP_61,63,M,C,15,bouquet,floral,declarative,–grad–subj,nice,3
+AP_61,63,M,C,16,question,review,sarcastic,–grad–subj,approve,1
+AP_61,63,M,C,17,question,review,sarcastic,–grad–subj,mean,1
+AP_61,63,M,C,18,question,review,sarcastic,–grad–subj,nice,4
+AP_61,63,M,C,19,dish,tasty,declarative,grad+subj+pos,approve,1
+AP_61,63,M,C,20,dish,tasty,declarative,grad+subj+pos,mean,1
+AP_61,63,M,C,21,dish,tasty,declarative,grad+subj+pos,nice,5
+AP_61,63,M,C,22,shirt,lovely,sarcastic,grad+subj+pos,approve,1
+AP_61,63,M,C,23,shirt,lovely,sarcastic,grad+subj+pos,mean,1
+AP_61,63,M,C,24,shirt,lovely,sarcastic,grad+subj+pos,nice,5
+AP_61,63,M,C,25,story,boring,declarative,grad+subj+neg,approve,0
+AP_61,63,M,C,26,story,boring,declarative,grad+subj+neg,mean,1
+AP_61,63,M,C,27,story,boring,declarative,grad+subj+neg,nice,4
+AP_61,63,M,C,28,tool,useless,sarcastic,grad+subj+neg,approve,0
+AP_61,63,M,C,29,tool,useless,sarcastic,grad+subj+neg,mean,1
+AP_61,63,M,C,30,tool,useless,sarcastic,grad+subj+neg,nice,2
+AP_61,63,M,C,31,hole,half-inch,declarative,–grad–subj,approve,0
+AP_61,63,M,C,32,hole,half-inch,declarative,–grad–subj,mean,1
+AP_61,63,M,C,33,hole,half-inch,declarative,–grad–subj,nice,2
+AP_61,63,M,C,34,solution,partial,sarcastic,–grad–subj,approve,0
+AP_61,63,M,C,35,solution,partial,sarcastic,–grad–subj,mean,1
+AP_61,63,M,C,36,solution,partial,sarcastic,–grad–subj,nice,2
+AP_61,63,M,C,37,novel,easy,declarative,grad+subj+pos,approve,0
+AP_61,63,M,C,38,novel,easy,declarative,grad+subj+pos,mean,1
+AP_61,63,M,C,39,novel,easy,declarative,grad+subj+pos,nice,2
+AP_61,63,M,C,40,video,witty,sarcastic,grad+subj+pos,approve,0
+AP_61,63,M,C,41,video,witty,sarcastic,grad+subj+pos,mean,1
+AP_61,63,M,C,42,video,witty,sarcastic,grad+subj+pos,nice,1
+AP_62,82,F,D,1,book,n/a,declarative,training1 neg,approve,0
+AP_62,82,F,D,2,book,n/a,declarative,training1 neg,mean,1
+AP_62,82,F,D,3,book,n/a,declarative,training1 neg,nice,4
+AP_62,82,F,D,4,recital,n/a,declarative,training2 pos,approve,1
+AP_62,82,F,D,5,recital,n/a,declarative,training2 pos,mean,1
+AP_62,82,F,D,6,recital,n/a,declarative,training2 pos,nice,4
+AP_62,82,F,D,7,cake,yucky,sarcastic,grad+subj+neg,approve,0
+AP_62,82,F,D,8,cake,yucky,sarcastic,grad+subj+neg,mean,1
+AP_62,82,F,D,9,cake,yucky,sarcastic,grad+subj+neg,nice,1
+AP_62,82,F,D,10,gift,birthday,declarative,–grad–subj,approve,1
+AP_62,82,F,D,11,gift,birthday,declarative,–grad–subj,mean,1
+AP_62,82,F,D,12,gift,birthday,declarative,–grad–subj,nice,4
+AP_62,82,F,D,13,bouquet,floral,sarcastic,–grad–subj,approve,0
+AP_62,82,F,D,14,bouquet,floral,sarcastic,–grad–subj,mean,1
+AP_62,82,F,D,15,bouquet,floral,sarcastic,–grad–subj,nice,1
+AP_62,82,F,D,16,question,clever,declarative,grad+subj+pos,approve,1
+AP_62,82,F,D,17,question,clever,declarative,grad+subj+pos,mean,1
+AP_62,82,F,D,18,question,clever,declarative,grad+subj+pos,nice,5
+AP_62,82,F,D,19,dish,tasty,sarcastic,grad+subj+pos,approve,1
+AP_62,82,F,D,20,dish,tasty,sarcastic,grad+subj+pos,mean,1
+AP_62,82,F,D,21,dish,tasty,sarcastic,grad+subj+pos,nice,5
+AP_62,82,F,D,22,shirt,ugly,declarative,grad+subj+neg,approve,0
+AP_62,82,F,D,23,shirt,ugly,declarative,grad+subj+neg,mean,1
+AP_62,82,F,D,24,shirt,ugly,declarative,grad+subj+neg,nice,1
+AP_62,82,F,D,25,story,boring,sarcastic,grad+subj+neg,approve,0
+AP_62,82,F,D,26,story,boring,sarcastic,grad+subj+neg,mean,1
+AP_62,82,F,D,27,story,boring,sarcastic,grad+subj+neg,nice,1
+AP_62,82,F,D,28,tool,wooden,declarative,–grad–subj,approve,0
+AP_62,82,F,D,29,tool,wooden,declarative,–grad–subj,mean,1
+AP_62,82,F,D,30,tool,wooden,declarative,–grad–subj,nice,4
+AP_62,82,F,D,31,hole,half-inch,sarcastic,–grad–subj,approve,0
+AP_62,82,F,D,32,hole,half-inch,sarcastic,–grad–subj,mean,1
+AP_62,82,F,D,33,hole,half-inch,sarcastic,–grad–subj,nice,1
+AP_62,82,F,D,34,solution,helpful,declarative,grad+subj+pos,approve,1
+AP_62,82,F,D,35,solution,helpful,declarative,grad+subj+pos,mean,1
+AP_62,82,F,D,36,solution,helpful,declarative,grad+subj+pos,nice,5
+AP_62,82,F,D,37,novel,easy,sarcastic,grad+subj+pos,approve,0
+AP_62,82,F,D,38,novel,easy,sarcastic,grad+subj+pos,mean,1
+AP_62,82,F,D,39,novel,easy,sarcastic,grad+subj+pos,nice,1
+AP_62,82,F,D,40,video,foolish,declarative,grad+subj+neg,approve,0
+AP_62,82,F,D,41,video,foolish,declarative,grad+subj+neg,mean,1
+AP_62,82,F,D,42,video,foolish,declarative,grad+subj+neg,nice,4
+AP_63,78,F,E,1,book,n/a,declarative,training1 neg,approve,0
+AP_63,78,F,E,2,book,n/a,declarative,training1 neg,mean,1
+AP_63,78,F,E,3,book,n/a,declarative,training1 neg,nice,3
+AP_63,78,F,E,4,recital,n/a,declarative,training2 pos,approve,1
+AP_63,78,F,E,5,recital,n/a,declarative,training2 pos,mean,1
+AP_63,78,F,E,6,recital,n/a,declarative,training2 pos,nice,5
+AP_63,78,F,E,7,cake,lemon,declarative,–grad–subj,approve,0
+AP_63,78,F,E,8,cake,lemon,declarative,–grad–subj,mean,1
+AP_63,78,F,E,9,cake,lemon,declarative,–grad–subj,nice,2
+AP_63,78,F,E,10,gift,birthday,sarcastic,–grad–subj,approve,0
+AP_63,78,F,E,11,gift,birthday,sarcastic,–grad–subj,mean,1
+AP_63,78,F,E,12,gift,birthday,sarcastic,–grad–subj,nice,2
+AP_63,78,F,E,13,bouquet,pretty,declarative,grad+subj+pos,approve,1
+AP_63,78,F,E,14,bouquet,pretty,declarative,grad+subj+pos,mean,0
+AP_63,78,F,E,15,bouquet,pretty,declarative,grad+subj+pos,nice,4
+AP_63,78,F,E,16,question,clever,sarcastic,grad+subj+pos,approve,0
+AP_63,78,F,E,17,question,clever,sarcastic,grad+subj+pos,mean,0
+AP_63,78,F,E,18,question,clever,sarcastic,grad+subj+pos,nice,2
+AP_63,78,F,E,19,dish,nasty,declarative,grad+subj+neg,approve,0
+AP_63,78,F,E,20,dish,nasty,declarative,grad+subj+neg,mean,0
+AP_63,78,F,E,21,dish,nasty,declarative,grad+subj+neg,nice,1
+AP_63,78,F,E,22,shirt,ugly,sarcastic,grad+subj+neg,approve,0
+AP_63,78,F,E,23,shirt,ugly,sarcastic,grad+subj+neg,mean,1
+AP_63,78,F,E,24,shirt,ugly,sarcastic,grad+subj+neg,nice,2
+AP_63,78,F,E,25,story,bedtime,declarative,–grad–subj,approve,1
+AP_63,78,F,E,26,story,bedtime,declarative,–grad–subj,mean,0
+AP_63,78,F,E,27,story,bedtime,declarative,–grad–subj,nice,5
+AP_63,78,F,E,28,tool,wooden,sarcastic,–grad–subj,approve,1
+AP_63,78,F,E,29,tool,wooden,sarcastic,–grad–subj,mean,1
+AP_63,78,F,E,30,tool,wooden,sarcastic,–grad–subj,nice,4
+AP_63,78,F,E,31,hole,careful,declarative,grad+subj+pos,approve,1
+AP_63,78,F,E,32,hole,careful,declarative,grad+subj+pos,mean,1
+AP_63,78,F,E,33,hole,careful,declarative,grad+subj+pos,nice,4
+AP_63,78,F,E,34,solution,helpful,sarcastic,grad+subj+pos,approve,1
+AP_63,78,F,E,35,solution,helpful,sarcastic,grad+subj+pos,mean,1
+AP_63,78,F,E,36,solution,helpful,sarcastic,grad+subj+pos,nice,4
+AP_63,78,F,E,37,novel,tricky,declarative,grad+subj+neg,approve,1
+AP_63,78,F,E,38,novel,tricky,declarative,grad+subj+neg,mean,1
+AP_63,78,F,E,39,novel,tricky,declarative,grad+subj+neg,nice,5
+AP_63,78,F,E,40,video,foolish,sarcastic,grad+subj+neg,approve,0
+AP_63,78,F,E,41,video,foolish,sarcastic,grad+subj+neg,mean,0
+AP_63,78,F,E,42,video,foolish,sarcastic,grad+subj+neg,nice,5
+AP_68,78,M,B,1,book,n/a,declarative,training1 neg,approve,0
+AP_68,78,M,B,2,book,n/a,declarative,training1 neg,mean,1
+AP_68,78,M,B,3,book,n/a,declarative,training1 neg,nice,2
+AP_68,78,M,B,4,recital,n/a,declarative,training2 pos,approve,1
+AP_68,78,M,B,5,recital,n/a,declarative,training2 pos,mean,1
+AP_68,78,M,B,6,recital,n/a,declarative,training2 pos,nice,4
+AP_68,78,M,B,7,cake,yummy,sarcastic,grad+subj+pos,approve,0
+AP_68,78,M,B,8,cake,yummy,sarcastic,grad+subj+pos,mean,1
+AP_68,78,M,B,9,cake,yummy,sarcastic,grad+subj+pos,nice,1
+AP_68,78,M,B,10,gift,awful,declarative,grad+subj+neg,approve,0
+AP_68,78,M,B,11,gift,awful,declarative,grad+subj+neg,mean,1
+AP_68,78,M,B,12,gift,awful,declarative,grad+subj+neg,nice,2
+AP_68,78,M,B,13,bouquet,messy,sarcastic,grad+subj+neg,approve,0
+AP_68,78,M,B,14,bouquet,messy,sarcastic,grad+subj+neg,mean,1
+AP_68,78,M,B,15,bouquet,messy,sarcastic,grad+subj+neg,nice,2
+AP_68,78,M,B,16,question,review,declarative,–grad–subj,approve,0
+AP_68,78,M,B,17,question,review,declarative,–grad–subj,mean,1
+AP_68,78,M,B,18,question,review,declarative,–grad–subj,nice,2
+AP_68,78,M,B,19,dish,lobster,sarcastic,–grad–subj,approve,0
+AP_68,78,M,B,20,dish,lobster,sarcastic,–grad–subj,mean,1
+AP_68,78,M,B,21,dish,lobster,sarcastic,–grad–subj,nice,2
+AP_68,78,M,B,22,shirt,lovely,declarative,grad+subj+pos,approve,1
+AP_68,78,M,B,23,shirt,lovely,declarative,grad+subj+pos,mean,1
+AP_68,78,M,B,24,shirt,lovely,declarative,grad+subj+pos,nice,3
+AP_68,78,M,B,25,story,funny,sarcastic,grad+subj+pos,approve,0
+AP_68,78,M,B,26,story,funny,sarcastic,grad+subj+pos,mean,1
+AP_68,78,M,B,27,story,funny,sarcastic,grad+subj+pos,nice,2
+AP_68,78,M,B,28,tool,useless,declarative,grad+subj+neg,approve,0
+AP_68,78,M,B,29,tool,useless,declarative,grad+subj+neg,mean,1
+AP_68,78,M,B,30,tool,useless,declarative,grad+subj+neg,nice,2
+AP_68,78,M,B,31,hole,careless,sarcastic,grad+subj+neg,approve,0
+AP_68,78,M,B,32,hole,careless,sarcastic,grad+subj+neg,mean,1
+AP_68,78,M,B,33,hole,careless,sarcastic,grad+subj+neg,nice,2
+AP_68,78,M,B,34,solution,partial,declarative,–grad–subj,approve,0
+AP_68,78,M,B,35,solution,partial,declarative,–grad–subj,mean,1
+AP_68,78,M,B,36,solution,partial,declarative,–grad–subj,nice,2
+AP_68,78,M,B,37,novel,fiction,sarcastic,–grad–subj,approve,0
+AP_68,78,M,B,38,novel,fiction,sarcastic,–grad–subj,mean,1
+AP_68,78,M,B,39,novel,fiction,sarcastic,–grad–subj,nice,1
+AP_68,78,M,B,40,video,witty,declarative,grad+subj+pos,approve,0
+AP_68,78,M,B,41,video,witty,declarative,grad+subj+pos,mean,1
+AP_68,78,M,B,42,video,witty,declarative,grad+subj+pos,nice,3
+AP_65,73,M,C,1,book,n/a,declarative,training1 neg,approve,0
+AP_65,73,M,C,2,book,n/a,declarative,training1 neg,mean,1
+AP_65,73,M,C,3,book,n/a,declarative,training1 neg,nice,1
+AP_65,73,M,C,4,recital,n/a,declarative,training2 pos,approve,1
+AP_65,73,M,C,5,recital,n/a,declarative,training2 pos,mean,1
+AP_65,73,M,C,6,recital,n/a,declarative,training2 pos,nice,2
+AP_65,73,M,C,7,cake,yucky,declarative,grad+subj+neg,approve,0
+AP_65,73,M,C,8,cake,yucky,declarative,grad+subj+neg,mean,1
+AP_65,73,M,C,9,cake,yucky,declarative,grad+subj+neg,nice,5
+AP_65,73,M,C,10,gift,awful,sarcastic,grad+subj+neg,approve,0
+AP_65,73,M,C,11,gift,awful,sarcastic,grad+subj+neg,mean,1
+AP_65,73,M,C,12,gift,awful,sarcastic,grad+subj+neg,nice,2
+AP_65,73,M,C,13,bouquet,floral,declarative,–grad–subj,approve,1
+AP_65,73,M,C,14,bouquet,floral,declarative,–grad–subj,mean,1
+AP_65,73,M,C,15,bouquet,floral,declarative,–grad–subj,nice,5
+AP_65,73,M,C,16,question,review,sarcastic,–grad–subj,approve,0
+AP_65,73,M,C,17,question,review,sarcastic,–grad–subj,mean,1
+AP_65,73,M,C,18,question,review,sarcastic,–grad–subj,nice,5
+AP_65,73,M,C,19,dish,tasty,declarative,grad+subj+pos,approve,0
+AP_65,73,M,C,20,dish,tasty,declarative,grad+subj+pos,mean,1
+AP_65,73,M,C,21,dish,tasty,declarative,grad+subj+pos,nice,5
+AP_65,73,M,C,22,shirt,lovely,sarcastic,grad+subj+pos,approve,1
+AP_65,73,M,C,23,shirt,lovely,sarcastic,grad+subj+pos,mean,1
+AP_65,73,M,C,24,shirt,lovely,sarcastic,grad+subj+pos,nice,5
+AP_65,73,M,C,25,story,boring,declarative,grad+subj+neg,approve,0
+AP_65,73,M,C,26,story,boring,declarative,grad+subj+neg,mean,0
+AP_65,73,M,C,27,story,boring,declarative,grad+subj+neg,nice,2
+AP_65,73,M,C,28,tool,useless,sarcastic,grad+subj+neg,approve,0
+AP_65,73,M,C,29,tool,useless,sarcastic,grad+subj+neg,mean,0
+AP_65,73,M,C,30,tool,useless,sarcastic,grad+subj+neg,nice,4
+AP_65,73,M,C,31,hole,half-inch,declarative,–grad–subj,approve,0
+AP_65,73,M,C,32,hole,half-inch,declarative,–grad–subj,mean,0
+AP_65,73,M,C,33,hole,half-inch,declarative,–grad–subj,nice,5
+AP_65,73,M,C,34,solution,partial,sarcastic,–grad–subj,approve,0
+AP_65,73,M,C,35,solution,partial,sarcastic,–grad–subj,mean,0
+AP_65,73,M,C,36,solution,partial,sarcastic,–grad–subj,nice,5
+AP_65,73,M,C,37,novel,easy,declarative,grad+subj+pos,approve,0
+AP_65,73,M,C,38,novel,easy,declarative,grad+subj+pos,mean,1
+AP_65,73,M,C,39,novel,easy,declarative,grad+subj+pos,nice,5
+AP_65,73,M,C,40,video,witty,sarcastic,grad+subj+pos,approve,0
+AP_65,73,M,C,41,video,witty,sarcastic,grad+subj+pos,mean,1
+AP_65,73,M,C,42,video,witty,sarcastic,grad+subj+pos,nice,5
+AP_69,77,M,C,1,book,n/a,declarative,training1 neg,approve,0
+AP_69,77,M,C,2,book,n/a,declarative,training1 neg,mean,1
+AP_69,77,M,C,3,book,n/a,declarative,training1 neg,nice,2
+AP_69,77,M,C,4,recital,n/a,declarative,training2 pos,approve,1
+AP_69,77,M,C,5,recital,n/a,declarative,training2 pos,mean,1
+AP_69,77,M,C,6,recital,n/a,declarative,training2 pos,nice,4
+AP_69,77,M,C,7,cake,yucky,declarative,grad+subj+neg,approve,0
+AP_69,77,M,C,8,cake,yucky,declarative,grad+subj+neg,mean,0
+AP_69,77,M,C,9,cake,yucky,declarative,grad+subj+neg,nice,2
+AP_69,77,M,C,10,gift,awful,sarcastic,grad+subj+neg,approve,0
+AP_69,77,M,C,11,gift,awful,sarcastic,grad+subj+neg,mean,0
+AP_69,77,M,C,12,gift,awful,sarcastic,grad+subj+neg,nice,1
+AP_69,77,M,C,13,bouquet,floral,declarative,–grad–subj,approve,1
+AP_69,77,M,C,14,bouquet,floral,declarative,–grad–subj,mean,1
+AP_69,77,M,C,15,bouquet,floral,declarative,–grad–subj,nice,3
+AP_69,77,M,C,16,question,review,sarcastic,–grad–subj,approve,1
+AP_69,77,M,C,17,question,review,sarcastic,–grad–subj,mean,1
+AP_69,77,M,C,18,question,review,sarcastic,–grad–subj,nice,3
+AP_69,77,M,C,19,dish,tasty,declarative,grad+subj+pos,approve,1
+AP_69,77,M,C,20,dish,tasty,declarative,grad+subj+pos,mean,1
+AP_69,77,M,C,21,dish,tasty,declarative,grad+subj+pos,nice,5
+AP_69,77,M,C,22,shirt,lovely,sarcastic,grad+subj+pos,approve,1
+AP_69,77,M,C,23,shirt,lovely,sarcastic,grad+subj+pos,mean,1
+AP_69,77,M,C,24,shirt,lovely,sarcastic,grad+subj+pos,nice,4
+AP_69,77,M,C,25,story,boring,declarative,grad+subj+neg,approve,0
+AP_69,77,M,C,26,story,boring,declarative,grad+subj+neg,mean,0
+AP_69,77,M,C,27,story,boring,declarative,grad+subj+neg,nice,1
+AP_69,77,M,C,28,tool,useless,sarcastic,grad+subj+neg,approve,0
+AP_69,77,M,C,29,tool,useless,sarcastic,grad+subj+neg,mean,1
+AP_69,77,M,C,30,tool,useless,sarcastic,grad+subj+neg,nice,2
+AP_69,77,M,C,31,hole,half-inch,declarative,–grad–subj,approve,0
+AP_69,77,M,C,32,hole,half-inch,declarative,–grad–subj,mean,1
+AP_69,77,M,C,33,hole,half-inch,declarative,–grad–subj,nice,2
+AP_69,77,M,C,34,solution,partial,sarcastic,–grad–subj,approve,0
+AP_69,77,M,C,35,solution,partial,sarcastic,–grad–subj,mean,1
+AP_69,77,M,C,36,solution,partial,sarcastic,–grad–subj,nice,3
+AP_69,77,M,C,37,novel,easy,declarative,grad+subj+pos,approve,1
+AP_69,77,M,C,38,novel,easy,declarative,grad+subj+pos,mean,1
+AP_69,77,M,C,39,novel,easy,declarative,grad+subj+pos,nice,2
+AP_69,77,M,C,40,video,witty,sarcastic,grad+subj+pos,approve,0
+AP_69,77,M,C,41,video,witty,sarcastic,grad+subj+pos,mean,1
+AP_69,77,M,C,42,video,witty,sarcastic,grad+subj+pos,nice,3
+AP_70,78,M,D,1,book,n/a,declarative,training1 neg,approve,1
+AP_70,78,M,D,2,book,n/a,declarative,training1 neg,mean,1
+AP_70,78,M,D,3,book,n/a,declarative,training1 neg,nice,5
+AP_70,78,M,D,4,recital,n/a,declarative,training2 pos,approve,1
+AP_70,78,M,D,5,recital,n/a,declarative,training2 pos,mean,1
+AP_70,78,M,D,6,recital,n/a,declarative,training2 pos,nice,5
+AP_70,78,M,D,7,cake,yucky,sarcastic,grad+subj+neg,approve,0
+AP_70,78,M,D,8,cake,yucky,sarcastic,grad+subj+neg,mean,1
+AP_70,78,M,D,9,cake,yucky,sarcastic,grad+subj+neg,nice,3
+AP_70,78,M,D,10,gift,birthday,declarative,–grad–subj,approve,1
+AP_70,78,M,D,11,gift,birthday,declarative,–grad–subj,mean,1
+AP_70,78,M,D,12,gift,birthday,declarative,–grad–subj,nice,3
+AP_70,78,M,D,13,bouquet,floral,sarcastic,–grad–subj,approve,1
+AP_70,78,M,D,14,bouquet,floral,sarcastic,–grad–subj,mean,1
+AP_70,78,M,D,15,bouquet,floral,sarcastic,–grad–subj,nice,3
+AP_70,78,M,D,16,question,clever,declarative,grad+subj+pos,approve,1
+AP_70,78,M,D,17,question,clever,declarative,grad+subj+pos,mean,1
+AP_70,78,M,D,18,question,clever,declarative,grad+subj+pos,nice,5
+AP_70,78,M,D,19,dish,tasty,sarcastic,grad+subj+pos,approve,1
+AP_70,78,M,D,20,dish,tasty,sarcastic,grad+subj+pos,mean,1
+AP_70,78,M,D,21,dish,tasty,sarcastic,grad+subj+pos,nice,5
+AP_70,78,M,D,22,shirt,ugly,declarative,grad+subj+neg,approve,0
+AP_70,78,M,D,23,shirt,ugly,declarative,grad+subj+neg,mean,1
+AP_70,78,M,D,24,shirt,ugly,declarative,grad+subj+neg,nice,3
+AP_70,78,M,D,25,story,boring,sarcastic,grad+subj+neg,approve,0
+AP_70,78,M,D,26,story,boring,sarcastic,grad+subj+neg,mean,1
+AP_70,78,M,D,27,story,boring,sarcastic,grad+subj+neg,nice,3
+AP_70,78,M,D,28,tool,wooden,declarative,–grad–subj,approve,1
+AP_70,78,M,D,29,tool,wooden,declarative,–grad–subj,mean,1
+AP_70,78,M,D,30,tool,wooden,declarative,–grad–subj,nice,3
+AP_70,78,M,D,31,hole,half-inch,sarcastic,–grad–subj,approve,1
+AP_70,78,M,D,32,hole,half-inch,sarcastic,–grad–subj,mean,1
+AP_70,78,M,D,33,hole,half-inch,sarcastic,–grad–subj,nice,3
+AP_70,78,M,D,34,solution,helpful,declarative,grad+subj+pos,approve,1
+AP_70,78,M,D,35,solution,helpful,declarative,grad+subj+pos,mean,1
+AP_70,78,M,D,36,solution,helpful,declarative,grad+subj+pos,nice,5
+AP_70,78,M,D,37,novel,easy,sarcastic,grad+subj+pos,approve,0
+AP_70,78,M,D,38,novel,easy,sarcastic,grad+subj+pos,mean,1
+AP_70,78,M,D,39,novel,easy,sarcastic,grad+subj+pos,nice,3
+AP_70,78,M,D,40,video,foolish,declarative,grad+subj+neg,approve,0
+AP_70,78,M,D,41,video,foolish,declarative,grad+subj+neg,mean,1
+AP_70,78,M,D,42,video,foolish,declarative,grad+subj+neg,nice,3
+AP_67,66,F,F,1,book,n/a,declarative,training1 neg,approve,0
+AP_67,66,F,F,2,book,n/a,declarative,training1 neg,mean,1
+AP_67,66,F,F,3,book,n/a,declarative,training1 neg,nice,2
+AP_67,66,F,F,4,recital,n/a,declarative,training2 pos,approve,1
+AP_67,66,F,F,5,recital,n/a,declarative,training2 pos,mean,1
+AP_67,66,F,F,6,recital,n/a,declarative,training2 pos,nice,5
+AP_67,66,F,F,7,cake,lemon,sarcastic,–grad–subj,approve,0
+AP_67,66,F,F,8,cake,lemon,sarcastic,–grad–subj,mean,1
+AP_67,66,F,F,9,cake,lemon,sarcastic,–grad–subj,nice,3
+AP_67,66,F,F,10,gift,awesome,declarative,grad+subj+pos,approve,1
+AP_67,66,F,F,11,gift,awesome,declarative,grad+subj+pos,mean,1
+AP_67,66,F,F,12,gift,awesome,declarative,grad+subj+pos,nice,5
+AP_67,66,F,F,13,bouquet,pretty,sarcastic,grad+subj+pos,approve,1
+AP_67,66,F,F,14,bouquet,pretty,sarcastic,grad+subj+pos,mean,1
+AP_67,66,F,F,15,bouquet,pretty,sarcastic,grad+subj+pos,nice,5
+AP_67,66,F,F,16,question,silly,declarative,grad+subj+neg,approve,0
+AP_67,66,F,F,17,question,silly,declarative,grad+subj+neg,mean,1
+AP_67,66,F,F,18,question,silly,declarative,grad+subj+neg,nice,2
+AP_67,66,F,F,19,dish,nasty,sarcastic,grad+subj+neg,approve,1
+AP_67,66,F,F,20,dish,nasty,sarcastic,grad+subj+neg,mean,1
+AP_67,66,F,F,21,dish,nasty,sarcastic,grad+subj+neg,nice,5
+AP_67,66,F,F,22,shirt,spotted,declarative,–grad–subj,approve,1
+AP_67,66,F,F,23,shirt,spotted,declarative,–grad–subj,mean,1
+AP_67,66,F,F,24,shirt,spotted,declarative,–grad–subj,nice,3
+AP_67,66,F,F,25,story,bedtime,sarcastic,–grad–subj,approve,0
+AP_67,66,F,F,26,story,bedtime,sarcastic,–grad–subj,mean,1
+AP_67,66,F,F,27,story,bedtime,sarcastic,–grad–subj,nice,3
+AP_67,66,F,F,28,tool,useful,declarative,grad+subj+pos,approve,1
+AP_67,66,F,F,29,tool,useful,declarative,grad+subj+pos,mean,1
+AP_67,66,F,F,30,tool,useful,declarative,grad+subj+pos,nice,5
+AP_67,66,F,F,31,hole,careful,sarcastic,grad+subj+pos,approve,1
+AP_67,66,F,F,32,hole,careful,sarcastic,grad+subj+pos,mean,1
+AP_67,66,F,F,33,hole,careful,sarcastic,grad+subj+pos,nice,5
+AP_67,66,F,F,34,solution,bossy,declarative,grad+subj+neg,approve,0
+AP_67,66,F,F,35,solution,bossy,declarative,grad+subj+neg,mean,1
+AP_67,66,F,F,36,solution,bossy,declarative,grad+subj+neg,nice,2
+AP_67,66,F,F,37,novel,tricky,sarcastic,grad+subj+neg,approve,1
+AP_67,66,F,F,38,novel,tricky,sarcastic,grad+subj+neg,mean,1
+AP_67,66,F,F,39,novel,tricky,sarcastic,grad+subj+neg,nice,3
+AP_67,66,F,F,40,video,tiktok,declarative,–grad–subj,approve,0
+AP_67,66,F,F,41,video,tiktok,declarative,–grad–subj,mean,1
+AP_67,66,F,F,42,video,tiktok,declarative,–grad–subj,nice,3
