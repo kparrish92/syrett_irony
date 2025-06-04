@@ -2,12 +2,12 @@
     "sortOrder": [
         {
             "columnIndex": 2,
-            "ascending": true
+            "ascending": false
         },
         {
             "columnIndex": 4,
             "ascending": true
         }
     ],
-    "path": "~/Documents/GitHub/syrett_adjectives/docs"
+    "path": "~/Documents/GitHub/qp_exp/scripts"
 }

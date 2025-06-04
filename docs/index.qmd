@@ -4,15 +4,41 @@ title: "Irony/intonation studies analysis"
 
 ## Statistical Analysis 
 
-Models run: 
+The focus of this analysis was on how the two groups (adults and children) responded differently to three distinct modifier types when they were uttered with two distinct intonation types. 
+There were also three probe types.
+The first two, labeled "mean" and "approve" had binary outcomes (yes or no), while the third (labeled "nice") was a 5 point Likert scale. 
 
-Decision rules: ROPE and differences 
+A series of Bayesian regression models were run depending upon the outcomce variable of the specific probe types. For "mean" and "approve", Bayesian multilevel binary logistic regressions were run for each of the three probe types. In these models, the log-odds of choosing "yes" was the outcome variable and group (2 levels) and intonation (2 levels) and their interaction were the predictor variables. The models also included a random intercept for participant, trial modifier and trial object. All models were fit in R using the brms package with 2000 iterations across 4 processing cores. For the binary logistic regression model, the bernoulli family was used to fit the model, while cumulative family was used for the ordinal regression.
+
+In the context of the current work, the use of Bayesian models offer a few advantages over their frequentist counterparts. First, they allow for more fine-grained interpretation of results than simply testing for statistical significance. That is, rather than forcing a binary (yes/no) outcome to the question of "are these two comparisons different?", the Bayesian approach can provide gradient probabilities of an effect using the probability of direction (pd) estimated by the model. In particular, we use the following criteria to make decision rules when testing for differences (after Makowski et al., 2019):
+
+> pd <= 95% ~ p > .1: uncertain
+
+> pd > 95% ~ p < .1: possibly existing
+
+> pd > 97%: likely existing
+
+> pd > 99%: probably existing
+
+> pd > 99.9%: certainly existing
+
+In addition, Bayesian methods can provide evidence for the null hypothesis using a specified region of practical equivalence. If a sufficient portion of the posterior distribution falls within the ROPE, then this is taken as evidence for equivalence. 
+We consider 90% of a distribution within the ROPE to be practically equivalent in an analogous interpretation of frequentist tests of equivalence (the 90% CI two one-sided tests procedure; Lakens, 2017).
+The ROPE range was the standard +/- .18.
+
 
 #### Experiment list
 
-[Experiment 1](includes/approve.html)
+[Aprrove](includes/approve.html)
 
-[Experiment 2](includes/exp_2.html)
+[Mean](includes/exp_2.html)
 
-[Experiment 3](includes/exp_3.html)
+[Nice](includes/exp_3.html)
 
+#### References 
+
+Lakens, D. (2017). Equivalence tests: A practical primer for t tests, correlations, and meta-analyses. Social psychological and personality science, 8(4), 355-362.
+
+Makowski, D., Ben-Shachar, M. S., & Lüdecke, D. (2019). bayestestR: Describing Effects and their Uncertainty, Existence and Significance within the Bayesian Framework. Journal of Open Source Software, 4(40), 1541. https://doi.org/10.21105/joss.01541
+
+Makowski, D., Ben-Shachar, M. S., Chen, S. H. A., & Lüdecke, D. (2019). Indices of Effect Existence and Significance in the Bayesian Framework. Frontiers in Psychology 2019;10:2767. 10.3389/fpsyg.2019.02767
