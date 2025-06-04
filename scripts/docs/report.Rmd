@@ -30,6 +30,7 @@ adult_data = read.csv(here("data", "tidy_data.csv")) %>%
   filter(trial_number > 6) %>% # removing practice trials %>% 
   select(response, intonation, modifier_type, subject.ID, trial_object, probe_type, trial_modifier) %>% 
   mutate(group = "adults")
+
 child_data_n = read.csv(here("data", "child_data.csv")) %>% 
   filter(trial_number > 6) %>% 
   filter(response != "N/A") %>% 

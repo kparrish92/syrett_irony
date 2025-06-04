@@ -1,0 +1,18 @@
+---
+title: "Irony/intonation studies analysis"
+---
+
+## Statistical Analysis 
+
+Models run: 
+
+Decision rules: ROPE and differences 
+
+#### Experiment list
+
+[Experiment 1](includes/approve.html)
+
+[Experiment 2](includes/exp_2.html)
+
+[Experiment 3](includes/exp_3.html)
+
