@@ -1,4 +1,5 @@
 library(brms)
+library(here)
 
 approve_data = read.csv(here("data", "tidy", "approve_data_tidy.csv"))
 
@@ -25,5 +26,6 @@ mod_int3 = brms::brm(response ~ intonation*group + (1 | subject.ID) +
 conditional_effects(mod_int)
 conditional_effects(mod_int2)
 conditional_effects(mod_int3)
+
 
 

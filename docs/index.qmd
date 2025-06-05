@@ -25,15 +25,15 @@ In the context of the current work, the use of Bayesian models offer a few advan
 In addition, Bayesian methods can provide evidence for the null hypothesis using a specified region of practical equivalence. If a sufficient portion of the posterior distribution falls within the ROPE, then this is taken as evidence for equivalence. 
 We consider 90% of a distribution within the ROPE to be practically equivalent in an analogous interpretation of frequentist tests of equivalence (the 90% CI two one-sided tests procedure; Lakens, 2017).
 The ROPE range was the standard +/- .18.
-
+Posthoc tests were also carried out using the emmeans package. 
 
 #### Experiment list
 
 [Aprrove](includes/approve.html)
 
-[Mean](includes/exp_2.html)
+[Mean](includes/mean.html)
 
-[Nice](includes/exp_3.html)
+[Nice](includes/nice.html)
 
 #### References 
 

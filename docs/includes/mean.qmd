@@ -9,8 +9,16 @@ library(here)
 library(bayestestR)
 library(bayesplot)
 library(brms)
+library(emmeans)
 library(report)
+library(schoolmath)
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+f95 <- function(n, mean, sd) {
+  e <- qnorm(0.975)*sd/sqrt(n)
+  return(c("lower" = mean - e, "upper" = mean + e))
+}
+
 
 syrett_theme <- function() {
   theme(
@@ -27,6 +35,10 @@ mean_mod_2 = readRDS(here("data", "models", "mean_mod_grad_s_p.rds"))
 
 mean_mod_3 = readRDS(here("data", "models", "mean_mod_gs.rds"))
 ```
+
+### General Plots and descriptive statistics
+
+**Note**: Only figures and tables are included here without explanation (for the sake of time). Please see the approve page for examples.
 
 ```{r, dpi = 600}
 #| label: fig-1
@@ -49,20 +61,9 @@ rep1 %>%
   ylim(0,100) +
   theme_minimal() + syrett_theme() + guides(fill="none") + ggtitle("Percentage of `yes` responses to declarative and sarcastic items")
 
-mean_df %>% 
-  mutate(response = case_when(
-    response == 0 ~ "No",
-    response == 1 ~ "Yes",
-  )) %>% 
-  group_by(intonation) %>% 
-  summarise(n = n())
 
 
 ```
-
-@fig-1 shows the overall percentage of "yes" responses for both groups combined in the two intonation types.
-As seen in the figure, "yes" was more frequent in declarative items overall (`r round(rep1$pct[1], digits = 1)`%) than in sarcastic items (`r round(rep1$pct[2], digits = 1)`%).
-The figure represents a total of 1204 trials for the declarative and 1203 for the sarcastic condition.
 
 ```{r, dpi = 600}
 #| label: fig-2
@@ -91,13 +92,6 @@ rep2 %>%
   ggtitle("Percentage of `yes` responses to declarative and sarcastic items in both groups")
 ```
 
-@fig-2 shows the overall percentage of "yes" responses for both groups individually in the two intonation types.
-In this case, "yes" was the most frequent in declarative items for adults (`r round(rep2$Percentage[1], digits = 1)`%), followed by declarative items in children (`r round(rep2$Percentage[2], digits = 1)`%).
-
-The sarcastic items had a lower percentage in both groups, (adults: `r round(rep2$Percentage[3], digits = 1)`%, children; `r round(rep2$Percentage[4], digits = 1)`%).
-Again, there was more data overall in the adult data set than children: there were `r total_data$n[1]` total data points for adults and 739 data points for children.
-
-
 ```{r, dpi = 600}
 #| label: fig-3
 #| fig-cap: "Percentage of `yes` responses by modifier type overall"
@@ -125,9 +119,6 @@ rep3 %>%
   ggtitle("Percentage of `yes` responses by modifier type overall")
 ```
 
-@fig-3 shows the overall percentage of "yes" responses for the of the three modifier types overall. 
-"Yes" was the most above 75% in all cases (grad+subj+pos items:`r round(rep3$Percentage[2], digits = 1)`%; -grad–subj items (`r round(rep3$Percentage[3], digits = 1)`%; grad+subj+neg `r round(rep3$Percentage[1], digits = 1)`%).
-
 ```{r, dpi = 600}
 #| label: fig-4
 #| fig-cap: "Percentage of `yes` responses by modifier type in both groups"
@@ -153,9 +144,6 @@ rep4 %>%
   ggtitle("Percentage of `yes` responses by modifier type in both groups")
 ```
 
-@fig-4 breaks down the percentage of "yes" responses for the of the three modifier types by groups.
-Overall, the percentages of "yes" responses ranged from 74.6% to 88.7%
-
 ```{r, dpi = 600}
 #| label: fig-5
 #| fig-cap: "Percentage of `yes` responses in each modifier type and intonation"
@@ -180,9 +168,6 @@ rep5 %>%
   ggtitle("Percentage of `yes` responses in each modifier type and intonation")
 
 ```
-
-@fig-5 breaks down the percentage of "yes" responses for the of the three modifier types by intonation instead of groups.
-Here, the lowest percentage of "yes" responses was 70.2 and the highest was 89.6. 
 
 ### Model Results 
 
@@ -210,9 +195,7 @@ rep6 %>%
   ggtitle("Percentage of `yes` responses by modifier type and intonation in both groups")
 ```
 
-Finally, @fig-6 breaks down the percentage of "yes" responses for the of the three modifier types by both intonation and between groups.
-Many of these differences were tested directly in the Bayesian Logistic regression models. 
-The logistic regression model are summarized in the tables below and test the differences the log-odds of answering "yes" for both sarcastic and declarative intonation in both groups. An individual model was run each of the three modifier types. 
+#### Model for -grad-subj
 
 ```{r}
 #| label: mos-2
@@ -238,34 +221,28 @@ repmod1 = describe_posterior(
 ) %>%
   as.data.frame() %>% 
   mutate(across(where(is.numeric), round, 3))
-
 ```
 
-Table 1 shows the model for the modifier type `-grad-subj` and is visualized in the left panel of @fig-6. 
-The intercept term predicts the log-odds of choosing "yes" for declarative items by adults `r repmod1$Median[1]` [95% HDI `r repmod1$CI_low[1]` - `r repmod1$CI_high[1]`]. 
-This corresponds to a median probability of `r round(plogis(repmod1$Median[1]), digits = 2)` (ranging from `r round(plogis(repmod1$CI_low[1]), digits = 2)` to `r round(plogis(repmod1$CI_high[1]), digits = 2)`).
-The fixed effect "intonationsarcastic" tests whether there was a difference in the adult group between declarative and sarcastic intonation. 
-The model results were inconclusive for this comparison [`r repmod1$Median[2]`; 95% HDI `r repmod1$CI_low[2]` - `r repmod1$CI_high[2]`; pd = `r repmod1$pd[2]`].
-There was also not sufficient evidence to consider the two conditions practically equivalent [ `r repmod1$ROPE_percentage[2]`].
-The model suggests that there is possible evidence that the children were less likely to answer "yes" than adults in the declarative condition `r repmod1$Median[3]` [95% HDI `r repmod1$CI_low[3]` - `r repmod1$CI_high[3]`; pd = `r repmod1$pd[3]`].
-Finally, there was not compelling evidence of an interaction `r repmod1$Median[4]` [95% HDI `r repmod1$CI_low[4]` - `r repmod1$CI_high[4]`; pd = `r repmod1$pd[4]`], suggesting that there was not reliable evidence that children were more likely to respond "yes" as a function of intonation for the `-grad-subj` modifier condition.
-Again, there was also not sufficient evidence for practical equivalence, suggesting that this result is inconclusive, rather than null [ROPE percentage: `r repmod1$ROPE_Percentage[4]`]. 
+```{r}
+#| tbl-cap: "Table 2: Pairwise comparisons for the Bayesian Logistic regression for -grad-subj."
+
+pairs(emmeans(mean_mod_3, ~ intonation*group)) %>% 
+  as.data.frame() %>% 
+  mutate_if(is.numeric, funs(. * -1)) %>% 
+  mutate(across(where(is.numeric), round, 3)) %>% 
+  mutate(result = case_when(
+    is.positive(estimate) & is.positive(lower.HPD) & is.positive(upper.HPD) ~ 1,
+    is.negative(estimate) & is.negative(lower.HPD) & is.negative(upper.HPD) ~ 1,
+    is.positive(estimate) & is.negative(lower.HPD) & is.positive(upper.HPD) ~ 0,
+    is.positive(estimate) & is.positive(lower.HPD) & is.negative(upper.HPD) ~ 0,
+    is.negative(estimate) & is.negative(lower.HPD) & is.positive(upper.HPD) ~ 0,
+    is.negative(estimate) & is.positive(lower.HPD) & is.negative(upper.HPD) ~ 0
+  )) %>% 
+  knitr::kable(row.names = FALSE)
+  
+```
 
 ```{r}
-#| label: mos-1
-#| tbl-cap: "Table 2: Description of the posterior distribution for the Bayesian Logistic regression for grad+subj+neg."
-
-describe_posterior(
-  mean_mod_1,
-  effects = "fixed",
-  component = "all",
-  test = c("p_direction", "p_significance", "rope"),
-  centrality = "all"
-) %>%
-  as.data.frame() %>% 
-  mutate(across(where(is.numeric), round, 3)) %>% 
-  knitr::kable(row.names = FALSE)
-
 repmod2 = describe_posterior(
   mean_mod_1,
   effects = "fixed",
@@ -275,19 +252,63 @@ repmod2 = describe_posterior(
 ) %>%
   as.data.frame() %>% 
   mutate(across(where(is.numeric), round, 3))
+
 ```
 
+#### Model for grad+subj+neg
 
-Table 2 shows the model for the modifier type `grad+subj+neg` and is visualized in the middle panel of @fig-6. 
-Again, the intercept term predicts the log-odds of choosing "yes" for declarative items by adults `r repmod2$Median[1]` [95% HDI `r repmod2$CI_low[1]` - `r repmod2$CI_high[1]`]. 
-There was compelling evidence for an increase in "yes" responses in adults for sarcastic items relative to declarative ones [Median = `r repmod2$Median[2]`; 95% HDI `repmod2$CI_low[2] - repmod2$CI_high[2]`, and certainly exists (pd = `r repmod2$pd[2]`).
+```{r}
+#| label: mos-1
+#| tbl-cap: "Table 3: Description of the posterior distribution for the Bayesian Logistic regression for grad+subj+neg."
 
-Unlike the first model, there was compelling evidence that the children were less likely to answer "yes" than adults in the declarative condition `r repmod2$Median[3]` [95% HDI `r repmod2$CI_low[3]` - `r repmod2$CI_high[3]`; pd = `r repmod2$pd[3]`].
-Likewise, there was also possible evidence of an interaction `r repmod2$Median[4]` [95% HDI `r repmod2$CI_low[4]` - `r repmod2$CI_high[4]`; pd = `r repmod2$pd[4]`], suggesting that there children were overall less likely to respond "yes" when the intonation was sarcastic. 
+describe_posterior(
+  mean_mod_1,
+  effects = "fixed",
+  component = "all",
+  test = c("p_direction", "p_significance", "rope"),
+  centrality = "all"
+) %>%
+  as.data.frame() %>% 
+  mutate(across(where(is.numeric), round, 3)) %>% 
+  knitr::kable(row.names = FALSE)
+```
+
+```{r}
+#| tbl-cap: "Table 4: Pairwise comparisons for the Bayesian Logistic regression for grad+subj+neg."
+
+pairs(emmeans(mean_mod_1, ~ intonation*group)) %>% 
+  as.data.frame() %>% 
+  mutate_if(is.numeric, funs(. * -1)) %>% 
+  mutate(across(where(is.numeric), round, 3)) %>% 
+  mutate(result = case_when(
+    is.positive(estimate) & is.positive(lower.HPD) & is.positive(upper.HPD) ~ 1,
+    is.negative(estimate) & is.negative(lower.HPD) & is.negative(upper.HPD) ~ 1,
+    is.positive(estimate) & is.negative(lower.HPD) & is.positive(upper.HPD) ~ 0,
+    is.positive(estimate) & is.positive(lower.HPD) & is.negative(upper.HPD) ~ 0,
+    is.negative(estimate) & is.negative(lower.HPD) & is.positive(upper.HPD) ~ 0,
+    is.negative(estimate) & is.positive(lower.HPD) & is.negative(upper.HPD) ~ 0
+  )) %>% 
+  knitr::kable(row.names = FALSE)
+  
+```
+
+#### Model for grad+subj+pos 
+
+```{r}
+repmod3 = describe_posterior(
+  mean_mod_2,
+  effects = "fixed",
+  component = "all",
+  test = c("p_direction", "p_significance", "rope"),
+  centrality = "all"
+) %>%
+  as.data.frame() %>% 
+  mutate(across(where(is.numeric), round, 3))
+```
 
 ```{r}
 #| label: mos-3
-#| tbl-cap: "Table 3: Description of the posterior distribution for the Bayesian Logistic regression for grad+subj+pos"
+#| tbl-cap: "Table 5: Description of the posterior distribution for the Bayesian Logistic regression for grad+subj+pos"
 
 describe_posterior(
   mean_mod_2,
@@ -299,23 +320,23 @@ describe_posterior(
   as.data.frame() %>% 
   mutate(across(where(is.numeric), round, 3)) %>% 
   knitr::kable(row.names = FALSE)
-
-repmod3 = describe_posterior(
-  mean_mod_2,
-  effects = "fixed",
-  component = "all",
-  test = c("p_direction", "p_significance", "rope"),
-  centrality = "all"
-) %>%
-  as.data.frame() %>% 
-  mutate(across(where(is.numeric), round, 3))
-
 ```
 
-Finally, Table 3 shows the model for the modifier type `grad+subj+pos` and is visualized in the right panel of @fig-6. 
-The log-odds of choosing "yes" for declarative items by adults was much higher than the other two modifier types `r repmod3$Median[1]` [95% HDI `r repmod3$CI_low[1]` - `r repmod3$CI_high[1]`]. 
-This corresponds to a median probability of `r round(plogis(repmod3$Median[1]), digits = 2)` (ranging from `r round(plogis(repmod3$CI_low[1]), digits = 2)` to `r round(plogis(repmod3$CI_high[1]), digits = 2)`).
-Again, there was an effect of intonation in adults, in which there was compelling evidence for an decrease in "yes" responses in adults for sarcastic items relative to declarative ones [Median = `r repmod3$Median[2]`; 95% HDI `repmod3$CI_low[2] - repmod3$CI_high[2]`; pd = `r repmod3$pd[2]`].
-There was also a possible effect of group for declarative intonation, in which there was compelling evidence for an increase in "yes" responses for children relative to adults [Median = `r repmod3$Median[2]`; 95% HDI `repmod3$CI_low[2] - repmod3$CI_high[2]`; pd = `r repmod3$pd[2]`].
-Finally, there was not compelling evidence of an interaction `r repmod3$Median[4]` [95% HDI `r repmod3$CI_low[4]` - `r repmod3$CI_high[4]`; pd = `r repmod3$pd[4]`], suggesting that there was not reliable evidence that children were more likely to respond "yes" as a function of intonation.
-However, there was also not sufficient evidence for practical equivalence, suggesting that this result is inconclusive, rather than null [ROPE bounds = +/- .18; ROPE percentage: `r repmod3$ROPE_Percentage[4]`]. 
+```{r}
+#| tbl-cap: "Table 6: Pairwise comparisons for the Bayesian Logistic regression for grad+subj+pos."
+
+pairs(emmeans(mean_mod_1, ~ intonation*group)) %>% 
+  as.data.frame() %>% 
+  mutate_if(is.numeric, funs(. * -1)) %>% 
+  mutate(across(where(is.numeric), round, 3)) %>% 
+  mutate(result = case_when(
+    is.positive(estimate) & is.positive(lower.HPD) & is.positive(upper.HPD) ~ 1,
+    is.negative(estimate) & is.negative(lower.HPD) & is.negative(upper.HPD) ~ 1,
+    is.positive(estimate) & is.negative(lower.HPD) & is.positive(upper.HPD) ~ 0,
+    is.positive(estimate) & is.positive(lower.HPD) & is.negative(upper.HPD) ~ 0,
+    is.negative(estimate) & is.negative(lower.HPD) & is.positive(upper.HPD) ~ 0,
+    is.negative(estimate) & is.positive(lower.HPD) & is.negative(upper.HPD) ~ 0
+  )) %>% 
+  knitr::kable(row.names = FALSE)
+  
+```

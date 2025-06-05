@@ -60,14 +60,10 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="general-plots-and-descriptive-statistics" class="level3">
+<h3 class="anchored" data-anchor-id="general-plots-and-descriptive-statistics">General Plots and descriptive statistics</h3>
+<p><strong>Note</strong>: Only figures and tables are included here without explanation (for the sake of time). Please see the approve page for examples.</p>
 <div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 2 × 2
-  intonation      n
-  &lt;chr&gt;       &lt;int&gt;
-1 declarative  1204
-2 sarcastic    1203</code></pre>
-</div>
 <div class="cell-output-display">
 <div id="fig-1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -77,7 +73,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p><a href="#fig-1">Figure&nbsp;1</a> shows the overall percentage of “yes” responses for both groups combined in the two intonation types. As seen in the figure, “yes” was more frequent in declarative items overall (86.2%) than in sarcastic items (77.2%). The figure represents a total of 1204 trials for the declarative and 1203 for the sarcastic condition.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div id="fig-2" class="quarto-figure quarto-figure-center anchored">
@@ -88,8 +83,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p><a href="#fig-2">Figure&nbsp;2</a> shows the overall percentage of “yes” responses for both groups individually in the two intonation types. In this case, “yes” was the most frequent in declarative items for adults (88.4%), followed by declarative items in children (81.4%).</p>
-<p>The sarcastic items had a lower percentage in both groups, (adults: 77.2%, children; 77.2%). Again, there was more data overall in the adult data set than children: there were 1668 total data points for adults and 739 data points for children.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div id="fig-3" class="quarto-figure quarto-figure-center anchored">
@@ -100,7 +93,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p><a href="#fig-3">Figure&nbsp;3</a> shows the overall percentage of “yes” responses for the of the three modifier types overall. “Yes” was the most above 75% in all cases (grad+subj+pos items:77.8%; -grad–subj items (83.2%; grad+subj+neg 84.2%).</p>
 <div class="cell">
 <div class="cell-output-display">
 <div id="fig-4" class="quarto-figure quarto-figure-center anchored">
@@ -111,7 +103,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p><a href="#fig-4">Figure&nbsp;4</a> breaks down the percentage of “yes” responses for the of the three modifier types by groups. Overall, the percentages of “yes” responses ranged from 74.6% to 88.7%</p>
 <div class="cell">
 <div class="cell-output-display">
 <div id="fig-5" class="quarto-figure quarto-figure-center anchored">
@@ -122,7 +113,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p><a href="#fig-5">Figure&nbsp;5</a> breaks down the percentage of “yes” responses for the of the three modifier types by intonation instead of groups. Here, the lowest percentage of “yes” responses was 70.2 and the highest was 89.6.</p>
+</section>
 <section id="model-results" class="level3">
 <h3 class="anchored" data-anchor-id="model-results">Model Results</h3>
 <div class="cell">
@@ -135,7 +126,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p>Finally, <a href="#fig-6">Figure&nbsp;6</a> breaks down the percentage of “yes” responses for the of the three modifier types by both intonation and between groups. Many of these differences were tested directly in the Bayesian Logistic regression models. The logistic regression model are summarized in the tables below and test the differences the log-odds of answering “yes” for both sarcastic and declarative intonation in both groups. An individual model was run each of the three modifier types.</p>
+<section id="model-for--grad-subj" class="level4">
+<h4 class="anchored" data-anchor-id="model-for--grad-subj">Model for -grad-subj</h4>
 <div class="cell">
 <div class="cell-output-display">
 <table class="table table-sm table-striped small">
@@ -249,11 +241,80 @@ ul.task-list li input[type="checkbox"] {
 </table>
 </div>
 </div>
-<p>Table 1 shows the model for the modifier type <code>-grad-subj</code> and is visualized in the left panel of <a href="#fig-6">Figure&nbsp;6</a>. The intercept term predicts the log-odds of choosing “yes” for declarative items by adults 3.075 [95% HDI 2.393 - 3.937]. This corresponds to a median probability of 0.96 (ranging from 0.92 to 0.98). The fixed effect “intonationsarcastic” tests whether there was a difference in the adult group between declarative and sarcastic intonation. The model results were inconclusive for this comparison [-0.219; 95% HDI -0.814 - 0.36; pd = 0.761]. There was also not sufficient evidence to consider the two conditions practically equivalent [ ]. The model suggests that there is possible evidence that the children were less likely to answer “yes” than adults in the declarative condition -0.919 [95% HDI -1.981 - 0.135; pd = 0.959]. Finally, there was not compelling evidence of an interaction 0.247 [95% HDI -0.716 - 1.231; pd = 0.694], suggesting that there was not reliable evidence that children were more likely to respond “yes” as a function of intonation for the <code>-grad-subj</code> modifier condition. Again, there was also not sufficient evidence for practical equivalence, suggesting that this result is inconclusive, rather than null [ROPE percentage: 0.269].</p>
 <div class="cell">
 <div class="cell-output-display">
 <table class="table table-sm table-striped small">
-<caption>Table 2: Description of the posterior distribution for the Bayesian Logistic regression for grad+subj+neg. </caption>
+<caption>Table 2: Pairwise comparisons for the Bayesian Logistic regression for -grad-subj. </caption>
+<colgroup>
+<col style="width: 53%">
+<col style="width: 11%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 8%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">contrast</th>
+<th style="text-align: right;">estimate</th>
+<th style="text-align: right;">lower.HPD</th>
+<th style="text-align: right;">upper.HPD</th>
+<th style="text-align: right;">result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">declarative adults - sarcastic adults</td>
+<td style="text-align: right;">-0.219</td>
+<td style="text-align: right;">0.364</td>
+<td style="text-align: right;">-0.805</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">declarative adults - declarative children</td>
+<td style="text-align: right;">-0.919</td>
+<td style="text-align: right;">0.091</td>
+<td style="text-align: right;">-2.003</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">declarative adults - sarcastic children</td>
+<td style="text-align: right;">-0.893</td>
+<td style="text-align: right;">0.137</td>
+<td style="text-align: right;">-1.991</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sarcastic adults - declarative children</td>
+<td style="text-align: right;">-0.689</td>
+<td style="text-align: right;">0.291</td>
+<td style="text-align: right;">-1.784</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sarcastic adults - sarcastic children</td>
+<td style="text-align: right;">-0.676</td>
+<td style="text-align: right;">0.424</td>
+<td style="text-align: right;">-1.725</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">declarative children - sarcastic children</td>
+<td style="text-align: right;">0.028</td>
+<td style="text-align: right;">0.877</td>
+<td style="text-align: right;">-0.688</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="model-for-gradsubjneg" class="level4">
+<h4 class="anchored" data-anchor-id="model-for-gradsubjneg">Model for grad+subj+neg</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<caption>Table 3: Description of the posterior distribution for the Bayesian Logistic regression for grad+subj+neg. </caption>
 <colgroup>
 <col style="width: 24%">
 <col style="width: 4%">
@@ -363,12 +424,80 @@ ul.task-list li input[type="checkbox"] {
 </table>
 </div>
 </div>
-<p>Table 2 shows the model for the modifier type <code>grad+subj+neg</code> and is visualized in the middle panel of <a href="#fig-6">Figure&nbsp;6</a>. Again, the intercept term predicts the log-odds of choosing “yes” for declarative items by adults 4.067 [95% HDI 3.231 - 5.108]. There was compelling evidence for an increase in “yes” responses in adults for sarcastic items relative to declarative ones [Median = -1.633; 95% HDI <code>repmod2$CI_low[2] - repmod2$CI_high[2]</code>, and certainly exists (pd = 1).</p>
-<p>Unlike the first model, there was compelling evidence that the children were less likely to answer “yes” than adults in the declarative condition -2.003 [95% HDI -3.115 - -1.003; pd = 1]. Likewise, there was also possible evidence of an interaction 0.838 [95% HDI -0.156 - 1.874; pd = 0.953], suggesting that there children were overall more likely to respond “yes” when the intonation was sarcastic.</p>
 <div class="cell">
 <div class="cell-output-display">
 <table class="table table-sm table-striped small">
-<caption>Table 3: Description of the posterior distribution for the Bayesian Logistic regression for grad+subj+pos </caption>
+<caption>Table 4: Pairwise comparisons for the Bayesian Logistic regression for grad+subj+neg. </caption>
+<colgroup>
+<col style="width: 53%">
+<col style="width: 11%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 8%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">contrast</th>
+<th style="text-align: right;">estimate</th>
+<th style="text-align: right;">lower.HPD</th>
+<th style="text-align: right;">upper.HPD</th>
+<th style="text-align: right;">result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">declarative adults - sarcastic adults</td>
+<td style="text-align: right;">-1.633</td>
+<td style="text-align: right;">-0.963</td>
+<td style="text-align: right;">-2.396</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">declarative adults - declarative children</td>
+<td style="text-align: right;">-2.003</td>
+<td style="text-align: right;">-0.979</td>
+<td style="text-align: right;">-3.089</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">declarative adults - sarcastic children</td>
+<td style="text-align: right;">-2.785</td>
+<td style="text-align: right;">-1.781</td>
+<td style="text-align: right;">-3.932</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sarcastic adults - declarative children</td>
+<td style="text-align: right;">-0.359</td>
+<td style="text-align: right;">0.568</td>
+<td style="text-align: right;">-1.269</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sarcastic adults - sarcastic children</td>
+<td style="text-align: right;">-1.146</td>
+<td style="text-align: right;">-0.279</td>
+<td style="text-align: right;">-2.130</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">declarative children - sarcastic children</td>
+<td style="text-align: right;">-0.786</td>
+<td style="text-align: right;">-0.131</td>
+<td style="text-align: right;">-1.579</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="model-for-gradsubjpos" class="level4">
+<h4 class="anchored" data-anchor-id="model-for-gradsubjpos">Model for grad+subj+pos</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<caption>Table 5: Description of the posterior distribution for the Bayesian Logistic regression for grad+subj+pos </caption>
 <colgroup>
 <col style="width: 24%">
 <col style="width: 4%">
@@ -478,7 +607,74 @@ ul.task-list li input[type="checkbox"] {
 </table>
 </div>
 </div>
-<p>Finally, Table 3 shows the model for the modifier type <code>grad+subj+pos</code> and is visualized in the right panel of <a href="#fig-6">Figure&nbsp;6</a>. The log-odds of choosing “yes” for declarative items by adults was much higher than the other two modifier types 2.253 [95% HDI 1.674 - 2.827]. This corresponds to a median probability of 0.9 (ranging from 0.84 to 0.94). Again, there was an effect of intonation in adults, in which there was compelling evidence for an decrease in “yes” responses in adults for sarcastic items relative to declarative ones [Median = -1.463; 95% HDI <code>repmod3$CI_low[2] - repmod3$CI_high[2]</code>; pd = 1]. There was also a possible effect of group for declarative intonation, in which there was compelling evidence for an increase in “yes” responses for children relative to adults [Median = -1.463; 95% HDI <code>repmod3$CI_low[2] - repmod3$CI_high[2]</code>; pd = 1]. Finally, there was not compelling evidence of an interaction 1.187 [95% HDI 0.205 - 2.153; pd = 0.992], suggesting that there was not reliable evidence that children were more likely to respond “yes” as a function of intonation. However, there was also not sufficient evidence for practical equivalence, suggesting that this result is inconclusive, rather than null [ROPE bounds = +/- .18; ROPE percentage: 0].</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<caption>Table 6: Pairwise comparisons for the Bayesian Logistic regression for grad+subj+pos. </caption>
+<colgroup>
+<col style="width: 53%">
+<col style="width: 11%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 8%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">contrast</th>
+<th style="text-align: right;">estimate</th>
+<th style="text-align: right;">lower.HPD</th>
+<th style="text-align: right;">upper.HPD</th>
+<th style="text-align: right;">result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">declarative adults - sarcastic adults</td>
+<td style="text-align: right;">-1.633</td>
+<td style="text-align: right;">-0.963</td>
+<td style="text-align: right;">-2.396</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">declarative adults - declarative children</td>
+<td style="text-align: right;">-2.003</td>
+<td style="text-align: right;">-0.979</td>
+<td style="text-align: right;">-3.089</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">declarative adults - sarcastic children</td>
+<td style="text-align: right;">-2.785</td>
+<td style="text-align: right;">-1.781</td>
+<td style="text-align: right;">-3.932</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sarcastic adults - declarative children</td>
+<td style="text-align: right;">-0.359</td>
+<td style="text-align: right;">0.568</td>
+<td style="text-align: right;">-1.269</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sarcastic adults - sarcastic children</td>
+<td style="text-align: right;">-1.146</td>
+<td style="text-align: right;">-0.279</td>
+<td style="text-align: right;">-2.130</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">declarative children - sarcastic children</td>
+<td style="text-align: right;">-0.786</td>
+<td style="text-align: right;">-0.131</td>
+<td style="text-align: right;">-1.579</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
 </section>
 
 </main>

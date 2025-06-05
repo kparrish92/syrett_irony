@@ -1,0 +1,251 @@
+---
+title: "Nice probe"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(here)
+library(bayestestR)
+library(bayesplot)
+library(brms)
+library(emmeans)
+library(report)
+library(schoolmath)
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+syrett_theme <- function() {
+  theme(
+    axis.text = element_text(colour = "black", family = "Arial", size = 12),
+    axis.title = element_text(colour = "black", family = "Arial", size = 12))
+}
+
+
+nice_df = read.csv(here("data", "tidy", "ordinal_data_tidy.csv"))
+
+nice_mod_1 = readRDS(here("data", "models", "nice_mod_grad_s_n.rds"))
+
+nice_mod_2 = readRDS(here("data", "models", "nice_mod_grad_s_p.rds"))
+
+nice_mod_3 = readRDS(here("data", "models", "nice_mod_gs.rds"))
+```
+
+#### Model for -grad-subj
+
+```{r, dpi = 600}
+#| label: fig-1
+#| fig-cap: "Distribution of ratings for -grad-subj in both groups and intonation types"
+totals_1 = nice_df %>% 
+  filter(modifier_type == "–grad–subj") %>% 
+  group_by(group, intonation) %>% 
+  summarise(total = n())
+
+nice_df_plot1 = nice_df %>% 
+  filter(modifier_type == "–grad–subj") %>% 
+  group_by(group, response, intonation) %>% 
+  summarise(n = n()) %>% 
+  left_join(totals_1) %>% 
+  mutate(percentage = n/total)
+
+nice_df_plot1 %>% 
+  ggplot(aes(x = response, y = percentage, fill = as.factor(response), group = as.factor(response))) +
+  geom_col(color = "black") +
+  theme_minimal() + syrett_theme() + 
+  facet_grid(group~intonation) +
+  theme(legend.position="none") + 
+  ggtitle("Percentage of ratings for -grad-subj")
+```
+
+```{r}
+#| label: mos-2
+#| tbl-cap: "Table 1: Description of the posterior distribution for the Bayesian Logistic regression for -grad-subj."
+
+describe_posterior(
+  nice_mod_3,
+  effects = "fixed",
+  component = "all",
+  test = c("p_direction", "p_significance", "rope"),
+  centrality = "all"
+) %>%
+  as.data.frame() %>% 
+  mutate(across(where(is.numeric), round, 3)) %>% 
+  knitr::kable(row.names = FALSE)
+
+repmod1 = describe_posterior(
+  nice_mod_3,
+  effects = "fixed",
+  component = "all",
+  test = c("p_direction", "p_significance", "rope"),
+  centrality = "all"
+) %>%
+  as.data.frame() %>% 
+  mutate(across(where(is.numeric), round, 3))
+```
+
+```{r}
+#| tbl-cap: "Table 2: Pairwise comparisons for the Bayesian Logistic regression for -grad-subj."
+
+pairs(emmeans(nice_mod_3, ~ intonation*group)) %>% 
+  as.data.frame() %>% 
+  mutate_if(is.numeric, funs(. * -1)) %>% 
+  mutate(across(where(is.numeric), round, 3)) %>% 
+  mutate(result = case_when(
+    is.positive(estimate) & is.positive(lower.HPD) & is.positive(upper.HPD) ~ 1,
+    is.negative(estimate) & is.negative(lower.HPD) & is.negative(upper.HPD) ~ 1,
+    is.positive(estimate) & is.negative(lower.HPD) & is.positive(upper.HPD) ~ 0,
+    is.positive(estimate) & is.positive(lower.HPD) & is.negative(upper.HPD) ~ 0,
+    is.negative(estimate) & is.negative(lower.HPD) & is.positive(upper.HPD) ~ 0,
+    is.negative(estimate) & is.positive(lower.HPD) & is.negative(upper.HPD) ~ 0
+  )) %>% 
+  knitr::kable(row.names = FALSE)
+  
+```
+
+```{r}
+repmod2 = describe_posterior(
+  nice_mod_1,
+  effects = "fixed",
+  component = "all",
+  test = c("p_direction", "p_significance", "rope"),
+  centrality = "all"
+) %>%
+  as.data.frame() %>% 
+  mutate(across(where(is.numeric), round, 3))
+
+```
+
+#### Model for grad+subj+neg
+
+```{r, dpi = 600}
+#| label: fig-2
+#| fig-cap: "Distribution of ratings for grad+subj+neg in both groups and intonation types"
+totals_2 = nice_df %>% 
+  filter(modifier_type == "grad+subj+neg") %>% 
+  group_by(group, intonation) %>% 
+  summarise(total = n())
+
+nice_df_plot2 = nice_df %>% 
+  filter(modifier_type == "grad+subj+neg") %>% 
+  group_by(group, response, intonation) %>% 
+  summarise(n = n()) %>% 
+  left_join(totals_2) %>% 
+  mutate(percentage = n/total)
+
+nice_df_plot2 %>% 
+  ggplot(aes(x = response, y = percentage, fill = as.factor(response), group = as.factor(response))) +
+  geom_col(color = "black") +
+  theme_minimal() + syrett_theme() + 
+  facet_grid(group~intonation) +
+  theme(legend.position="none") + 
+  ggtitle("Percentage of ratings for grad+subj+neg")
+```
+
+
+```{r}
+#| label: mos-1
+#| tbl-cap: "Table 3: Description of the posterior distribution for the Bayesian Logistic regression for grad+subj+neg."
+
+describe_posterior(
+  nice_mod_1,
+  effects = "fixed",
+  component = "all",
+  test = c("p_direction", "p_significance", "rope"),
+  centrality = "all"
+) %>%
+  as.data.frame() %>% 
+  mutate(across(where(is.numeric), round, 3)) %>% 
+  knitr::kable(row.names = FALSE)
+```
+
+```{r}
+#| tbl-cap: "Table 4: Pairwise comparisons for the Bayesian Logistic regression for grad+subj+neg."
+
+pairs(emmeans(nice_mod_1, ~ intonation*group)) %>% 
+  as.data.frame() %>% 
+  mutate_if(is.numeric, funs(. * -1)) %>% 
+  mutate(across(where(is.numeric), round, 3)) %>% 
+  mutate(result = case_when(
+    is.positive(estimate) & is.positive(lower.HPD) & is.positive(upper.HPD) ~ 1,
+    is.negative(estimate) & is.negative(lower.HPD) & is.negative(upper.HPD) ~ 1,
+    is.positive(estimate) & is.negative(lower.HPD) & is.positive(upper.HPD) ~ 0,
+    is.positive(estimate) & is.positive(lower.HPD) & is.negative(upper.HPD) ~ 0,
+    is.negative(estimate) & is.negative(lower.HPD) & is.positive(upper.HPD) ~ 0,
+    is.negative(estimate) & is.positive(lower.HPD) & is.negative(upper.HPD) ~ 0
+  )) %>% 
+  knitr::kable(row.names = FALSE)
+  
+```
+
+#### Model for grad+subj+pos 
+
+```{r, dpi = 600}
+#| label: fig-3
+#| fig-cap: "Distribution of ratings for grad+subj+pos in both groups and intonation types"
+totals_3 = nice_df %>% 
+  filter(modifier_type == "grad+subj+pos") %>% 
+  group_by(group, intonation) %>% 
+  summarise(total = n())
+
+nice_df_plot3 = nice_df %>% 
+  filter(modifier_type == "grad+subj+pos") %>% 
+  group_by(group, response, intonation) %>% 
+  summarise(n = n()) %>% 
+  left_join(totals_3) %>% 
+  mutate(percentage = n/total)
+
+nice_df_plot3 %>% 
+  ggplot(aes(x = response, y = percentage, fill = as.factor(response), group = as.factor(response))) +
+  geom_col(color = "black") +
+  theme_minimal() + syrett_theme() + 
+  facet_grid(group~intonation) +
+  theme(legend.position="none") + 
+  ggtitle("Percentage of ratings for grad+subj+pos")
+```
+
+
+```{r}
+repmod3 = describe_posterior(
+  nice_mod_2,
+  effects = "fixed",
+  component = "all",
+  test = c("p_direction", "p_significance", "rope"),
+  centrality = "all"
+) %>%
+  as.data.frame() %>% 
+  mutate(across(where(is.numeric), round, 3))
+```
+
+```{r}
+#| label: mos-3
+#| tbl-cap: "Table 5: Description of the posterior distribution for the Bayesian Logistic regression for grad+subj+pos"
+
+describe_posterior(
+  nice_mod_2,
+  effects = "fixed",
+  component = "all",
+  test = c("p_direction", "p_significance", "rope"),
+  centrality = "all"
+) %>%
+  as.data.frame() %>% 
+  mutate(across(where(is.numeric), round, 3)) %>% 
+  knitr::kable(row.names = FALSE)
+```
+
+```{r}
+#| tbl-cap: "Table 6: Pairwise comparisons for the Bayesian Logistic regression for grad+subj+pos."
+
+pairs(emmeans(nice_mod_1, ~ intonation*group)) %>% 
+  as.data.frame() %>% 
+  mutate_if(is.numeric, funs(. * -1)) %>% 
+  mutate(across(where(is.numeric), round, 3)) %>% 
+  mutate(result = case_when(
+    is.positive(estimate) & is.positive(lower.HPD) & is.positive(upper.HPD) ~ 1,
+    is.negative(estimate) & is.negative(lower.HPD) & is.negative(upper.HPD) ~ 1,
+    is.positive(estimate) & is.negative(lower.HPD) & is.positive(upper.HPD) ~ 0,
+    is.positive(estimate) & is.positive(lower.HPD) & is.negative(upper.HPD) ~ 0,
+    is.negative(estimate) & is.negative(lower.HPD) & is.positive(upper.HPD) ~ 0,
+    is.negative(estimate) & is.positive(lower.HPD) & is.negative(upper.HPD) ~ 0
+  )) %>% 
+  knitr::kable(row.names = FALSE)
+
+```
